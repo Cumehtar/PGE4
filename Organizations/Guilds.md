@@ -1,1 +1,1 @@
-The Imperial Guilds were redefined by the [[restoration of the Guilds Act]] of the last Mede Emperor [[Albertius Mede]].
+The Imperial Guilds were redefined by the [[Restoration of the Guilds Act]] of the last Mede Emperor [[Albertius Mede]].

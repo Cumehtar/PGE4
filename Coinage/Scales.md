@@ -1,0 +1,1 @@
+ Silver coins of the [[Second Potentate]].
