@@ -22,7 +22,7 @@
 
 *The Thalmor misunderstood, and paid for their misunderstanding. Talos is but a face of Ysmir, and Ysmir is eternal. To slay the man, one must also slay the dragon - for the man and dragon are the same, are they not? Perhaps one day the elves will understand the truth of many faces, for all faces are one.*
 
-**Chaplain Desnia Pinethorn, Primate of Auri-El, Kvatch**
+**Chaplain Desnia Pinethorn, Primate of Auri-El, [[Kvatch]]**
 
 *What a tragedy. The Thalmor attempted to wage war on the Heavens. All they “proved” is that we mortals desperately need Divine guidance to maintain order and stability. Auri-El the King, Magnus the Architect, Merid-Nunda the Keeper. They want only what is best for us, to follow the Divine Mandate and lead a life of proper discipline. That is why the Archdiocese is founded upon false and heretical thought, and should come back into the true fold. “Oneness” deludes mortals into believing that they, too, could one day become as Gods. Just as the Thalmor believed. The ending will be just as destructive.*
 
@@ -34,11 +34,11 @@
 
 *Ha, that was somethin’ alright. Damned Thalmor thought they could kill a god. Instead they blew up a whole damned city! Dusk’s still a sad vestige of its former self. It kick-started the revolution, though, so it worked out for us in the end. Spread themselves too thin in the war, and we kicked their pompous asses right out of the Eton Nir! By the Eleven Forces, I get excited just thinking about it! Let me tell you some of my grandpap’s old war stories. Next round of golden ale on me.*
 
-**Halnach the Wolf-Voice, Vateshran, Markarth**
+**Halnach the Wolf-Voice, Vateshran, [[Markarth]]**
 
 *The Day of Darkness is remembered with holy feasts here in the Reach. The World of Spirit and the World of Flesh became as one on that day, and the Druadach trembled from the union. The Tricky Hunter changed the skin of some of our bravest warriors, and they slew the Nords and the Bretons and the Imperials in their forts. The Forsworn had been fighting for our freedom for many an age, it is true, but that day was when the war of liberation began in earnest.* 
 
-**Vasha, Mother Navigator, Gottlesfont**
+**Vasha, Mother Navigator, [[Gottlesfont]]**
 
 *Of course that was an awful day, the story was passed down to me from my foremothers. The Dark Moon turning day into night for so long? It caused quite the panic in Dunei, but that is another story. A dust storm kicked up from Sentinel to Gilane, and for my ancestors it was a sign from Tava herself that a great change was coming. They began to walk new roads farther and farther from the Alik’r, and made contact with the cat-mothers from the south. When the Plague hit, our trade kept all of Tamriel united, and the mothers prospered from it. And when the mothers prosper, everyone prospers. Now Tava and Khenarthi are as one, and the Mother Navigators can make a special trip, just for you. Same low price.*
 

@@ -2,7 +2,7 @@ Before setting your sights on the lengthy travel outside of the Potentate it is 
 
 Currently, the Temple presents itself much differently, as over the last centuries it was extended both over and under the ground. Smaller chapels, annexes, subdivided chambers - all of them are devoted to the different aspects of the Mother. Each is full of small statues, figurines, portraits and icons of Mother's Saints. Day and night the Temple is illuminated by the soft glow of thousands upon thousands of candles and scented oil lamps the pilgrims light as a prayer, a thanks, or just a remembrance.
 
-Some of the chambers contain tombs of the important characters of the Temple history, chief among them the Primate Fianna Georick, who played a crucial role in overturning the Septim doctrines back in the third century. 
+Some of the chambers contain tombs of the important characters of the Temple history, chief among them the Primate [[Fianna Georick]], who played a crucial role in overturning the Septim doctrines back in the third century. 
 
 An astronomer, a researcher and a priest, she is said one day to nail a pamphlet with her theses at the door of the Temple - the original of the pamphlet is displayed under glass over her tomb. In this paper she succinctly argued against the dogmatic rigidity of the Cult of the Eight, against the astronomical nonsense of identifying the Divines with the planets and against the simplistic characterization of the Divine spheres of influence. Instead, she argued for meditation and strive for self-improvement for laypeople, assisted by the mendicant priesthood.
 

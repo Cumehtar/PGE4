@@ -8,7 +8,7 @@
 
 ***The Marriage of [[Queen Elisif]] of [[Solitude]] and [[Queen Gwynienne]] of [[Northpoint]] (sometime between 4E 204 and 4E 207)***
 
-*Their marriage will go on to found the [[Kingdom of Wrothgaria and Karth]].*
+*Their marriage will go on to found the [[Wiki/Polities/Kingdom of Wrothgaria and Karth]].*
 
 ***The [[Silver Plague]] (4E 206 - 4E 230's)***
 
@@ -30,11 +30,11 @@
 
 *Sload begin immigrating to Tamriel with promises of cures to the Silver Plague.*
 
-***The Sload Invasion (circa 4E 222)***
+***The [[Sload Invasion]] (circa 4E 222)***
 
-*A militant group of Sload invade shortly after the more peaceful group. They claim Lilmoth as New Thras.*
+*A militant group of Sload invade shortly after the more peaceful group. They claim Lilmoth as [[Wiki/Polities/New Thras|New Thras]].*
 
-***Founding of the [[Druadach Kingdom]] (4E 227 - 4E 251)***
+***Founding of the [[Wiki/Polities/Druadach Kingdom]] (4E 227 - 4E 251)***
 
 *Melusa Stormclaw unites the various clans of the Reach and conquers historically Reachfolk cities, as well as some Nordic, Redguard, Orcish, and Breton settlements.*
 
@@ -46,7 +46,7 @@
 
 *Eight Dragons begin to roost on the White-Gold Tower, seen as vindication of the Archbishop of the One's doctrines.*
 
-***[[Sancre Tor]] Joins the [[Colovian Estates]] (4E 320)***
+***[[Sancre Tor]] Joins the [[Wiki/Polities/Colovian Estates]] (4E 320)***
 
 *After the Minotaurs of Sancre Tor help defend against a wave of horsemen, they are invited into the Colovian Estates.*
 
