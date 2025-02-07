@@ -26,7 +26,7 @@
 
 *Some consider this the founding of the [[Second Potentate]].*
 
-***Solitude and the College of Winterhold Investigate Old Thras (4E 219)***
+***Solitude and the [[College of Winterhold]] Investigate Old Thras (4E 219)***
 
 *Sload begin immigrating to Tamriel with promises of cures to the Silver Plague.*
 
@@ -34,7 +34,7 @@
 
 *A militant group of Sload invade shortly after the more peaceful group. They claim Lilmoth as [[Wiki/Polities/New Thras|New Thras]].*
 
-***Founding of the [[Wiki/Polities/Druadach Kingdom]] (4E 227 - 4E 251)***
+***Founding of the [[Druadach Kingdom]] (4E 227 - 4E 251)***
 
 *Melusa Stormclaw unites the various clans of the Reach and conquers historically Reachfolk cities, as well as some Nordic, Redguard, Orcish, and Breton settlements.*
 
@@ -46,7 +46,7 @@
 
 *Eight Dragons begin to roost on the White-Gold Tower, seen as vindication of the Archbishop of the One's doctrines.*
 
-***[[Sancre Tor]] Joins the [[Wiki/Polities/Colovian Estates]] (4E 320)***
+***[[Sancre Tor]] Joins the [[Colovian Estates]] (4E 320)***
 
 *After the Minotaurs of Sancre Tor help defend against a wave of horsemen, they are invited into the Colovian Estates.*
 
@@ -56,7 +56,8 @@
 
 ***The Great Razzia (4E 337)***
 
-*Baandari pirates cause havoc across the Niben, are ultimately repelled by the Potentate and Khajiiti forces.*
+*[[Baandari Coast]] pirates cause havoc across the Niben, are ultimately repelled by the [[Second Potentate]] and 
+Khajiiti forces.*
 
 ***The War of the Sacred Wood (4E 337 - 4E 344)***
 
