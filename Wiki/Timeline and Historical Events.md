@@ -36,13 +36,13 @@
 
 ***Founding of the [[Druadach Kingdom]] (4E 227 - 4E 251)***
 
-*Melusa Stormclaw unites the various clans of the Reach and conquers historically Reachfolk cities, as well as some Nordic, Redguard, Orcish, and Breton settlements.*
+*[[Melusa Stormclaw]] unites the various clans of the Reach and conquers historically Reachfolk cities, as well as some Nordic, Redguard, Orcish, and Breton settlements.*
 
-***Minotuars Begin to Rebuild Sancre Tor (4E 266)***
+***Minotuars Begin to Rebuild [[Sancre Tor]] (4E 266)***
 
 *Led by a prophet-queen, tribes of Minotaurs migrate to the ancient settlement.*
 
-***Apparent Dragon Vindication of the Archdiocese (4E 300)***
+***Apparent Dragon Vindication of the [[Archdiocese]] (4E 300)***
 
 *Eight Dragons begin to roost on the White-Gold Tower, seen as vindication of the Archbishop of the One's doctrines.*
 
@@ -52,7 +52,7 @@
 
 ***Succession Crisis in [[Kvatch]] (4E 335)***
 
-*A member of the Camoran Dynasty performs a* coup *and founds an Ayleid Revivalist state in Colovia.*
+*A member of the Camoran Dynasty performs a* coup *and founds an [[Ayleid Imperium]] state in Colovia.*
 
 ***The Great Razzia (4E 337)***
 
@@ -61,6 +61,6 @@ Khajiiti forces.*
 
 ***The War of the Sacred Wood (4E 337 - 4E 344)***
 
-*The Ayleid Revivalists invade Bloodtoil, claiming much of the former Valenwood and part of former Elsweyr.*
+*[[Ayleid Imperium]] invades Bloodtoil, claiming much of the former Valenwood and part of former Elsweyr.*
 
 ***The Potentate's Guide to the Environs is Published (4E 401)***
