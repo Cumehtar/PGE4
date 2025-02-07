@@ -1,3 +1,6 @@
 An independent Orcish city-state in the Druadach Mountains. Formed from the city of Orsinium and surrounding strongholds, Orsinium is one of the most magically and technologically advanced nations in the setting - not that most others know it. Approaching magic as applied engineering, Orsinium has a unique blend of magitek, using magically engineered "whaleships" to traverse the Ashpit to travel to planes of Oblivion to trade and raid. Governed by elected chiefs and a council of Beseechers who consult directly with their God-King Malacath, Orsinium is a strange and reclusive elected theocracy whose internal divisions and strife are hidden from sight and go much deeper than they let on. Iron Orcs, city Orcs, traditional stronghold Orcs, descendants of Imperial Legions and the newly-emerging Deep Orcs all manage to coexist - for now.
 
 Orsinium is a sort of Switzerland and North Korea, a reclusive mountain state mostly closed off to outsiders, also drawing inspiration from Tibet, the Inca, and traditional Orcish culture of the setting. The magitek of Orsinium is both advanced and primitive, drawing parallels to solarpunk, Warhammer 40k, and Dwemer tech to create a bizarre blend of capabilities.
+
+*Sources:*
+[[Chapter. Orsinium]]
