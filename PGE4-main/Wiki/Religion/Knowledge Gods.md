@@ -1,1 +1,0 @@
-Jhunal, Orkay, and Mora

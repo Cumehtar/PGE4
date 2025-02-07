@@ -1,1 +1,0 @@
- Currently the capital city of the [[Second Potentate]]. 
