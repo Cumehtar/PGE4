@@ -36,7 +36,7 @@
 
 ***Founding of the [[Druadach Kingdom]] (4E 227 - 4E 251)***
 
-*[[Melusa Stormclaw]] unites the various clans of the Reach and conquers historically Reachfolk cities, as well as some Nordic, Redguard, Orcish, and Breton settlements.*
+*[[Melusa Swordclaw]] unites the various clans of the Reach and conquers historically Reachfolk cities, as well as some Nordic, Redguard, Orcish, and Breton settlements.*
 
 ***Minotuars Begin to Rebuild [[Sancre Tor]] (4E 266)***
 
