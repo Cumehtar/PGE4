@@ -1,0 +1,43 @@
+*This week the Great Council of the Houses of Resdayn is gathering in Blacklight in order to elect a new Hortator, who will serve as both war-leader and arbiter of inter-Great house conflicts for the next thirty-six years. This time however, the current Hortator, Gilyam Sarethi has made it known that he will not be seeking a fourth term. As a result, and for the first time in more than a century, the full Council of each of the five Great Houses as well as the leadership of the Temple of the Reclamations have come to take part. They are not the only ones to have made the journey however, as the Potentate has seen fit to send the Honorable Dante Luceveri of Bravil as Special Envoy to Resdayn to observe the proceedings. And of course,* the Mouth of the Niben, *in the person of yours truly, has come to keep you, dear reader, appraised of the latest going-ons in the East.*
+
+*The Honorable Dante Luceveri has daigned grant us an interview over lunch during this Thurdas, the second day of the election. The Potentate's special envoy is in many ways the archetypical example of a middle-aged member of the landed Nibenean gentry: jovial, well-read, impeccably dressed, devoted to Mother Mara (but not to the point of zealotry), clever and volubile.*
+
+**Greetings, Your Excellency, and many thanks for taking time out of your busy schedule to adress our readers.**  
+Oh, it's no issue at all, not at all. It is crucially important that the good people of the Potentate understand our neighbor clearly. Besides, we do want to get some value out of all those subventions your newspaper received last year. (*laughs.*)
+
+**Could you explain the stakes of this election and why ? Is the Hortator equivalent to our Potentate?**  
+Oh, on paper the Hortator is simply the military leader when a major conflict arise, is in charge of diplomatic relations with the Ashlanders, and gets a tie-breaking vote should the Great Council be gridlocked. However in practice, he is the highest authority in the land. Especially since all Hortators since the beginning of the Fouth Era have also been Archmaster of Redoran, the most powerful of the five Great Houses.
+
+**Diplomacy with the Ashlanders? Are they not part of Resdayn?**  
+They are of Resdayn, yes, but not subject to the Great Houses and the Grand Council. Legally each tribe is its own independent nation, and they form their own confederation, lead by Gah-Khan Sul-Yahaz. Ashlanders form a vital part of Resdayn culture, as they are seen as living memory of the ancient and sacred Velothi traditions (a claim disputed by serious historians), but they also frequently clash with House Dunmer especially over religious matters. Just last night a Redoran was killed by an ashlander for speaking positively of Saint Vivec in a cornerclub. In fact it's likely that without the Temple mixing both traditions and serving as an intermediary, both people would wage war.
+
+**So the Gah-Khan is only there as observer and won't take part in the election?**  
+In theory yes. Though in practice his endorsement of a particular candidate has a lot of weight, and vice-verse when it is time for the Ashkhans to pick a new leader. And the same is true for the Alma Rula of the Temple of course. House, Temple, Nomads, the three corners of modern Dunmeri society, and their three leaders forming an unofficial (though hardly secret) triumvirate. The common people have even taken to associate each member of this "lesser Tribunal" with one of the Three Good Daedra.
+
+**What is the process of election?**  
+It is extremely simple. The Alma Rula presides the proceedings and the five Archcanons keep track of the votes of each Councilor. The Hortator must be picked unanimously minus one and Councilors are not allowed to vote for themselves. They vote six times a day until a name is picked. As we have a full council attending for the first time in a century, this is likely to take a month or two, but Elves are nothing if not patient.
+
+**Do you have any prediction as to the identity of the next Hortator?**  
+In theory any Councilor could be picked. In reality there are only two serious candidates. Feranos Sarethi, the son of the current Hortator, would be a natural heir to his father, but he is not very popular with the other Councilors who question his legitimacy to seat on the council. The other is Idesa Arano, the current Councilor of Solstheim. Her ebony mines make her one of the richest Dunmer in Resdayn and she has a reputation for being a cunning leader. Yes, I think she is likely to be the next Hortator. But the Sarethi clan is hardly going to let the position escape them that easily. I suspect a wedding will soon be announced.
+
+**What about the other Houses? Couldn't they take advantage of Redoran divisions to take the vote?**  
+Unlikely. Despite his undeniable skill, Archmagister Aryon could never get the Telvanni Masters to vote for one of their own, since that would be elevating a rival far above their own station. House Sadras is not yet ready to step out of Redoran's shadow. They are most likely going to support whichever candidate will give them the best guarantees agaisnt their Telvanni rivals. All Indoril Councilors are former Canons and Mehra of the Temple and it is not in the priests' interest to rock the boat now. Better to play kingmaker, you see. As for House Dres, they simply do not have the political capital to rally people behind them.
+
+**Speaking of House Dres, it seems their newest Councilor is the talk of the town.**  
+Indeed, Speak-With-Caution is hardly what you expect of a Dres Councilor, is he not? (*laughs.*) But it's not as surprising as it seems at first glance. The Archein Tribe has spent centuries selling their fellow Argonians to House Dres. Now that they are exiled form Black Marsh and that Dres is teetering on the brink of extinction, both are leaing on each other as much as possible. Speak-With-Caution's nomination was just the logical endpoint of that process.
+
+**And yet it seems House Sadras features an even stranger Councilor.**  
+Do you mean the Dreugh? He's not a Councilor. At least not yet. Resdayn has been relying on dreugh mercenaries more and more to help keep the Argonian navy, pardon the pun, at bay. This success is owed to House Sadras, and their hosting of the Dreugh Ambassador is a simple reminder of their importance to their rivals. Still I was there when they disembarked and I must admit, the strange wheeled aquarium the creature uses for transportation was quite impressive\*.
+
+**You are, of course, an expert on Resdaynian politics, but if you'll forgive the question wouldn't a Dunmer be more suited to the task?**  
+Quite the opposite! As a Nibenese from Bravil, and a follower of Mother Mara, I can represent the Potentate without any of the biases that a resident of Kragenmoor would have, or at least would be perceived with. There is still a lot of bad blood between the Houses Hlaalu and Redoran, not to mention the dres occupation of Narsis where the ancestors of many Potentae Dunmer resides. No believe me, it's better that. Take the matter I am here for: a pack of Blood Vampires has taken to raid Potentate territory, that has long belonged to House Indoril but now is controlled by Hlaalu, from their base somewhere in Resdayn, likely in territorry that now belong to House Redoran but was House Hlaalu for centuries before that. Can you imagine how much trickier it would be to negotiate a reaction from the grand Council if I had family linked to these lands?
+
+**What about the Sadras Councilor Selvas Drath? The two of you have been seen dining together twice this week and he is the third cousin twice removed of the Third Era Count Cheydinhal, Andel Indarys, who was close friends with our esteemed Potentate. Do we have allies within the Great Council?**  
+Please, that would be telling. (*laughs.*)
+
+**Well, that was the last question we had. Thank you again for your time. Is there anything else you wish to tell to our readers?**  
+And I thank you for the excellent work you do in keeping the people aware of the work we do on their behalf. As for your readers, I can only exhort them to work dutifully for family and country, to honor the gods and live a virtuous life under the wise guidance of the Elders and the Potentate.
+
+A. H.
+
+*\*Unlike their land cousins our readers may be familiar with, the Sea Dreugh are perfectly cognizant but incapable of breathing air without magical assistance. The Dreugh Ambassador N'knvzzathak of Fluang-zzzmbar comunicates through a Dunmer interpret as well as an ingenious device capable of transforming the air-waves made by speech into water-waves and back.*

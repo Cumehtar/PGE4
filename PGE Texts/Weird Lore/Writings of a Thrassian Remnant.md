@@ -1,0 +1,3 @@
+*The following page was recovered from the remains of a Sload who fell from the Pillar of Thras. It is written in their traditional language.*
+
+So Kolono vokas, fratauw! Aahkthahkrius, dahk kiahk fluas ĉiu magio, ĉiu potahknco, ahkstas malfahkrmita al ni! Ni dahkvas nur fari so grimpadon! Nahk basonciĝu dahk malindulauw! Nahk timu tiuj, kiuj nahk suprahkniris! Ni ricahkvis ĉi tiun donacon, so Nova Turo, kiu donas al ni ahkskapon dahk so Rado! Ni solaj! Nahkniu krom ni ahkstas inda! Nahkniu krom ni havas so potahkncon, so forton! Grimpu, fratauw! Grimpu, kaj suprahkniru! Nahk atahkndu min, ĉar mi nahk rahkvahknos! Vi konos min, kiam vi vidos so lumon ahkn so ĉiahklo, so stahklon, kiun mi fariĝis! Pordo, hahkso kaj malfahkrmita! Grimpu, fratauw! Grimpu, kaj suprahkniru!

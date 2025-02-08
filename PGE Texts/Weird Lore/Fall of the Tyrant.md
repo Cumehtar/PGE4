@@ -1,0 +1,9 @@
+*There is no consensus among the historians which of the events of the last several centuries was pivotal for the world we live in. Some attribute the biggest influence to the Silver Plague, some - to the series of rebellions and civil conflicts that shook both the Cyrodic Empire and the Aldmeri Dominion. Some look even further in the past and speak about the end of the Septim Dynasty.*
+
+*The most mystically inclined scholars of all traditions, however, tend to remind of the return of the dragons, and above all - of their leader, the Black Dragon Alduin. They associate him with *the* Alduin-World-Eater of Nord legends, and look for parallels in other mythologies: Sep, the Serpent, Alkhan.*
+
+*The key event, in their opinion, was the defeat of the World-Eater by the equally mystical figure known as Dragonborn. This defeat - here the versions differ - should have either prevented or heralded the coming of the new age, a new 'kalpa' in their mystic parlance.*
+
+*The versions on the origin and nature of the Dragonborn are diverse as well. He was sent and helped by the Gods, but you would never hear the same version of which Gods that were supposed to be. The traditional Nord reading equate him with Ysmir-breath-of-Kyne, continuing the legend of the origin of Thu'um. In Colovia and Wrothgar he is rather associated with the draconic aspect of Akatosh. Nibenay believes him to be the reincarnation of Saint Martin the Martyr.*
+
+*The most peculiar interpretation belongs to the Cult of Xarxes of Freehold. According to them, the Dragonborn was Xarxes himself returned. Once already he had led his people - the Altmer - in Exodus from under the dragon dominion. Later he had reincarnated to fight his ancient nemesis. After the victory, they say, he returned to Apocrypha where he resides with his teacher Hermaeus Mora.*
