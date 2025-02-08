@@ -1,0 +1,1 @@
+Formerly Firsthold, now one of the most important cities of the [[Freehold Republic]].

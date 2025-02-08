@@ -52,7 +52,7 @@
 
 ***Succession Crisis in [[Kvatch]] (4E 335)***
 
-*A member of the Camoran Dynasty performs a* coup *and founds an [[Ayleid Imperium]] state in Colovia.*
+*A member of the Camoran Dynasty performs a* coup *and founds a [[New Ayleid Imperium]] state in Colovia.*
 
 ***The Great Razzia (4E 337)***
 
@@ -61,6 +61,6 @@ Khajiiti forces.*
 
 ***The War of the Sacred Wood (4E 337 - 4E 344)***
 
-*[[Ayleid Imperium]] invades Bloodtoil, claiming much of the former Valenwood and part of former Elsweyr.*
+*[[New Ayleid Imperium]] invades Bloodtoil, claiming much of the former Valenwood and part of former Elsweyr.*
 
 ***The Potentate's Guide to the Environs is Published (4E 401)***
