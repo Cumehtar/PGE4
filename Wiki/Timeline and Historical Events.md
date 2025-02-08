@@ -16,9 +16,7 @@
 
 ***[[Skyrim's Collapse]] (4E 207)***
 
-***The Anarchy of Alinor (4E 207 - 4E 237)***
-
-*A breakdown of communication with the Dominion forces fighting in Tamriel, combined with a series of large-scale riots at home, causes the Thalmor regime to finally collapse. The Anarchy is later ended by the Sapiarchy from Lillandril.*
+***The [[Anarchy of Alinor]] (4E 207 - 4E 237)***
 
 ***The [[Deepwoods Period of Solitude]] (4E 207 - 4E 227)***
 
@@ -31,8 +29,6 @@
 *Sload begin immigrating to Tamriel with promises of cures to the Silver Plague.*
 
 ***The [[Sload Invasion]] (circa 4E 222)***
-
-*A militant group of Sload invade shortly after the more peaceful group. They claim Lilmoth as [[Wiki/Polities/New Thras|New Thras]].*
 
 ***Founding of the [[Druadach Kingdom]] (4E 227 - 4E 251)***
 
@@ -62,5 +58,7 @@ Khajiiti forces.*
 ***The War of the Sacred Wood (4E 337 - 4E 344)***
 
 *[[New Ayleid Imperium]] invades Bloodtoil, claiming much of the former Valenwood and part of former Elsweyr.*
+
+***The [[Souls Edict]]*** (4E 397)
 
 ***The Potentate's Guide to the Environs is Published (4E 401)***

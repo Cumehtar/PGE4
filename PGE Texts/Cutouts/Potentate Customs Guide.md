@@ -6,7 +6,7 @@
 
 • Enchanted items that perform the work that falls under the purview of the established Guilds are allowed for the personal use only for the duration of the stay, unless the latter is more than two years.
 
-• Additionally, enchanted items with the individual soul density greater than 71.5 payem/in^3 (constituting a 'black soul' as per the Elder Council edict #6824990 from 16/Frfall/4E397) and/or individual soul strength greater than 5000 payem are prohibited for possession, use and trade on the Potentate territories.
+• Additionally, enchanted items with the individual soul density greater than 71.5 payem/in^3 (constituting a 'black soul' as per the Elder Council [[Souls Edict]] #6824990 from 16/Frfall/4E397) and/or individual soul strength greater than 5000 payem are prohibited for possession, use and trade on the Potentate territories.
 
 • The exception for the above clause can be done for religious or research purposes. The corresponding papers from the county of origin need an apostille from any of the following: a Potentate-certified priest of Arkay, Namira or Sithis, an authorized Synod representative, a Master of Psychomancy with the degree issued or nostrified by the University of Gwylim or the University of Cheydinhal.
 
