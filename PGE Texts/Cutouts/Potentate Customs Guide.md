@@ -10,6 +10,6 @@
 
 • The exception for the above clause can be done for religious or research purposes. The corresponding papers from the county of origin need an apostille from any of the following: a Potentate-certified priest of Arkay, Namira or Sithis, an authorized Synod representative, a Master of Psychomancy with the degree issued or nostrified by the University of Gwylim or the University of Cheydinhal.
 
-• Moon-sugar is allowed for import for personal recreational or religious usage, provided the amount doesn't exceed two (Potentate) ounces per person.
+• [[Moon Sugar]] is allowed for import for personal recreational or religious usage, provided the amount doesn't exceed two (Potentate) ounces per person.
 
 • Elsweyr cane grasses and other moon-sugar precursors are prohibited for import without the proper certificate by Potentate-recognized authority, including but not limited to ...
