@@ -1,0 +1,13 @@
+*The statue of Ysmir Alduin is one of Whiterun’s most popular pilgrimage sites, alongside the Temple of Kyne and the Gildergreen, which it shares the central plaza with.*
+
+*Local legend holds that the statue stands on the site once occupied by the statue of Talos. On the day that the Thalmor killed Talos, it is claimed that the statue was rent asunder, crumbling into rubble. As Skyrim collapsed and the Silver Plague struck, the remains of the statue went untouched, until a stonemason arrived.*
+
+*The identity of the stonemason is unknown. What is allegedly known is that they walked into the depopulated city of Whiterun in complete silence, making their way to the plaza. There, they laid out their tools and went to work. Over the following years, the mason toiled in absolute silence, crafting a statue to the nascent Nordic hero-god. When their work was done, they packed their tools and left, never to be seen again.*
+
+*Regardless of the truth of this story, the statue stands. Masterfully crafted, the base of the statue depicts two dragons coiling about each other, heads raised to frame the figure of a man. Ysmir Alduin himself is surprisingly unremarkable - no towering warrior-king in elaborate armor, this. Instead, the man depicted is of average height and build, garbed in the armor of a wandering sellsword - steel, leather, and fur, well-worn and oft-mended. On his back is a simple bow and quiver of arrows, at his side is a dagger, an axe, and a spell tome. An old shield with the horse of Whiterun rests at his feet, and his hands rest upon the pommel of a simple steel sword, point grounded on the stone at his feet. Scars from manacles are worked into the stone at his wrists. Upon his head is a horned helm, nocked and dented, but the face below is blank - smooth stone, with only the faintest trace of eyes behind the faceplate.*
+
+*For most visitors, the statue conveys a sense of unyielding strength - the triumphant hero-god, standing bold, sword planted confidently. For most pilgrims, this is the image they will leave with - Ysmir Alduin, a pillar of strength, a figure to aspire to.*
+
+*For those who visit the statue alone in the early hours of the dawn, when dew collects upon the stone, or those who seek it out when rain washes over Whiterun and all others seek shelter, the statue is transformed. No longer does Ysmir Alduin stand invincible. The sword is planted not in triumph, but as support. The hands upon the pommel grasp it tightly, afraid to let go. The shoulders hunch, bearing an unimaginable weight and grief. And the face, the blank face across which water washes…*
+
+*Alone in the rain, Ysmir weeps.*
