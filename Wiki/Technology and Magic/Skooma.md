@@ -1,3 +1,3 @@
-A potent narcotic, a refined product of the [[Moon Sugar]]. Skooma is sometimes described as a 'Fool's Chim' in the esoteric circles, for giving all that 'seeing tower from the side' trip, but without any real effect. Usually.
+A potent narcotic, a refined product of the [[Moon-sugar]]. Skooma is sometimes described as a 'Fool's Chim' in the esoteric circles, for giving all that 'seeing tower from the side' trip, but without any real effect. Usually.
 
 It is terribly addictive psychologically, especially for the people in hard times looking for the easy way out. For prepared practitioners though, it *may* be used to jump-start the enlightenment with careful preparation.

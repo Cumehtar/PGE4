@@ -1,1 +1,0 @@
-A ritual and recreative substance, obtained from the Elsweyr cane. Is widely used in the Khajiiti regional cuisine. When taken in high doses, has a comparatively mild 'ego death' effect, a slight disconnect between the spirit and the body, an out-of-body experience.
