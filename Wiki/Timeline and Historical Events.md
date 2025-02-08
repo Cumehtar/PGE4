@@ -8,7 +8,7 @@
 
 ***The Marriage of [[Queen Elisif]] of [[Solitude]] and [[Queen Gwynienne]] of [[Northpoint]] (sometime between 4E 204 and 4E 207)***
 
-*Their marriage will go on to found the [[Wiki/Polities/Kingdom of Wrothgaria and Karth]].*
+*Their marriage will go on to found the [[Greater Wrothgaria and Karth]].*
 
 ***The [[Silver Plague]] (4E 206 - 4E 230's)***
 

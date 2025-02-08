@@ -3,3 +3,7 @@ If you want a medieval fantasy state, GW&K is there for you. Born of an unexpect
 Religiously, the kingdom preserved the old Septim-era worship (bar the cult of Talos) in an almost untouched state. While nominally accepting the primacy of the Archdiocese, the Temple of the Eight Divines spread over the whole city quarter, including the Castle Dour, and converted it into the prime theological educational institution of the North.
 
 Influence-wise, GW&K takes the most stereotypical 'medieval European fantasy' elements of Daggerfall, Oblivion and Skyrim, and tries to give them a 'convergent evolution' explanation in the world.
+
+*Sources:*
+[[Chapter. Greater Wrothgar and Karth]]
+[[On the arms and armaments of Wrothgaria]]
