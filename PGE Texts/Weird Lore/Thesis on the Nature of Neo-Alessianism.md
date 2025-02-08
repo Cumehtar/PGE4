@@ -1,0 +1,29 @@
+*The following was penned by Brother Mirinius, Prior of the Chapel of the One in [[Gottlesfont]].*
+
+\*\*\*
+
+Since the Miracle of the Singular Heaven was observed and the proclamation was made that the Divines were of unitary substance, there has been understandable fear and outcry, protests which hearken back to the excesses of the first theologians to posit such beliefs: the so-called Alessian Order. So it is that I shall open this public address, made in the hopes of assuaging these misplaced concerns and clarifying our purpose, with a vital commandment: 
+
+Mistake not the Marukhati for our antecedents. Our faith is born of the Fourth Era and its tumult, our mission likewise.
+
+"As One in Heaven, as One on Nirn," this creed speaks to our truest intentions. If it is said that the Divines serve as examples for we mortals, then a Divine of inextricable singularity should serve as an example for the uniting of all mortals under its blessed concord.
+
+Cast your mind to the great tragedies of our era: the interregnum, the first Great War, the White-Gold Concordant and the civil war in Skyrim, the second Great War and the fall of the Empire, what cause lay at the center of all this conflict? What could motivate such senseless violence? Schism; differences of faith, of ideology, and the dredging up of ancient feuds best left beyond the pale of the tolerant age of the Septims.
+
+I speak, of course, of man against elf and elf against man. History is fraught with this primordial contest between those who have forgotten where we come from, the Divines to which we all owe our existence, and the ties which bind us together as misplaced siblings, kin under the One.
+
+Our Cyrodiil is just now beginning to mend this woeful rift, as she has in ages past. Think now of the tragedies of the First Era and the crimes of the Marukhati. Though we may credit the Prophet Marukh for laying forth the laws and customs of our society, and, indeed, for first conceptualizing the mono-theological model on which our own is founded, it is clear to any moral persons of our era that the "Oneness" preached by Marukh was at once paradoxically divisive. Simply recite his Exclusionary Mandates to any citizen of our modern world and watch as they react with the utmost shock and disgust at the bigotries contained within; the most critical being the allegation that the mere existence of the elven people is a "taint" on our world.   
+Their cultures, their magicks, and even their gods were regarded as blasphemous poisons which corrupt the lives of men, a sentiment so ludicrous that it is unthinkable in our age of peaceful cohabitation with our elven brothers. Yet this is what the Marukhati believed, and with this self-righteous code of racial superiority, they committed ghastly pogroms and massacres throughout our homeland.
+
+I have held closely to the position that such disharmonious thinking has no place in our common era, and yet still, some may recognize this rhetoric, some of you may have even lived through it. An inversion of this exact sentiment, in which man is cast as the folly of creation, is known to be the hard-line stance of the Alinori traditionalists; the very same who, most recently, lent their ideology to the dreaded Aldmeri Dominion and its ruling body, the Thalmor.  
+The Thalmor considered any people but their own to be "impure" and committed atrocities with this perceived justification, even upon their alleged "allies" in the Dominion. In this regard, it is impossible not to recognize the commonality of these two historical evils, the ugliness that festers in one, man or elf, who strays from the wisdom of the Divine and sees only enemies in all unlike himself.
+
+Reflect on the arrogance of these two movements, their profane attempts to change the gods themselves to fit neatly into their distorted visions of the world, and the catastrophes they thoughtlessly invited upon us. Yet consider that all their fruitless efforts to divide us have proven is that very Oneness they refused to see, for how can they divide two gods, Auriel and Akatosh, if they are-- as any scholar knows-- One and the same? How can they think to kill a god, Talos, when he is One with all gods? 
+
+The vastness of their rituals' consequences are proof of the interrelation of what we once preached as individual divinities. When the heavenly bodies aligned over Cyrodiil City, it was the One itself speaking to us, showing us in a way that we might understand the truth: that there are no differences above us and should be none before us on Nirn. 
+
+This is our doctrine. We worship the All-in-One, the eternal good, the force behind all virtue, behind all gods worshiped by honest folk, whatever they may be. The One is Akatosh, is Auriel, is Mara, is Shor, is Y'ffre, is Azura, is Khenarthi, is Ruptga, is Xarxes, is Malacath, and one thousand and one equal repetitions. Our great work is the joining of all noble faiths in Tamriel beneath the unity of the One, who all noble people already worship under its many guises. We are sworn enemies to discord, to hatred, war, and strife among tolerant peoples for they are all the same under the singular eye of the One. Our dream is a Tamriel united under the guiding principles of the One, under whom all are equal, and all good is rewarded, and all evil is punished. 
+
+It is my earnest hope that this address has enlightened you to the singular truth. We are not so foolish to believe it shall be easy to convince others; many agents of disunity have broken from the body which once governed the Eight faiths and now governs the One, but we know the truth. This is the only path forward for us. This is the path to a peace that shall rule as long as time itself.
+
+One Faith, One God, One Tamriel.
