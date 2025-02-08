@@ -1,0 +1,11 @@
+*An excerpt from Riften's newspaper, "The Black-Briar Reader".*
+
+-----------------
+
+*Tensions ran high today at the Rift's Hold Moot, where the future of the canal dubbed "Riften's Ditch" was debated. The canal, initially proposed three years ago, would have connected Riften, Greenwall, Shor's Stone, and the Aalto in its original form, and opened easier trade between the Rift and the rest of the Commonwealth and beyond. However, this route was deemed "A damned waste of time, money and resources" by the College surveying and engineering team, among other rebuttals to the feasibility of the planned canal. If the Rift wanted a canal, it would have to build it elsewhere.*
+
+*No doubts were raised about the feasibility of building such a canal at today's Moot. As proven by the White, Yorgrim, and Darkwater lock systems, such an assembly of locks, cranes, and runs of water is completely feasible. Instead, concerns centered around proposed construction sites and methods. Under the current proposal, the canal would begin either on the Treva River or at Lake Geir and descend to the Aalto in a series of switchbacks to meet the Darkwater at Darkwater Crossing, allowing longships to easily ascend to the Rift without portaging. However, such a route would require both purchase of large tracts of land from local landowners and usage of large amounts of fire salt explosives to cut through the rock. Locals raised concerns about the legality of such land purchases and the possibility of fire salt pollution in the soil.*
+
+*Azgar gro-Ivarstead, a local farmer, was quoted as declaring "I have a sword, an axe, and a crossbow, and so help me Kyne, if anyone touches my land I will use all three to send them to Sovngarde." Loud applause met this statement. Sinmir Wall-Breaker, another farmer, reminded the Moot of the consequences of fire salt pollution, including damaged soil, lowered crop yields, and possible physical injury. Julius Sunsman, a river-boat captain, raised concerns about the feasibility of dredging the locks and the introduction of invasive fish and molluscs to the Rift's rivers.*
+
+*The Moot closed the day at sundown, to resume in the morning.*

@@ -1,0 +1,5 @@
+The land of the Reach is one of stark divides. Rugged and mountainous, the region is cut by gorges and valleys, making large-scale cultivation of crops nigh impossible. Traditionally, the people of the Reach grew their grains and vegetables in the small river bottoms of these valleys, leaving the mountainsides, glens and highlands for their herds of nimble-footed goats and sheep, and nearly as nimble-footed shepherds and goatherds.
+
+Since the Reachmen gained independence, though, much has changed. Stonemasons and farmers have taken to cutting terraces out of the mountainsides, producing large, flat steps on which crops are grown. Ingenious mechanisms of almost Dwemer make pump water uphill, irrigating these terraces. The population of the Reach has grown, the newfound prosperity allowing more children to survive to adulthood and grow stronger and healthier.
+
+However, a distinct clash of cultures is emerging. The traditional herdsmen and farmers of secluded valleys resent what they see as intrusions into their territory of hillsides and highlands, and see the disruption of hunting lands as an affront to their sacred past.
