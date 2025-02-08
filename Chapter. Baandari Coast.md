@@ -1,0 +1,13 @@
+The Aldmeri Dominion took advantage of the longstanding pirate problem of the Topal bay by funding and training native Khajiit and Bosmeri pirate crews in order to reorganize them into semi-controlled corsair fleets that would harass the Empire without directly implicating the Dominion. With the breakdown of authority that followed the SGW and the Silver Plague, those fleets broke away from the Dominion and ended up becoming the main local powers, often being the the only groups able to provide the locals with a measure of physical and economic safety.
+
+While officially the city-states of Greenheart, Southpoint, Mistral and Senchal oppose piracy, it is well-known that all of them welcome the Baandari fleets and will happily let them restock and maintain their ships in exchange for suspiciously low prices on a variety of goods. It is an open secret that the current Harbor-Duke of Senchal is also the "Corsair-King" of the largest fleet of the the coast.
+
+While primarily made up of Bosmer and Khajiits, these fleets include a number of Altmer (the oldest of which are often veterans of the Great Wars), Redguards and Cyrodiil sailors, as well people from all over Tamriel, and possibly beyond as some ship designs and sailors look suspiciously Maormeri.
+
+The Coast and the fleets take their name from the most popular god among pirates, Baan Dar the Bandit God, of especially great relevance among the Khajiit and Wood Elves. The Corsairs live by their own version of the Baandari Code which among, other things, state how loot should be distributed, how the wounded may be compensated, and how the captain may be mutinied against if he becomes too unpopular. While several fleets are permanent, and lead by a commodore who rules through a combination of dread and promises of wealth and glory, most are temporary alliances between crews with a specific objective in mind, after which they dissolve.
+
+The Baandari fleets mainly prowl the the Blue Divide and topal Bay, but they are known to occasionally lauch exeditions into the Abecean sea, the Padomaic Ocean or upstream the Niben. Such as during the infamous Great Razzia of 4E 337 which saw them put Leyawiin to the torch and be driven back by the Potentate at the Battle of Bravil.
+
+In order to facilitate their operations, fleets are often setting up secret harbors in Black Marsh, that the Kingdom of Argonia is constantly rying to find and destroy. They are also trying to ingratiate themselves with the authorities of Soulrest.
+
+* [Port Topal](https://www.reddit.com/r/PGE_4/comments/1ceov2i/port_topal/)
