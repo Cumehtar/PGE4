@@ -1,1 +1,1 @@
-Queen of Solitude, married [[Queen Gwynniene ]], laying the foundations of Greater Wrothgaria and Karth. 
+Queen of Solitude, married [[Queen Gwynienne]], laying the foundations of Greater Wrothgaria and Karth. 
