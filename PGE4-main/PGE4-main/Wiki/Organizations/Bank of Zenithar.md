@@ -1,1 +1,0 @@
-Pan-Tamrielic organization based in Leyawiin that regulates currency, ideally to give favorable loans to "developing nations". Heavily controlled by the wealthier nations, like the Potentate and the Freehold Republic.

@@ -1,1 +1,0 @@
-Bureaucracy of the Potentate, assigned and promoted based on the [[Potentate. Civil Servants Exams]].

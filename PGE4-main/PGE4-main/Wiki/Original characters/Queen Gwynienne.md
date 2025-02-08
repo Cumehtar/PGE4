@@ -1,1 +1,0 @@
-Queen of Northpoint, married [[Queen Elisif]], laying the foundation for Greater Wrothgaria and Karth.
