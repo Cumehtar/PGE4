@@ -1,0 +1,1 @@
+Based in [[Bravil]], an almost-counter faith to the [[Archdiocese]] that technically doesn't *invalidate* its theology. Popular in Nibenay. Has a large host of "saints" who serve to guide mortals toward Enlightenment. Inspired by Buddhism and early Christianity, with some Protesant Reformation vibes.

@@ -1,0 +1,1 @@
+The Beseechers of Orsinium speak directly to Malacath, though he likely encourages disagreement and self-reliance. The Deep Orcs are becoming increasingly agnostic, to Dwemer-like levels.
