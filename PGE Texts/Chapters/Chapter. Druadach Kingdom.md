@@ -28,7 +28,7 @@ The village of Old Hroldan surrounds a circle of *menhirs* (standing stones) dat
 
 The citadel of Sungard seats at the intersection of the borders of the kingdom, Greater Wrothgar and Orsinium. As such it is heavily fortified in case of Nordic attack (it has already weathered three sieges) and its walls are adorrned with both Reachfolk and Orcish symbols.
 
-The Orcish Stronghold of Mor Khazgul is the northernmost settlement of the Druadach Kingdom. Because of this relative isolation, the orcs there consider themselves more akin to allies of the Reach than members and have on occasion become a baronny of Greater Wrothgar. However they have strong economic ties with Markarth as their great forges are the most productive of the entire kingdom.
+The Orcish Stronghold of [[Mor Khazgur]] is the northernmost settlement of the Druadach Kingdom. Because of this relative isolation, the orcs there consider themselves more akin to allies of the Reach than members and have on occasion become a baronny of Greater Wrothgar. However they have strong economic ties with Markarth as their great forges are the most productive of the entire kingdom.
 
 *1. Sure, and Orcs were born of Boethiah's dung...*  
 *2. "Unmentionned" heh? What about the "Breton" mercenaries that joined Alessia's revolt in early 243, before Vrage did the same? I suppose "unmentionning" them means you don't have to mention how the Empire treated them.*  
