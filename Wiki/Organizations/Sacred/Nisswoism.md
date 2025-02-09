@@ -1,0 +1,3 @@
+Found mostly in Argonia. Divided between the Treeminders, the Nisswo, and the Shadowscales, officially led by a "King." The Treeminders worship the Hist, the Nisswo follow Sithis, usually in its aspect as "Change," and the Shadowscales worship Sithis increasingly in its aspect as "Destroyer." The "Sithis-as-changer" and "Sithis-as-destroyer" debate is the main internal conflict.
+
+Preferred terminology: Treeminders tend to the Hist trees. Nisswo are itenerent philosopher-priests, and blood-nisswo are the faction arguing for "Sithis-as-destroyer." Shadowscales are trained by a Shadowscale council. Temples are called xanmeers.

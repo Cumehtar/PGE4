@@ -1,0 +1,3 @@
+The "official faith" of the Druadach Kingdom, promoting a syncretic blend of Nedic, Nordic and even Orcish pantheons to compromise with all the clans of Reachfolk. Influenced by the original Alessian reforms, but to meet the needs of the Reach instead. The "leader" is the Ard in Markarth, though really the faith is highly decentralized. Main gods include Hircine, Dibella, and Peryite.
+
+Preferred terminology: Vateshrans, song-keepers, priests, witches.

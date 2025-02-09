@@ -1,0 +1,3 @@
+Mostly in the Republic, the return of "Aedra-as-ancestors", the big ones acting as patron deities for the various families of the Republic. Some overlap with Alessianism in Colovia, and the Yokudan faith in former Hammerfell. Esoteric cults also abound among the elite. For the Jephrine worship of Woodhearth and the Camorans, the influence is the Renaissance philosophy of Cornelius Agrippa (invoking the name of god and the angels), some Promethean and Gnostic "secret knowledge" influence with the dominant Xarxes cult and all throughout.
+
+Preferred terminology: Priests? Seekers? Most buildings are chapels and temples.

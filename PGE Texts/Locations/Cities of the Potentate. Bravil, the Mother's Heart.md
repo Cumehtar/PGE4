@@ -8,7 +8,7 @@ An astronomer, a researcher and a priest, she is said one day to nail a pamphlet
 
 She later defended her position in the public debate, and the popular legend  insists she was pronounced the new Primate on the spot by the cheering crowd. The reality was more complicated, and it took her several decades to gain the position. The theological dispute between the candidates, however, had become the tradition in the following century, and now is used to elect not only the Primate, but also the head priests of various local temples.
 
-This transition to community-elected priesthood went not without issues, but the intervention of the Elder Council prevented the all-out religious conflict with the Archbishop of the One. The atmosphere at the [[Council of Eight]] still remains tense, though, and each new [[Primate of Mara]] demands recognition and a personal invitation before coming to the Imperial City.
+This transition to community-elected priesthood went not without issues, but the intervention of the Elder Council prevented the all-out religious conflict with the Archbishop of the One. The atmosphere at the [[Council of Eight]] still remains tense, though, and each new [[Primate]] of Mara demands recognition and a personal invitation before coming to the Imperial City.
 
 *YgM: It is certainly convenient to have religious leaders owing you favors, can't argue.*
 

@@ -1,0 +1,3 @@
+A pantheistic, animistic, faith found mostly in Bloodtoil and rural parts of the New Ayleid Imperium. Highly non-creedal and disorganized, intentionally so. A sort of ascestic religion focused on getting in touch with the "the Now", but what that means varies. Blends various inspirations, such as Sufism and Buddhism with pantheistic animism.
+
+Preferred terminology: "official" leaders (insofar as they have any) are called "Green Prophets," with the nominal Head of Faith being the High Prophet of the Green in Bloodtoil Valley (who also confers with the Green Lady). Much overlap with other priests, monks, shamanic traditons, and the like that exists within Bloodtoil.

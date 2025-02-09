@@ -1,0 +1,3 @@
+The Old Ways are resurgent among the people of the Alinor Sapiarchy, though it may also be present among other cultures. For the Alinor Sapiarchy, it is basically neoplatonism through the lens of Elven ancestor worship, with heavy emphasis on returning spiritually to Anu. This doesn't necessarily mean they hate or want to destroy the material world. In the case of the Beautiful, they have also revived the Psijjic Endeavor and the idea of "becoming something always new."
+
+Preferred terminology: they have priests, aldarchs, and temples, but the "official" leaders are Sapiarchs of Mythohistory, Religious Studies, Divine Revelations, etc.. The Beautiful and those closer to their side of the spectrum likely have no formal hierarchy.

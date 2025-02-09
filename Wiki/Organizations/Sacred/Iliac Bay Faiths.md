@@ -1,0 +1,3 @@
+Religion in the Iliac Bay is highly decentralized, inspired by their portrayal in _Daggerfall_. Each city has a patron deity, and keeps its own theology, and the churches don't always get along. Ancient Greek city-state religion is a major inspiration.
+
+Preferred terminology: [Daggerfall Temple ranks](https://en.uesp.net/wiki/Daggerfall:Temples) might offer some inspiration, but really it seems unlikely that the Bay would have any hard rules about titles and terminology.

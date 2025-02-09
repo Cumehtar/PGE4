@@ -1,0 +1,3 @@
+The main faith of Resdayn. The Temple from _Morrowind_, now trying to incorporate more traditional Velothi tribal customs as well in a precarious balancing act. Boethiah, Mephala, and Azura are the dominant deities, with a host of saints and ancestors following them. Features a host of sub-sects, such as the [[Morag Tong]] (honorable assassins), the [[Ouada Tong]] (Temple-managed guilds), the Clockwork Apostles, and likely more. Like in _Morrowind_, it mixes _many_ influences including Hinduism, Christianity, and Mesopotamian mythology.
+
+Preferred terminology: The Temple is led by the [[Alma Rula]]. Below them are the Archcanons, followed by various Masters, mehras, and wise women (among the Velothi tribes and settlements).
