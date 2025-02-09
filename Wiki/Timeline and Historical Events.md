@@ -20,7 +20,7 @@
 
 ***The [[Deepwoods Period of Solitude]] (4E 207 - 4E 227)***
 
-***The [[Elder Council]] Reconvenes in [[Cheydinhal]] (4E 218)***
+***The [[Elder Council]] reconvenes in [[Cheydinhal]] (4E 218)***
 
 *Some consider this the founding of the [[Second Potentate]].*
 
