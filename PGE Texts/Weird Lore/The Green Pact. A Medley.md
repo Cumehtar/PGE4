@@ -46,7 +46,7 @@
 
 *Magnus reminds us, that Blessed Sun, that there is an entire world of Imagination beyond mortal reckoning we need only the mind to tap into. We Sing now not only in the Green, but also in tune to the Dawn. We forge cities of Light, and go higher, ever higher, until we forever escape the surly bonds of Darkness and reach the new home waiting in the Heavens.* 
 
-***Forget What You Know - A Green Prophecy***
+***Forget What You Know - A [[Green Prophecy]]***
 
 *To know the Green, put down your quill. Stop thinking, theorizing, or debating. It isn’t about Y’ffre, or the Ooze, for those are names and names are dead things. We live in the Spirit of the Now. Go outside and taste the water, smell the winds, touch the grass. That is the Green. The Green is the sweet aroma of fresh honey, the Green is the pile of dung that fertilizes new plants. The Green is a newborn fawn nuzzling its mother, the Green is a rotting carcass that feeds the vultures and insects. The Green is lived, it is the Song of Life, and it is the Song of Death.*
 
