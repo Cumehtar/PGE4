@@ -18,7 +18,7 @@ That's how it went. Or not.
 
 Picture young Xarxes, sitting by the stream, talking to his new hidden friend, learning all twists and turns of the possible futures. He learns when to speak and when to keep silent, when to act and when to bid his time. In several years, he has gathered a secret following among the newcomers, they gather the supplies, and prepare to escape from their hosts-turned-overlords. When the time comes, they make their escape with the single most precious treasure - the word-breath of the dragon immortality.
 
-They run across the icy wastelands, and their former friends chase them. On the broken ice, under the light of two moons, three childhood friends clash their weapons. The boy Xarxes is killed, ice and snow stained with his blood. His red-headed friend holds him in his hands and cries.
+They run across the icy wastelands, and their former friends chase them. On broken ice, under the light of two moons, three childhood friends clash their weapons. The boy Xarxes is killed, ice and snow stained with his blood. His red-headed friend holds him in his hands and cries.
 
 They run across the icy wastelands, he, and his big and brooding friend, their tribes stole away together, but the third one, of blond and red-haired bearded giants, chases them. They clash weapons on ice, and many of them die, the treasured word of immortality lost. Xarxes doesn't ever utter a word until his death, his eyes hollow.
 
