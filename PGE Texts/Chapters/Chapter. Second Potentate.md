@@ -12,7 +12,7 @@ Bigger cities of the region act as the hubs of trade, religion, and education, e
 
 [[Bravil]] is most famous as a site of religious pilgrimages. Petitioners from all over Tamriel come to beg Her Saints for intervention or offer their thanks, and the sermons of the Primates attract the most diverse crowd.
 
-Kragenmoor guards the passage over the Velothi mountains. In the times almost forgotten it was a center of Dres agriculture. Now, ironically, the city that once supplied most of Cyrodiil with saltrice depends on the Nibenese rice shipments itself. The ash that choker its fields is, conversely, one of the biggest exports, as it is used not only in alchemy, but as a component of new building materials.
+[[Kragenmoor]] guards the passage over the Velothi mountains. In the times almost forgotten it was a center of Dres agriculture. Now, ironically, the city that once supplied most of Cyrodiil with saltrice depends on the Nibenese rice shipments itself. The ash that choker its fields is, conversely, one of the biggest exports, as it is used not only in alchemy, but as a component of new building materials.
 
 If you want to see the center of modern agriculture, look no further than [[Cropsford]]. Modern plantations, worked by the enchanted automatae, far surpass the productivity of anything that came before, and, fortunately, they weren't affected by the recent [[Souls Edict]] restrictions. ^9
 
