@@ -1,0 +1,1 @@
+One of the most important cities of the [[Freehold Republic]].
