@@ -1,4 +1,4 @@
-A Documentation of an Ayleid Communication Spell, And a Conversation Afterwards by the Alessian Assistant Magistrate of Lower Kvatch. 
+A Documentation of an Ayleid Communication Spell, And a Conversation Afterwards by the Alessian Assistant Magistrate of Lower [[Kvatch]]. 
 
 *\[I had the idea to write a sort of day-in-the-life exchange of (Neo? not sure I understand the terminology) Alessianists. I hope it's ok\]*
 

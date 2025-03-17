@@ -8,7 +8,7 @@
 
 The nature of the soul has been a matter of debate among scholars and priests for millennia. However, recent research has brought us much closer to the truth of such matters, at least as the soul pertains to the old “white” and “black” divides. Indeed, many misconceptions must be rectified, and that is the purpose of this paper. First, however, some history needs to be established.
 
-The original divide between white and black souls was devised by Vanus Galerion (2E 581) in order to combat the Order of the Black Worm by establishing legal “white” souls trapped from non-sapient beings and illegal “black” souls harvested from sapient beings. This has remained the “common knowledge” of souls even to this very day. It is, however, a purely political construct which bears little similarity to actually existing modern research. After all, Galerion’s old system of soul trapping defined the souls of Minotaurs as “white,” which would no doubt disturb our friends from Sancre Tor. 
+The original divide between white and black souls was devised by Vanus Galerion (2E 581) in order to combat the Order of the Black Worm by establishing legal “white” souls trapped from non-sapient beings and illegal “black” souls harvested from sapient beings. This has remained the “common knowledge” of souls even to this very day. It is, however, a purely political construct which bears little similarity to actually existing modern research. After all, Galerion’s old system of soul trapping defined the souls of Minotaurs as “white,” which would no doubt disturb our friends from [[Sancre Tor]]. 
 
 In modern terminology the “color” of a soul is not a matter of size or humanity, but content. White souls are raw Anuic creatia, formless and easily shaped by the psychomancer. All souls are white at birth; research performed by scholars at the [[University of Kragenmoor]] (Rallon et al., 4E 355) found that the souls of feti are not significantly different in substance from the soul of an ox or a goat, often weaker. Black souls are dense with psychic substance: as mortal souls absorb mythic pollution in the form of memories, emotion, knowledge, belief, daedrons, magicka and so on, the density increases, the soul becoming “darker.” This process is a spectrum, however, not the crude binary dated literature might lead you to believe. The most common “black” souls in usage, those of condemned prisoners, are not as dense as the souls of great mages; size is also known to be variable, mammoths and very old trolls often have souls as large as an average Dunmer or Nibenean (Adair et al., 4E 260). 
 
@@ -28,6 +28,6 @@ Elisgan and Cassa. (4E 341). Souldust pollution in Woodhearth and environs. *Rep
 
 Galerion, V. (2E 581). Guild Memo on Soul Trapping. *Collected Texts of the Mages Guild,* pp. 399\*.\* 
 
-Larethal, K. (4E 350). Souldust pollution re-examined. *University of Skywatch Magazine.*
+Larethal, K. (4E 350). Souldust pollution re-examined. *[[University of Skywatch]] Magazine.*
 
-Rallon, Z., Hlaalo, C., Sadryon, A., & Gulas, T. (4E 355). An analysis of stillborn souls. *Kragenmoor University Press.* 
+Rallon, Z., Hlaalo, C., Sadryon, A., & Gulas, T. (4E 355). An analysis of stillborn souls. *[[Kragenmoor University]] Press.* 

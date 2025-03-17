@@ -11,6 +11,6 @@ Let us explore Tamriel together.
 Yours truly,
 The Geographic Society of Cheydinhal.
 
-[Note by Yzmul Gra-Maluk at the margins:]
+<Note by [[Yzmul Gra-Maluk]] at the margins:>
 
 *Those fat sit-at-home slugs of the Geographic Society, they took the money from both the Palace and the EEC. And paid out only the meager royalties to the real authors, from what I heard. And they published only what Helseth would like to hear, to boot - none of my letters got into it. But at least it is real impressions of the people who were to the places in last decade, and not the translation of the thousand-year-old notes by Remanian missionary who didn't speak the local tongue.*
