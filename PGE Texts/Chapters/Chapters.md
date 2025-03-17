@@ -1,4 +1,4 @@
-[[Chapter. Archdiocese of the Divine]]
+[[https://cumehtar.github.io/PGE4/PGE Texts/Chapters/Chapter. Archdiocese of the Divine.md|Chapter. Archdiocese of the Divine|]]
 [[Chapter. Argonia]]
 [[Chapter. Baandari Coast]]
 [[Chapter. Colovian Frontier]]
