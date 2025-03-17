@@ -1,3 +1,3 @@
 Southern Valenwood, mostly Bosmer and Imga with mixtures of every other beastfolk thrown in. Theoretically led by a “Chorus,” essentially a congress of representatives from the various tribes and clans, but the land is very anarchic. The Bosmer here have become much more animalistic in appearance and more esoteric in their interpretations of the Green Pact. Heavily inspired by PGE1 descriptions of Valenwood as well as early Morrowind concept art for the Bosmer.
 
-The [[Wiki/Organizations/Sacred/Green Prophecy|Green Prophecy]] is the only unifying force, a strange non-creedal pseudo-pantheistic religion that is basically anti-gnosticism: only the material world of nature (the Green) matters. Everything else is Elf Talk.
+The [[Green Prophecy|Green Prophecy]] is the only unifying force, a strange non-creedal pseudo-pantheistic religion that is basically anti-gnosticism: only the material world of nature (the Green) matters. Everything else is Elf Talk.
