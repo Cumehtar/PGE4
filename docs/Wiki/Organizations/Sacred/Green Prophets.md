@@ -1,0 +1,1 @@
+Name for those monks, mystics, priests, spinners, and the like who promote and uphold the [[Green Prophecy]].
