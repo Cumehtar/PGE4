@@ -1,0 +1,1 @@
+A city on the eastern side of the Great Bay in [[Greater Wrothgaria and Karth]].

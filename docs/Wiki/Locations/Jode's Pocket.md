@@ -1,4 +1,4 @@
-A port town of [[New Ayleid Imperium]].
+A port town of the [[New Ayleid Imperium]].
 
 *Sources:*
 [[Iliac Bay. Balfiera Regatta]]
