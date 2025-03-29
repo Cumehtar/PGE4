@@ -3,3 +3,5 @@ One of the most important cities of the [[Freehold Republic]]. Home to the Adari
 *Sources:*
 
 [[Chapter. Freehold Republic]]
+
+[[Freehold Esotericism At A Glance]]
