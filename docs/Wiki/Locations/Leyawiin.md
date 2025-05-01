@@ -1,0 +1,1 @@
+A major city where the Niben meets the Southern Sea. Under the control of [[Anequina]]. Home to the [[Tamrielic Bank of Z’en]].
