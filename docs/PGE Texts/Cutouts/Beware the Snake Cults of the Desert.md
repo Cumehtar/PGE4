@@ -1,0 +1,5 @@
+While restrictions may be officially high in the [[Yokedate]], there are those who dare to live freely. This does not mean, however, that you will be greeted kindly by them—far from it, in fact. Nomadic bands of serpent-worshipping cultists are a blight upon the sands of the Alik’r. These marauders—these so-called 'Satakal Anarchists'—travel through the sweltering wastes completely nude, their bodies covered in scars from self-inflicted ritual flensing.
+
+Perhaps most shocking is the fact that they are not only Redguards, but also beastfolk: Lamiae, Jiit, Nu-Folk, and even Goblin-ken—the ancient enemies of the Ra Gada.
+
+These savage bands never stay in one place for long, and when they do, one never knows what to expect. Sometimes they raid without mercy. Sometimes they simply ask for supplies and move on. And sometimes… it is said they devour entire villages. Little stake should be placed in the last claim, however, as those said to be eaten often appear to have joined the ranks of the [[Satakals]].
