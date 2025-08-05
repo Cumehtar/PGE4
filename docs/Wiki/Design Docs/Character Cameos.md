@@ -1,0 +1,1 @@
+Characters from the old games and lore can make cameos, but let's not overdo it. This isn't a *Star Wars* sequel. See [this Reddit thread](https://www.reddit.com/r/PGE_4/comments/1bz0ekd/character_cameos/) for previously suggested ideas.

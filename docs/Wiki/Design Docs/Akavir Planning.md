@@ -1,0 +1,1 @@
+Akavir is (allegedly) locked in war between the Mede Legions, led by "Emperor Attrebus II", a son of a Kvatchi cadet branch, and "Emperor" Uriel Septim V, who may or may not be a lich. All information coming out of Akavir should be presented as sensationalist rumor and gossip.
