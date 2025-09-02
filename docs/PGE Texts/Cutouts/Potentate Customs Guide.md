@@ -4,7 +4,7 @@
 
 • Skulls of men, mer and other recognized sentients, except for the cases where the familial relation either by blood or adoption can be proven by the Temple certificate of any of the recognized political and religious entities.
 
-• Enchanted items that perform the work that falls under the purview of the established Guilds are allowed for the personal use only for the duration of the stay, unless the latter is more than two years.
+• Enchanted items that perform the work that falls under the purview of the established Guilds are allowed for personal use only for the duration of the stay, unless the latter is more than two years.
 
 • Additionally, enchanted items with the individual soul density greater than 71.5 payem/in^3 (constituting a 'black soul' as per the Elder Council [[Souls Edict]] #6824990 from 16/Frfall/4E397) and/or individual soul strength greater than 5000 payem are prohibited for possession, use and trade on the Potentate territories.
 
