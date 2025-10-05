@@ -1,4 +1,4 @@
-A city in the [[Baandari Coast]] which ostensibly belongs to [[Pelletine]]. 
+A city in the [[Baandari Coast]] ruled by a council of sugar-plantation owners backing the piratical Harbor-Duke [[Dro’Zhan]].
 
 *Sources:*
 
