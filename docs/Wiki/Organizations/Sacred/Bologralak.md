@@ -2,7 +2,7 @@ The Emperor of Old Hammerfell is attempting to resurrect and "purify" the religi
 
 - Satakal is perceived as an impersonal force above even the gods, much like Anu. He is Creation and Destruction and doesn't much care for mortals and lesser spirits. At most he is Fate incarnate. So he is hardly prayed to. The Emperor's role as High Priest then would be less about interceding with him or carrying his will but enacting the proper rituals to maintain cosmic order.
     
-- Tall Papa is one step removed on the ladder of unknowableness. As the progenitor of the gods and the creator of the Walkabout he is worshipped as the originator of Law and proper conduct. But as he turned away from the World in disgust he is seen as harsh and distant and only prayed to for the most important of occasions.
+- Tall Papa is one step removed on the ladder of unknowable-ness. As the progenitor of the gods and the creator of the Walkabout he is worshipped as the originator of Law and proper conduct. But as he turned away from the World in disgust he is seen as harsh and distant and only prayed to for the most important of occasions.
     
 - Tu'whacca I feel would then be the most popular deity as shown by the importance of funeral rites to the Redguards and VoF stating that Arkay gains prominence in those cultures where Akatosh becomes to abstract. I think he would be seen as Ruptga's emissary to the mortals as the one who showed them how to still reach the Far Shores.
     

@@ -1,0 +1,1 @@
+A spiritual covenant between certain mortals, namely Bosmer, and the [[Green]]. Usually forbids the harming of plant life.
