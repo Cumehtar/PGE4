@@ -8,7 +8,7 @@ But you're not the only one we will share this gift with tonight. Oh no, for ton
 
 *My friend,*
 
-*As you have no doubt surmised, I do not expect this letter to be included in our guide. I only passed it on to you in the hope that its contents, as well as those of the bloody package that accompanied it, which leave little doube on the gruesome fate that befell Enzo Fore, our envoy to Karth, will finally make you agree to my demands that we hire the Fighters' Guild to escort our envoys, rather than rely on the thugs you poetically call "security personnel" and who hardly seem suited to any job more demanding than shaking down a Colovian farmer.* *You will find enclosed a form stipulating that the 30-month pension Enzo's widower is entitled to shall be taken from your services' budget. I expect you to have it returned to me stamped by tomorrow.*
+*As you have no doubt surmised, I do not expect this letter to be included in our guide. I only passed it on to you in the hope that its contents, as well as those of the bloody package that accompanied it, which leave little doubt on the gruesome fate that befell Enzo Fore, our envoy to Karth, will finally make you agree to my demands that we hire the Fighters' Guild to escort our envoys, rather than rely on the thugs you poetically call "security personnel" and who hardly seem suited to any job more demanding than shaking down a Colovian farmer.* *You will find enclosed a form stipulating that the 30-month pension Enzo's widower is entitled to shall be taken from your services' budget. I expect you to have it returned to me stamped by tomorrow.*
 
 *Best regards and fair health to you,*
 

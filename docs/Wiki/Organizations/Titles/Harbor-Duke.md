@@ -1,0 +1,1 @@
+The ancient title for the ruler of [[Senchal]].
