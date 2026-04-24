@@ -40,4 +40,4 @@ Last but not the least, [[Port Katariah]]. The black gem of the Topal Bay, it is
 
 *^8 Cramped 'islands' are bad enough, but the Potentate-built arcologies started decaying decades after they were built; unlike the ones in Port Katariah, those were done by the lowest bidder*
 
-*^9 Oh, how I hope that it will be affected - the farmers are fighting to be recognized as a Guild, and we are centrally going to have new strikes soon until they are; and [[Syffim]] will make sure that EEC thugs won't touch anyone this time*
+*^9 Oh, how I hope that it will be affected - the farmers are fighting to be recognized as a Guild, and we are certainly going to have new strikes soon until they are; and [[Syffim]] will make sure that EEC thugs won't touch anyone this time*
