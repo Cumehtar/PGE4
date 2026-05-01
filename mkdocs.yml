@@ -24,7 +24,7 @@ theme:
 
 # Extensions
 markdown_extensions:
-  - pymdownx.inlinefootnotes
+  - footnotes
   # - attr_list
   - pymdownx.arithmatex:
       generic: true
