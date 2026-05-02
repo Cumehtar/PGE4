@@ -59,7 +59,7 @@ jobs:
           sed -i 's/\[\[//g; s/\]\]//g' combined.md
 
       - name: Run Pandoc
-        uses: docker://pandoc/latex:3.8-full
+        uses: docker://pandoc/extra:3.9
         with:
           args: >
             combined.md
