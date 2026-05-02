@@ -1,0 +1,60 @@
+name: Convert Vault to PDF
+
+on:
+  workflow_dispatch:
+
+jobs:
+  convert_via_pandoc:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Process Manifest and Inject Headers
+        id: prepare
+        run: |
+          mkdir -p build_dir
+          mkdir -p output
+          
+          ORDERED_FILES=""
+
+          # Read manifest line by line
+          while IFS='|' read -r filename header_str; do
+            if [ -f "$filename" ]; then
+              # Sanitize filename for the build directory
+              safe_name=$(echo "$filename" | tr '/' '_')
+              
+              # 1. Add the custom header from manifest
+              echo "$header_str" > "build_dir/$safe_name"
+              echo "" >> "build_dir/$safe_name"
+              
+              # 2. Append file content
+              # Optional: strip wikilinks [[ ]] to prevent LaTeX errors
+              sed 's/\[\[//g; s/\]\]//g' "$filename" >> "build_dir/$safe_name"
+              
+              ORDERED_FILES="$ORDERED_FILES \"build_dir/$safe_name\""
+            else
+              echo "Warning: $filename not found. Skipping."
+            fi
+          done < manifest.txt
+
+          echo "files=$ORDERED_FILES" >> $GITHUB_OUTPUT
+
+      - name: Run Pandoc
+        uses: docker://pandoc/latex:3.8
+        with:
+          args: >
+            --from markdown
+            --output=output/vault_export.pdf
+            metadata.yaml
+            ${{ steps.prepare.outputs.files }}
+            --toc
+            --number-sections
+            --pdf-engine=pdflatex
+            -V colorlinks=true
+
+      - name: Upload PDF
+        uses: actions/upload-artifact@v4
+        with:
+          name: converted-pdf
+          path: output/vault_export.pdf
