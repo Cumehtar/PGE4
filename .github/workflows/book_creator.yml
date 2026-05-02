@@ -19,15 +19,15 @@ jobs:
             cat metadata.yaml > combined.md
             echo -e "\n" >> combined.md
           else
-            echo "---" > combined.md
-            echo "title: Documentation" >> combined.md
-            echo "---" >> combined.md
+            echo -e "---\ntitle: Documentation\n---\n" > combined.md
           fi
 
-          # 2. Append each file from manifest with its header
-          while IFS='|' read -r filename header_str || [ -n "$filename" ]; do
-            # Clean filename
-            filename=$(echo "$filename" | tr -d '\r' | xargs)
+          # 2. Append each file from manifest
+          # We use -r to prevent backslash escapes and a custom trim for the filename
+          while IFS='|' read -r raw_filename header_str || [ -n "$raw_filename" ]; do
+            
+            # Trim leading/trailing whitespace and remove Windows carriage returns safely
+            filename=$(echo "$raw_filename" | sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//' | tr -d '\r')
             
             if [ -n "$filename" ] && [ -f "$filename" ]; then
               echo "Adding: $filename"
@@ -35,18 +35,17 @@ jobs:
               # Add the header from manifest
               echo -e "\n$header_str\n" >> combined.md
               
-              # Append content while stripping original Obsidian frontmatter
-              # This Perl command ensures no internal '---' blocks remain
+              # Aggressively strip original Obsidian frontmatter and append
               perl -0777 -pe 's/^---\s*.*?\n---\s*\n//s' "$filename" >> combined.md
               
-              # Add spacing between files
+              # Add spacing between files to prevent formatting bleed
               echo -e "\n" >> combined.md
             elif [ -n "$filename" ]; then
               echo "Warning: File '$filename' not found. Skipping."
             fi
           done < manifest.txt
 
-          # 3. Final cleanup: Remove Wikilinks [[ ]] from the combined file
+          # 3. Final cleanup: Remove Wikilinks [[ ]]
           sed -i 's/\[\[//g; s/\]\]//g' combined.md
 
       - name: Run Pandoc
