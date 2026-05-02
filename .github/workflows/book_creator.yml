@@ -1,4 +1,4 @@
-name: Convert Vault to PDF
+name: Convert Vault to PDF (Production)
 
 on:
   workflow_dispatch:
@@ -14,7 +14,7 @@ jobs:
         run: |
           mkdir -p output
           
-          # 1. Global Metadata setup
+          # 1. Initialize with Global Metadata
           if [ -f "metadata.yaml" ]; then
             cat metadata.yaml > combined.md
             echo -e "\n" >> combined.md
@@ -25,25 +25,30 @@ jobs:
           # 2. Process Manifest line by line
           while IFS='|' read -r raw_filename header_str || [ -n "$raw_filename" ]; do
             
-            # Clean filename strings
+            # Remove Windows line endings and trim whitespace
             filename=$(echo "$raw_filename" | sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//' | tr -d '\r')
             
             if [ -n "$filename" ] && [ -f "$filename" ]; then
               echo "Processing: $filename"
               
-              # Prepend the Chapter/Section Header
+              # Prepend the Chapter Header (e.g., # Introduction)
               echo -e "\n$header_str\n" >> combined.md
               
-              # Unique Footnote ID generation (prevents collisions)
+              # Generate unique ID for footnotes to prevent duplication
               FILE_ID=$(echo "$filename" | md5sum | cut -c1-5)
               
-              # LOGIC: Wrap files from the Sidebars folder in a frame
+              # Handle Sidebar framing
               if [[ "$filename" == *"Sidebars"* ]]; then
                  echo -e "\n\begin{sidebarbox}" >> combined.md
               fi
 
-              # Clean content: strip frontmatter, swap --- for ***, and uniquify footnotes
+              # CLEANING & APPENDING:
+              # 1. perl: Nuke Obsidian YAML frontmatter block
+              # 2. tr: Strip the problematic U+0008 (^^H) and other nasty control chars
+              # 3. sed: Convert '---' into '***' to avoid YAML parse errors
+              # 4. sed: Make footnote markers unique to this specific file
               perl -0777 -pe 's/^---\s*.*?\n---\s*\n//s' "$filename" | \
+              tr -d '[:cntrl:]' | \
               sed "s/^---/***/" | \
               sed -r "s/\[\^([0-9]+)\]/[^\1-$FILE_ID]/g" >> combined.md
               
@@ -51,11 +56,12 @@ jobs:
                  echo -e "\end{sidebarbox}\n" >> combined.md
               fi
 
+              # Visual separator in Markdown for safety
               echo -e "\n" >> combined.md
             fi
           done < manifest.txt
 
-          # 3. Strip Wikilinks [[ ]]
+          # 3. Strip Wikilinks
           sed -i 's/\[\[//g; s/\]\]//g' combined.md
 
       - name: Run Pandoc
@@ -70,11 +76,12 @@ jobs:
             --number-sections
             --pdf-engine=pdflatex
             -V colorlinks=true
+            -V geometry:margin=1in
 
-      - name: Upload Results
+      - name: Upload Artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: final-pdf-package
+          name: final-document
           path: |
             output/vault_export.pdf
             combined.md
