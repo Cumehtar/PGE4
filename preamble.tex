@@ -1,0 +1,27 @@
+\usepackage{titlesec}
+\usepackage{tcolorbox}
+\usepackage{marginnote}
+\usepackage{geometry}
+
+% 1. Wide margins for side notes
+\geometry{left=1in, right=2.5in, marginparwidth=2in, marginparsep=0.2in}
+
+% 2. Push Chapter headers (#) to middle of page
+\titleformat{\section}[display]
+  {\normalfont\huge\bfseries\centering}
+  {}
+  {0pt}
+  {\vspace{4cm}} % Adjust this to move it higher/lower
+[\vfill\break]
+
+% 3. Redefine footnotes as side notes
+\renewcommand{\footnote}[1]{\marginnote{\small #1}}
+
+% 4. Style for "Sidebars" (Framed Inserts)
+\newtcolorbox{cutoutbox}{
+  colback=white,
+  colframe=black,
+  sharp corners,
+  boxrule=1pt,
+  fontupper=\small
+}
