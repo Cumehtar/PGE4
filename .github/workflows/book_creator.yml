@@ -61,7 +61,7 @@ jobs:
 
       - name: Run Pandoc
         # Switched to the -full image to ensure titlesec and tcolorbox are present
-        uses: docker://pandoc/latex:3.9
+        uses: docker://pandoc/extra:3.9
         with:
           args: >
             combined.md
