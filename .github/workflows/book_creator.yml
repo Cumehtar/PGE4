@@ -14,7 +14,7 @@ jobs:
         run: |
           mkdir -p output
           
-          # 1. Start the combined file with the global metadata
+          # 1. Start the combined file with global metadata
           if [ -f "metadata.yaml" ]; then
             cat metadata.yaml > combined.md
             echo -e "\n" >> combined.md
@@ -23,10 +23,9 @@ jobs:
           fi
 
           # 2. Append each file from manifest
-          # We use -r to prevent backslash escapes and a custom trim for the filename
           while IFS='|' read -r raw_filename header_str || [ -n "$raw_filename" ]; do
             
-            # Trim leading/trailing whitespace and remove Windows carriage returns safely
+            # Trim whitespace and CR safely
             filename=$(echo "$raw_filename" | sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//' | tr -d '\r')
             
             if [ -n "$filename" ] && [ -f "$filename" ]; then
@@ -35,10 +34,14 @@ jobs:
               # Add the header from manifest
               echo -e "\n$header_str\n" >> combined.md
               
-              # Aggressively strip original Obsidian frontmatter and append
-              perl -0777 -pe 's/^---\s*.*?\n---\s*\n//s' "$filename" >> combined.md
+              # Create a temporary version of the file for cleaning
+              # Step A: Strip the actual YAML frontmatter block (top of file only)
+              # Step B: Replace any remaining '---' at start of lines with '***' (Horizontal Rule alternative)
+              # This stops Pandoc from thinking there is a second YAML block
+              perl -0777 -pe 's/^---\s*.*?\n---\s*\n//s' "$filename" | \
+              sed 's/^---/***/' >> combined.md
               
-              # Add spacing between files to prevent formatting bleed
+              # Add spacing
               echo -e "\n" >> combined.md
             elif [ -n "$filename" ]; then
               echo "Warning: File '$filename' not found. Skipping."
