@@ -16,29 +16,38 @@ jobs:
           mkdir -p build_dir
           mkdir -p output
           
-          ORDERED_FILES=""
+          # Initialize an empty file to track the list of paths for Pandoc
+          # This is safer than environment variables for very long file lists
+          touch file_list.txt
 
-          # Read manifest line by line
-          while IFS='|' read -r filename header_str; do
+          # Use IFS= to prevent trimming leading/trailing whitespace
+          # -r prevents backslash escapes from being interpreted
+          while IFS='|' read -r filename header_str || [ -n "$filename" ]; do
+            # Trim potential carriage returns (common if manifest was edited on Windows)
+            filename=$(echo "$filename" | tr -d '\r')
+            
             if [ -f "$filename" ]; then
-              # Sanitize filename for the build directory
-              safe_name=$(echo "$filename" | tr '/' '_')
+              # Create a safe filename for the build directory
+              # Replaces spaces and slashes with underscores for the filesystem
+              safe_name=$(echo "$filename" | tr ' /' '__')
               
-              # 1. Add the custom header from manifest
+              # 1. Inject the header
               echo "$header_str" > "build_dir/$safe_name"
               echo "" >> "build_dir/$safe_name"
               
-              # 2. Append file content
-              # Optional: strip wikilinks [[ ]] to prevent LaTeX errors
+              # 2. Append content (stripping wikilinks)
               sed 's/\[\[//g; s/\]\]//g' "$filename" >> "build_dir/$safe_name"
               
-              ORDERED_FILES="$ORDERED_FILES \"build_dir/$safe_name\""
+              # 3. Add to our list with absolute paths for Docker to find
+              echo "/github/workspace/build_dir/$safe_name" >> file_list.txt
             else
-              echo "Warning: $filename not found. Skipping."
+              echo "Warning: File '$filename' not found. Skipping."
             fi
           done < manifest.txt
 
-          echo "files=$ORDERED_FILES" >> $GITHUB_OUTPUT
+          # Convert the list into a single line of space-separated quoted paths
+          FILES_STRING=$(sed 's/.*/"&"/' file_list.txt | tr '\n' ' ')
+          echo "files=$FILES_STRING" >> $GITHUB_OUTPUT
 
       - name: Run Pandoc
         uses: docker://pandoc/latex:3.8
@@ -51,7 +60,6 @@ jobs:
             --toc
             --number-sections
             --pdf-engine=pdflatex
-            -V colorlinks=true
 
       - name: Upload PDF
         uses: actions/upload-artifact@v4
