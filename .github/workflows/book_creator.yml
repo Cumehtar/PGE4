@@ -1,7 +1,7 @@
 name: Convert Vault to PDF
 
 on:
-  workflow_dispatch: # Allows manual trigger from the Actions tab
+  workflow_dispatch:
 
 jobs:
   convert_via_pandoc:
@@ -13,43 +13,38 @@ jobs:
       - name: Process Manifest and Inject Headers
         id: prepare
         run: |
-          # Create clean directories
           mkdir -p build_dir
           mkdir -p output
-          
-          # Initialize a list to hold the paths for Pandoc
           touch file_list.txt
 
-          # Read manifest line by line (format: filename|# Header)
-          # IFS='|' ensures spaces in filenames don't break the split
           while IFS='|' read -r filename header_str || [ -n "$filename" ]; do
-            # Remove Windows carriage returns if present
-            filename=$(echo "$filename" | tr -d '\r')
+            # 1. Clean up the filename (remove Windows carriage returns)
+            filename=$(echo "$filename" | tr -d '\r' | xargs)
             
-            if [ -f "$filename" ]; then
-              # Create a filesystem-safe name for the build directory
+            if [ -n "$filename" ] && [ -f "$filename" ]; then
+              # Create a safe name for build_dir by flattening the path
               safe_name=$(echo "$filename" | tr ' /' '__')
               
-              # 1. Add the custom header from manifest to the new temp file
+              # 2. Prepend the header from manifest
               echo "$header_str" > "build_dir/$safe_name"
               echo "" >> "build_dir/$safe_name"
               
-              # 2. Append content while STRIPPING Obsidian frontmatter (--- ... ---)
-              # This prevents the "did not find expected <document start>" error
-              sed '1 { /^---/ { :a N; /\n---/! ba; d } }' "$filename" >> "build_dir/$safe_name"
+              # 3. Aggressively strip YAML frontmatter and append content
+              # This Perl command deletes everything from the first --- to the second ---
+              # only if it starts at the beginning of the file.
+              perl -0777 -pe 's/^---\s*.*?\n---\s*\n//s' "$filename" >> "build_dir/$safe_name"
               
-              # 3. Strip Wikilinks [[ ]] to prevent LaTeX formatting issues
+              # 4. Strip Wikilinks [[ ]]
               sed -i 's/\[\[//g; s/\]\]//g' "build_dir/$safe_name"
               
-              # 4. Record the path for the Pandoc container
+              # 5. Save the absolute path for the Docker container
               echo "/github/workspace/build_dir/$safe_name" >> file_list.txt
-              echo "Processed: $filename"
-            else
+            elif [ -n "$filename" ]; then
               echo "Warning: File '$filename' not found. Skipping."
             fi
           done < manifest.txt
 
-          # Join all filenames into a single string wrapped in quotes
+          # Convert list to space-separated quoted string
           FILES_STRING=$(sed 's/.*/"&"/' file_list.txt | tr '\n' ' ')
           echo "files=$FILES_STRING" >> $GITHUB_OUTPUT
 
