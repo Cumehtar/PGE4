@@ -1,0 +1,278 @@
+% ══════════════════════════════════════════════════════════════════════════════
+% travelguide.tex  —  Pandoc LaTeX template
+% Place at: .github/templates/travelguide.tex
+%
+% Style: editorial travel guide — black & white only, wide sidenote margin,
+%        full-page chapter titles, framed inserts, footnotes as handwritten
+%        sidenotes in the right margin.
+%
+% Requires in conversion-config.yml:
+%   defaults:
+%     engine:    pdflatex
+%     template:  .github/templates/travelguide.tex
+%     pandoc_args: ["--top-level-division=chapter"]
+% ══════════════════════════════════════════════════════════════════════════════
+
+
+% ── Document class ─────────────────────────────────────────────────────────────
+% `oneside`   — no alternating margins; all sidenotes go right
+% `openany`   — chapters can start on any page (not just odd)
+\documentclass[
+  $if(fontsize)$$fontsize$$else$12pt$endif$,
+  a4paper,
+  oneside,
+  openany
+]{book}
+
+
+% ── Page geometry ──────────────────────────────────────────────────────────────
+% Wide right margin houses the sidenotes.
+% A4 = 210mm.  left 27 + text 118 + sep 6 + marginpar 46 + right 13 = 210mm
+\usepackage[
+  top    = 27mm,
+  bottom = 32mm,
+  left   = 27mm,
+  right  = 13mm,
+  marginparwidth = 43mm,
+  marginparsep   = 6mm,
+]{geometry}
+
+
+% ── Font stack ─────────────────────────────────────────────────────────────────
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+$if(fontfamily)$
+\usepackage{$fontfamily$}
+$else$
+\usepackage{lmodern}          % clean default serif
+$endif$
+\usepackage{microtype}        % better justification and kerning
+\usepackage{calligra}         % handwritten font for sidenotes
+                              % (texlive-fonts-extra)
+
+
+% ── Colour — pure black and white, no greys ────────────────────────────────────
+% Only black (#000000) and white (#FFFFFF) are used throughout.
+\usepackage{xcolor}
+\colorlet{ink}{black}
+\colorlet{paper}{white}
+
+
+% ── Sidenotes — footnotes redirected to the right margin ───────────────────────
+\usepackage{marginnote}
+\usepackage{ragged2e}         % \RaggedRight inside margin notes
+
+% Counter mirrors the footnote counter so numbering is continuous.
+\newcounter{sidenote}[chapter]
+
+\renewcommand{\footnote}[1]{%
+  \refstepcounter{sidenote}%
+  % Superscript marker in the main text
+  \textsuperscript{\footnotesize\thesidenote}%
+  % Matching note in the margin, set in calligra
+  \marginnote{%
+    \RaggedRight
+    \textsuperscript{\scriptsize\thesidenote}\,%
+    {\calligra\small #1}%
+  }%
+}
+
+% Keep \marginnote flush with the text column
+\renewcommand*{\marginfont}{\normalfont\small}
+
+
+% ── Drop caps (optional — use \lettrine{L}{etter} in a chapter opening) ─────────
+\usepackage{lettrine}
+\setcounter{DefaultLines}{3}
+\renewcommand{\LettrineFontHook}{\bfseries}
+
+
+% ── Chapter title page — large, centred, double rule ───────────────────────────
+\usepackage{titlesec}
+
+% Remove the default "Chapter N" label — show only the destination name.
+\titleformat{\chapter}[display]
+  {\normalfont\centering}%          global format for label + title block
+  {}%                               label (chapter number) — intentionally blank
+  {0pt}%                            separation between label and title
+  % ↓ before-code: injected above the title text
+  {%
+    \vspace*{0.21\textheight}%
+    \noindent\rule{\textwidth}{2.2pt}\\[-1pt]%
+    \noindent\rule{\textwidth}{0.5pt}\\[1.4em]%
+    \fontsize{44}{52}\selectfont\bfseries%
+  }%
+  % ↓ after-code: injected below the title text
+  [%
+    \\[1.4em]%
+    \noindent\rule{\textwidth}{0.5pt}\\[-1pt]%
+    \noindent\rule{\textwidth}{2.2pt}%
+    \vspace{0.21\textheight}%
+  ]
+
+% Suppress the extra vertical space book class adds before \chapter
+\titlespacing*{\chapter}{0pt}{-54pt}{0pt}
+
+
+% ── Section headings ───────────────────────────────────────────────────────────
+% Section  (## in Markdown with --top-level-division=chapter)
+\titleformat{\section}
+  {\normalfont\large\bfseries}
+  {}
+  {0pt}
+  {}
+  [\vspace{3pt}\noindent\rule{\textwidth}{0.8pt}]
+\titlespacing*{\section}{0pt}{18pt}{8pt}
+
+% Subsection  (### in Markdown)
+\titleformat{\subsection}
+  {\normalfont\normalsize\bfseries\itshape}
+  {}
+  {0pt}
+  {}
+\titlespacing*{\subsection}{0pt}{12pt}{4pt}
+
+% Subsubsection  (#### in Markdown)
+\titleformat{\subsubsection}
+  {\normalfont\normalsize\itshape}
+  {}
+  {0pt}
+  {}
+\titlespacing*{\subsubsection}{0pt}{8pt}{2pt}
+
+
+% ── Paragraph spacing ──────────────────────────────────────────────────────────
+\usepackage{parskip}
+\setlength{\parskip}{5pt plus 1pt}
+\setlength{\parindent}{0pt}
+
+
+% ── Insert / callout boxes — double-rule frame, white background ────────────────
+% Used by the `insert` type in conversion-config.yml.
+% The outer thick rule + inner thin rule reads as a classic editorial box.
+\usepackage[most]{tcolorbox}
+
+\newtcolorbox{insertbox}{
+  enhanced,
+  breakable,
+  colback  = white,
+  colframe = black,
+  boxrule  = 1.8pt,
+  arc      = 0pt,
+  left     = 11pt, right  = 11pt,
+  top      = 9pt,  bottom = 9pt,
+  % Inner thin rule drawn as an overlay, 4pt inside the outer frame
+  overlay  = {
+    \draw[line width=0.5pt, black]
+      ([xshift=4pt, yshift=-4pt]frame.south west)
+      rectangle
+      ([xshift=-4pt, yshift=4pt]frame.north east);
+  },
+}
+
+
+% ── Running headers and footers ────────────────────────────────────────────────
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Left header: current chapter title (auto-updated by \chapter)
+\fancyhead[L]{%
+  \small\itshape\nouppercase{\leftmark}%
+}
+% Right header: document title from front matter / config
+\fancyhead[R]{%
+  \small$if(title)$$title$$endif$%
+}
+% Centre footer: page number
+\fancyfoot[C]{\small\thepage}
+
+% Chapter-opening pages use `plain` style — just the page number
+\fancypagestyle{plain}{
+  \fancyhf{}
+  \fancyfoot[C]{\small\thepage}
+  \renewcommand{\headrulewidth}{0pt}
+}
+
+
+% ── Images ─────────────────────────────────────────────────────────────────────
+\usepackage{graphicx}
+\setkeys{Gin}{width=\linewidth, keepaspectratio}
+
+
+% ── Tables ─────────────────────────────────────────────────────────────────────
+\usepackage{booktabs}
+\usepackage{longtable}
+
+
+% ── Code ───────────────────────────────────────────────────────────────────────
+\usepackage{listings}
+\lstset{
+  basicstyle      = \small\ttfamily,
+  breaklines      = true,
+  frame           = single,
+  framesep        = 4pt,
+  rulecolor       = \color{black},
+  backgroundcolor = \color{white},
+  numbers         = none,
+  tabsize         = 2,
+}
+
+
+% ── Lists ──────────────────────────────────────────────────────────────────────
+\usepackage{enumitem}
+\setlist{noitemsep, topsep=4pt, leftmargin=1.4em}
+
+
+% ── Links — rendered in pure black so they are print-safe ──────────────────────
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks = true,
+  linkcolor  = black,
+  urlcolor   = black,
+  citecolor  = black,
+  pdftitle   = {$if(title)$$title$$endif$},
+  pdfauthor  = {$if(author)$$author$$endif$},
+}
+
+
+% ══════════════════════════════════════════════════════════════════════════════
+% DOCUMENT BODY
+% ══════════════════════════════════════════════════════════════════════════════
+
+\begin{document}
+
+% ── Half-title / cover page ────────────────────────────────────────────────────
+$if(title)$
+\begin{titlepage}
+  \thispagestyle{empty}
+  \vspace*{\fill}
+  \begin{center}
+    \noindent\rule{\textwidth}{2.2pt}\\[-1pt]
+    \noindent\rule{\textwidth}{0.5pt}\\[2.5em]
+    {\fontsize{52}{62}\selectfont\bfseries $title$}\\[2em]
+    $if(subtitle)${\Large\itshape $subtitle$}\\[1.5em]$endif$
+    \noindent\rule{\textwidth}{0.5pt}\\[-1pt]
+    \noindent\rule{\textwidth}{2.2pt}\\[2.5em]
+    $if(author)${\large $author$}\\[0.8em]$endif$
+    $if(date)${\small $date$}$endif$
+  \end{center}
+  \vspace*{\fill}
+\end{titlepage}
+$endif$
+
+% ── Table of contents ──────────────────────────────────────────────────────────
+$if(toc)$
+{
+  \setlength{\parskip}{2pt}
+  \tableofcontents
+  \clearpage
+}
+$endif$
+
+% ── Main content ───────────────────────────────────────────────────────────────
+$body$
+
+\end{document}

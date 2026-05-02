@@ -1,0 +1,122 @@
+name: Convert Markdown to PDF
+
+on:
+  workflow_dispatch:
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Pandoc and TeX Live
+        run: |
+          sudo apt-get update -y
+          sudo apt-get install -y \
+            pandoc \
+            texlive-latex-base \
+            texlive-latex-recommended \
+            texlive-latex-extra \
+            texlive-fonts-recommended \
+            texlive-fonts-extra \
+            lmodern \
+            python3-yaml
+
+      - name: Create output directories
+        run: mkdir -p output/latex output/pdf
+
+      - name: Build and compile LaTeX document
+        run: |
+          python3 << 'PYEOF'
+          import yaml, os, subprocess
+
+          with open(".github/workflows/conversion-config.yml") as f:
+              config = yaml.safe_load(f)
+
+          defaults    = config.get("defaults", {})
+          type_styles = config.get("type_styles", {})
+          output_name = config.get("output", "document")
+          files       = config.get("files", [])
+
+          engine      = defaults.get("engine",    "pdflatex")
+          font_size   = defaults.get("font_size", "12pt")
+          margin      = defaults.get("margin",    "2.5cm")
+          font_main   = defaults.get("font_main", "lmodern")
+          template    = defaults.get("template")
+          toc         = defaults.get("table_of_contents", False)
+          title       = defaults.get("title", "")
+          author      = defaults.get("author", "")
+          date        = defaults.get("date", "\\today")
+          extra_args  = defaults.get("pandoc_args", [])
+
+          # ── Step 1: Convert each .md to a raw LaTeX fragment ────────────────
+          fragments = []
+          for entry in files:
+              src       = entry["src"]
+              file_type = entry.get("type", "chapter")
+              style     = type_styles.get(file_type, {})
+
+              print(f"   + [{file_type}] {src}")
+
+              result = subprocess.run([
+                  "pandoc", src,
+                  "--from=markdown",
+                  "--to=latex",
+                  *extra_args,
+              ], capture_output=True, text=True, check=True)
+
+              body   = result.stdout.strip()
+              before = style.get("before", "")
+              after  = style.get("after",  "")
+              fragments.append(f"{before}\n{body}\n{after}")
+
+          # ── Step 2: Assemble one .tex file ──────────────────────────────────
+          # When a Pandoc template is provided, pass all fragments as $body$
+          # so the template handles the full preamble and title page.
+          merged_md = "output/merged-body.md"
+          with open(merged_md, "w") as f:
+              f.write("\n\n".join(fragments))
+
+          tex_path = f"output/latex/{output_name}.tex"
+          cmd = [
+              "pandoc", merged_md,
+              "--from=latex",   # fragments are already LaTeX
+              "--to=latex",
+              "--standalone",
+              f"--variable=fontsize:{font_size}",
+              f"--variable=geometry:margin={margin}",
+              f"--variable=fontfamily:{font_main}",
+              f"--variable=toc:{'true' if toc else 'false'}",
+              f"--output={tex_path}",
+          ]
+          if template:
+              cmd.append(f"--template={template}")
+          if title:
+              cmd += [f"--variable=title:{title}"]
+          if author:
+              cmd += [f"--variable=author:{author}"]
+          if date:
+              cmd += [f"--variable=date:{date}"]
+
+          subprocess.run(cmd, check=True)
+          print(f"\n── Assembled: {tex_path}")
+
+          # ── Step 3: Compile (two passes for TOC and cross-refs) ─────────────
+          pdf_dir = "output/pdf"
+          for pass_num in (1, 2):
+              subprocess.run([
+                  engine, "-interaction=nonstopmode",
+                  f"-output-directory={pdf_dir}", tex_path,
+              ], check=(pass_num == 2))
+
+          print(f"\n✓  output/pdf/{output_name}.pdf")
+          PYEOF
+
+      - name: Upload PDF
+        uses: actions/upload-artifact@v4
+        with:
+          name: document-pdf
+          path: output/pdf/*.pdf
+          if-no-files-found: error
