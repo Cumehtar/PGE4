@@ -10,60 +10,62 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Process Manifest and Inject Headers
-        id: prepare
+      - name: Assemble Combined Markdown
         run: |
-          mkdir -p build_dir
           mkdir -p output
-          touch file_list.txt
+          
+          # 1. Start the combined file with the global metadata
+          if [ -f "metadata.yaml" ]; then
+            cat metadata.yaml > combined.md
+            echo -e "\n" >> combined.md
+          else
+            echo "---" > combined.md
+            echo "title: Documentation" >> combined.md
+            echo "---" >> combined.md
+          fi
 
+          # 2. Append each file from manifest with its header
           while IFS='|' read -r filename header_str || [ -n "$filename" ]; do
-            # 1. Clean up the filename (remove Windows carriage returns)
+            # Clean filename
             filename=$(echo "$filename" | tr -d '\r' | xargs)
             
             if [ -n "$filename" ] && [ -f "$filename" ]; then
-              # Create a safe name for build_dir by flattening the path
-              safe_name=$(echo "$filename" | tr ' /' '__')
+              echo "Adding: $filename"
               
-              # 2. Prepend the header from manifest
-              echo "$header_str" > "build_dir/$safe_name"
-              echo "" >> "build_dir/$safe_name"
+              # Add the header from manifest
+              echo -e "\n$header_str\n" >> combined.md
               
-              # 3. Aggressively strip YAML frontmatter and append content
-              # This Perl command deletes everything from the first --- to the second ---
-              # only if it starts at the beginning of the file.
-              perl -0777 -pe 's/^---\s*.*?\n---\s*\n//s' "$filename" >> "build_dir/$safe_name"
+              # Append content while stripping original Obsidian frontmatter
+              # This Perl command ensures no internal '---' blocks remain
+              perl -0777 -pe 's/^---\s*.*?\n---\s*\n//s' "$filename" >> combined.md
               
-              # 4. Strip Wikilinks [[ ]]
-              sed -i 's/\[\[//g; s/\]\]//g' "build_dir/$safe_name"
-              
-              # 5. Save the absolute path for the Docker container
-              echo "/github/workspace/build_dir/$safe_name" >> file_list.txt
+              # Add spacing between files
+              echo -e "\n" >> combined.md
             elif [ -n "$filename" ]; then
               echo "Warning: File '$filename' not found. Skipping."
             fi
           done < manifest.txt
 
-          # Convert list to space-separated quoted string
-          FILES_STRING=$(sed 's/.*/"&"/' file_list.txt | tr '\n' ' ')
-          echo "files=$FILES_STRING" >> $GITHUB_OUTPUT
+          # 3. Final cleanup: Remove Wikilinks [[ ]] from the combined file
+          sed -i 's/\[\[//g; s/\]\]//g' combined.md
 
       - name: Run Pandoc
         uses: docker://pandoc/latex:3.8
         with:
           args: >
-            --from markdown
+            combined.md
             --output=output/vault_export.pdf
-            metadata.yaml
-            ${{ steps.prepare.outputs.files }}
+            --from markdown
             --toc
             --number-sections
             --pdf-engine=pdflatex
             -V colorlinks=true
             -V geometry:margin=1in
 
-      - name: Upload PDF
+      - name: Upload Results
         uses: actions/upload-artifact@v4
         with:
-          name: converted-pdf
-          path: output/vault_export.pdf
+          name: vault-export
+          path: |
+            output/vault_export.pdf
+            combined.md
