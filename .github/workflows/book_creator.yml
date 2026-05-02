@@ -14,7 +14,7 @@ jobs:
         run: |
           mkdir -p output
           
-          # 1. Start with global metadata
+          # 1. Global Metadata setup
           if [ -f "metadata.yaml" ]; then
             cat metadata.yaml > combined.md
             echo -e "\n" >> combined.md
@@ -22,46 +22,44 @@ jobs:
             echo -e "---\ntitle: Documentation\n---\n" > combined.md
           fi
 
-          # 2. Process Manifest
+          # 2. Process Manifest line by line
           while IFS='|' read -r raw_filename header_str || [ -n "$raw_filename" ]; do
             
+            # Clean filename strings
             filename=$(echo "$raw_filename" | sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//' | tr -d '\r')
             
             if [ -n "$filename" ] && [ -f "$filename" ]; then
-              echo "Adding: $filename"
+              echo "Processing: $filename"
               
-              # Add the header
+              # Prepend the Chapter/Section Header
               echo -e "\n$header_str\n" >> combined.md
               
-              # UNIQUE FOOTNOTE FIX:
-              # Generates a short unique ID based on the filename (e.g., 'abc12')
-              # Replaces [^1] with [^1-abc12] so footnotes don't collide.
+              # Unique Footnote ID generation (prevents collisions)
               FILE_ID=$(echo "$filename" | md5sum | cut -c1-5)
               
-              # Wrap Cutouts in LaTeX environments if folder matches
-              if [[ "$filename" == *"Cutouts"* ]]; then
-                 echo -e "\n\begin{cutoutbox}" >> combined.md
+              # LOGIC: Wrap files from the Sidebars folder in a frame
+              if [[ "$filename" == *"Sidebars"* ]]; then
+                 echo -e "\n\begin{sidebarbox}" >> combined.md
               fi
 
-              # Strip frontmatter, sanitize horizontal rules, and uniquify footnotes
+              # Clean content: strip frontmatter, swap --- for ***, and uniquify footnotes
               perl -0777 -pe 's/^---\s*.*?\n---\s*\n//s' "$filename" | \
               sed "s/^---/***/" | \
               sed -r "s/\[\^([0-9]+)\]/[^\1-$FILE_ID]/g" >> combined.md
               
-              if [[ "$filename" == *"Cutouts"* ]]; then
-                 echo -e "\end{cutoutbox}\n" >> combined.md
+              if [[ "$filename" == *"Sidebars"* ]]; then
+                 echo -e "\end{sidebarbox}\n" >> combined.md
               fi
 
               echo -e "\n" >> combined.md
             fi
           done < manifest.txt
 
-          # 3. Final cleanup: Remove Wikilinks
+          # 3. Strip Wikilinks [[ ]]
           sed -i 's/\[\[//g; s/\]\]//g' combined.md
 
       - name: Run Pandoc
-        # Switched to the -full image to ensure titlesec and tcolorbox are present
-        uses: docker://pandoc/extra:3.9
+        uses: docker://pandoc/latex:3.8-full
         with:
           args: >
             combined.md
@@ -76,7 +74,7 @@ jobs:
       - name: Upload Results
         uses: actions/upload-artifact@v4
         with:
-          name: vault-export
+          name: final-pdf-package
           path: |
             output/vault_export.pdf
             combined.md
