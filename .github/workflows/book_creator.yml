@@ -1,4 +1,4 @@
-name: Convert Vault to PDF (Production)
+name: Convert Vault to PDF
 
 on:
   workflow_dispatch:
@@ -23,48 +23,53 @@ jobs:
           fi
 
           # 2. Process Manifest line by line
+          # Using IFS='|' to handle filenames with spaces and single quotes safely
           while IFS='|' read -r raw_filename header_str || [ -n "$raw_filename" ]; do
             
-            # Remove Windows line endings and trim whitespace
+            # Clean filename strings and remove Windows carriage returns
             filename=$(echo "$raw_filename" | sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//' | tr -d '\r')
             
             if [ -n "$filename" ] && [ -f "$filename" ]; then
               echo "Processing: $filename"
               
-              # Prepend the Chapter Header (e.g., # Introduction)
+              # Prepend the Chapter/Section Header from manifest
               echo -e "\n$header_str\n" >> combined.md
               
-              # Generate unique ID for footnotes to prevent duplication
+              # Generate unique ID for footnotes to prevent duplication across files
               FILE_ID=$(echo "$filename" | md5sum | cut -c1-5)
               
-              # Handle Sidebar framing
+              # Start Sidebar Frame if folder/path matches "Sidebars"
               if [[ "$filename" == *"Sidebars"* ]]; then
                  echo -e "\n\begin{sidebarbox}" >> combined.md
               fi
 
-              # CLEANING & APPENDING:
-              # 1. perl: Nuke Obsidian YAML frontmatter block
-              # 2. tr: Strip the problematic U+0008 (^^H) and other nasty control chars
-              # 3. sed: Convert '---' into '***' to avoid YAML parse errors
-              # 4. sed: Make footnote markers unique to this specific file
-              perl -0777 -pe 's/^---\s*.*?\n---\s*\n//s' "$filename" | \
-              tr -d '[:cntrl:]' | \
+              # CLEANING & APPENDING PIPELINE:
+              # A. iconv: Force UTF-8 and drop invalid bytes (-c)
+              # B. perl: Nuke the YAML frontmatter block at the top of the file
+              # C. sed 1: Scrub all non-printable control characters (including U+0008 / ^^H)
+              # D. sed 2: Swap '---' to '***' so Pandoc doesn't see a second YAML block
+              # E. sed 3: Append the unique FILE_ID to every footnote reference
+              iconv -f utf-8 -t utf-8 -c "$filename" | \
+              perl -0777 -pe 's/^---\s*.*?\n---\s*\n//s' | \
+              sed 's/[\x00-\x08\x0B\x0C\x0E-\x1F]//g' | \
               sed "s/^---/***/" | \
               sed -r "s/\[\^([0-9]+)\]/[^\1-$FILE_ID]/g" >> combined.md
               
+              # Close Sidebar Frame if necessary
               if [[ "$filename" == *"Sidebars"* ]]; then
                  echo -e "\end{sidebarbox}\n" >> combined.md
               fi
 
-              # Visual separator in Markdown for safety
+              # Safety newline between files
               echo -e "\n" >> combined.md
             fi
           done < manifest.txt
 
-          # 3. Strip Wikilinks
+          # 3. Final cleanup: Remove Obsidian Wikilinks [[ ]]
           sed -i 's/\[\[//g; s/\]\]//g' combined.md
 
       - name: Run Pandoc
+        # Using the extra:3.9 image for maximum LaTeX package compatibility
         uses: docker://pandoc/extra:3.9
         with:
           args: >
@@ -76,12 +81,11 @@ jobs:
             --number-sections
             --pdf-engine=pdflatex
             -V colorlinks=true
-            -V geometry:margin=1in
 
       - name: Upload Artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: final-document
+          name: vault-pdf-package
           path: |
             output/vault_export.pdf
             combined.md
