@@ -1,68 +1,30 @@
-name: Convert Vault to PDF
-
-on:
-  workflow_dispatch:
-
-jobs:
-  convert_via_pandoc:
-    runs-on: ubuntu-24.04
-    steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
-
       - name: Process Manifest and Inject Headers
         id: prepare
         run: |
           mkdir -p build_dir
           mkdir -p output
-          
-          # Initialize an empty file to track the list of paths for Pandoc
-          # This is safer than environment variables for very long file lists
           touch file_list.txt
 
-          # Use IFS= to prevent trimming leading/trailing whitespace
-          # -r prevents backslash escapes from being interpreted
           while IFS='|' read -r filename header_str || [ -n "$filename" ]; do
-            # Trim potential carriage returns (common if manifest was edited on Windows)
             filename=$(echo "$filename" | tr -d '\r')
             
             if [ -f "$filename" ]; then
-              # Create a safe filename for the build directory
-              # Replaces spaces and slashes with underscores for the filesystem
               safe_name=$(echo "$filename" | tr ' /' '__')
               
-              # 1. Inject the header
+              # 1. Add the custom header from manifest
               echo "$header_str" > "build_dir/$safe_name"
               echo "" >> "build_dir/$safe_name"
               
-              # 2. Append content (stripping wikilinks)
-              sed 's/\[\[//g; s/\]\]//g' "$filename" >> "build_dir/$safe_name"
+              # 2. Append content while STRIPPING Obsidian YAML frontmatter
+              # This sed command deletes everything between the first and second '---'
+              sed '1 { /^---/ { :a N; /\n---/! ba; d } }' "$filename" >> "build_dir/$safe_name"
               
-              # 3. Add to our list with absolute paths for Docker to find
+              # 3. Strip remaining Wikilinks [[ ]]
+              sed -i 's/\[\[//g; s/\]\]//g' "build_dir/$safe_name"
+              
               echo "/github/workspace/build_dir/$safe_name" >> file_list.txt
-            else
-              echo "Warning: File '$filename' not found. Skipping."
             fi
           done < manifest.txt
 
-          # Convert the list into a single line of space-separated quoted paths
           FILES_STRING=$(sed 's/.*/"&"/' file_list.txt | tr '\n' ' ')
           echo "files=$FILES_STRING" >> $GITHUB_OUTPUT
-
-      - name: Run Pandoc
-        uses: docker://pandoc/latex:3.8
-        with:
-          args: >
-            --from markdown
-            --output=output/vault_export.pdf
-            metadata.yaml
-            ${{ steps.prepare.outputs.files }}
-            --toc
-            --number-sections
-            --pdf-engine=pdflatex
-
-      - name: Upload PDF
-        uses: actions/upload-artifact@v4
-        with:
-          name: converted-pdf
-          path: output/vault_export.pdf
