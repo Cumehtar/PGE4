@@ -1,4 +1,4 @@
-name: Convert Vault to PDF
+name: Convert Vault to PDF (Advanced Layout)
 
 on:
   workflow_dispatch:
@@ -14,7 +14,7 @@ jobs:
         run: |
           mkdir -p output
           
-          # 1. Start the combined file with global metadata
+          # 1. Start with global metadata
           if [ -f "metadata.yaml" ]; then
             cat metadata.yaml > combined.md
             echo -e "\n" >> combined.md
@@ -22,33 +22,33 @@ jobs:
             echo -e "---\ntitle: Documentation\n---\n" > combined.md
           fi
 
-          # 2. Append each file from manifest
+          # 2. Process Manifest
           while IFS='|' read -r raw_filename header_str || [ -n "$raw_filename" ]; do
             
-            # Trim whitespace and CR safely
             filename=$(echo "$raw_filename" | sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//' | tr -d '\r')
             
             if [ -n "$filename" ] && [ -f "$filename" ]; then
               echo "Adding: $filename"
               
-              # Add the header from manifest
+              # Add the header
               echo -e "\n$header_str\n" >> combined.md
               
-              # Create a temporary version of the file for cleaning
-              # Step A: Strip the actual YAML frontmatter block (top of file only)
-              # Step B: Replace any remaining '---' at start of lines with '***' (Horizontal Rule alternative)
-              # This stops Pandoc from thinking there is a second YAML block
-              perl -0777 -pe 's/^---\s*.*?\n---\s*\n//s' "$filename" | \
-              sed 's/^---/***/' >> combined.md
+              # LOGIC: If path contains "Sidebar", wrap in a LaTeX Frame
+              if [[ "$filename" == *"Sidebar"* ]]; then
+                 echo -e "\n\begin{cutoutbox}" >> combined.md
+              fi
+
+              # Strip frontmatter and append content
+              perl -0777 -pe 's/^---\s*.*?\n---\s*\n//s' "$filename" | sed 's/^---/***/' >> combined.md
               
-              # Add spacing
+              if [[ "$filename" == *"Sidebar"* ]]; then
+                 echo -e "\end{cutoutbox}\n" >> combined.md
+              fi
+
               echo -e "\n" >> combined.md
-            elif [ -n "$filename" ]; then
-              echo "Warning: File '$filename' not found. Skipping."
             fi
           done < manifest.txt
 
-          # 3. Final cleanup: Remove Wikilinks [[ ]]
           sed -i 's/\[\[//g; s/\]\]//g' combined.md
 
       - name: Run Pandoc
@@ -57,17 +57,9 @@ jobs:
           args: >
             combined.md
             --output=output/vault_export.pdf
-            --from markdown
+            --include-in-header=preamble.tex
             --toc
+            --toc-depth=1
             --number-sections
             --pdf-engine=pdflatex
             -V colorlinks=true
-            -V geometry:margin=1in
-
-      - name: Upload Results
-        uses: actions/upload-artifact@v4
-        with:
-          name: vault-export
-          path: |
-            output/vault_export.pdf
-            combined.md
