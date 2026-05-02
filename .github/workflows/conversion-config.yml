@@ -45,7 +45,7 @@ type_styles:
 
 # ── Files — assembled and converted in this order ──────────────────────────────
 files:
-  - src:  docs/introduction.md
+  - src:  'docs/PGE Texts/Sidebars/Editorial Foreword.md'
     type: introduction
 
   - src:  docs/chapter-1.md
