@@ -4,12 +4,12 @@
 \usepackage{xcolor}
 \usepackage[T1]{fontenc}
 
-% 1. Geometry - Wide right margin for sidenotes and overhang
+% 1. Geometry - Standard margins with a large right "canvas"
 \geometry{
   left=1in, 
   right=2.5in, 
   marginparwidth=2in, 
-  marginparsep=0.2in,
+  marginparsep=0.1in,
   footskip=0.5in
 }
 
@@ -21,28 +21,35 @@
   {\vspace*{\fill}} 
 [\vfill\clearpage]
 
-% 3. Handwritten-style Sidenotes (Monospace Italic)
+% 3. Sidenotes - Positioned for B&W contrast
 \renewcommand{\footnote}[1]{%
-  \marginpar{\raggedright\ttfamily\itshape\scriptsize #1}%
+  \marginpar{\raggedright\ttfamily\itshape\tiny #1}%
 }
 
-% 4. The Overhang Environment (###)
-% This environment pushes 1.5in into the side margin
+% 4. The "Big Box" Overhang Environment (###)
+% Pushes -2.2in into the margin for maximum width
 \newenvironment{OverhangBox}[1]{%
   \begin{list}{}{
-    \leftmargin=0pt \rightmargin=-1.5in
+    \leftmargin=0pt \rightmargin=-2.2in
     \listparindent=\parindent \itemindent=\parindent \parsep=\parskip
   }\item[]
   \begin{mdframed}[
-    linecolor=black, linewidth=1.5pt, backgroundcolor=white,
-    innertopmargin=10pt, innerbottommargin=10pt,
-    innerleftmargin=10pt, innerrightmargin=10pt,
-    skipabove=20pt, skipbelow=20pt
+    linecolor=black, 
+    linewidth=2pt,          % Thicker border for "Big Box" feel
+    backgroundcolor=white,
+    innertopmargin=15pt, 
+    innerbottommargin=15pt,
+    innerleftmargin=15pt, 
+    innerrightmargin=15pt,
+    skipabove=25pt, 
+    skipbelow=25pt,
+    splitbottomskip=10pt,   % Settings for clean page breaks
+    splittopskip=10pt,
+    breakable=true          % Ensure it breaks across pages
   ]
-  \textbf{\large #1}\par\medskip
+  {\interlinepenalty=10000 \noindent\huge\bfseries #1}\par\medskip\hrule\medskip
 }{%
   \endmdframed\end{list}%
 }
 
-% Ensure links and table of contents are strictly Black & White
 \usepackage[hidelinks]{hyperref}
