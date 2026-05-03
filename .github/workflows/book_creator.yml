@@ -7,23 +7,41 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout Repository
+        uses: actions/checkout@v4
 
-      - name: Assemble
+      - name: Assemble Document
         run: |
-          echo -e "---\ntitle: Vault Export\n---\n" > combined.md
+          # 1. Start with metadata.yaml or a default header
+          if [ -f "metadata.yaml" ]; then
+            cat metadata.yaml > combined.md
+            echo -e "\n" >> combined.md
+          else
+            echo -e "---\ntitle: Vault Export\n---\n" > combined.md
+          fi
+
+          # 2. Process the manifest
           while IFS='|' read -r f h || [ -n "$f" ]; do
-            fname=$(echo "$f" | xargs) # Clean whitespace
-            if [ -f "$fname" ]; then
+            # Trim whitespace and remove Windows carriage returns safely
+            fname=$(echo "$f" | sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//' | tr -d '\r')
+            
+            if [ -n "$fname" ] && [ -f "$fname" ]; then
+              echo "Adding: $fname"
+              # Append the header level from manifest (e.g., #, ##)
               echo -e "\n$h\n" >> combined.md
-              # Remove YAML and append content
+              
+              # Strip YAML frontmatter from individual files and append content
               sed '1{/^---$/{:a;n;/^---$/!ba;d}}' "$fname" >> combined.md
+              echo -e "\n" >> combined.md
+            else
+              [ -n "$fname" ] && echo "Warning: File not found -> $fname"
             fi
           done < manifest.txt
-          # Clean wikilinks
+
+          # 3. Clean up Obsidian-specific syntax
           sed -i 's/\[\[//g; s/\]\]//g' combined.md
 
-      - name: Pandoc
+      - name: Run Pandoc
         uses: docker://pandoc/extra:3.9
         with:
           args: >
@@ -33,7 +51,7 @@ jobs:
             --toc
             --pdf-engine=pdflatex
 
-      - name: Upload
+      - name: Upload Artifacts
         uses: actions/upload-artifact@v4
         with:
           name: export-files
