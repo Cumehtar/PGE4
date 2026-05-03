@@ -1,4 +1,4 @@
-name: Vault Export
+name: Simple Vault Export (Framed Boxes)
 
 on:
   workflow_dispatch:
@@ -14,42 +14,32 @@ jobs:
         run: |
           mkdir -p output
           
-          # Initialize combined file with a default title if metadata is missing
           if [ -f "metadata.yaml" ]; then
             cat metadata.yaml > combined.md
           else
             echo -e "---\ntitle: Documentation\n---\n" > combined.md
           fi
 
-          # Process the manifest
           while IFS='|' read -r raw_filename header_str || [ -n "$raw_filename" ]; do
-            
             filename=$(echo "$raw_filename" | sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//' | tr -d '\r')
             
             if [ -n "$filename" ] && [ -f "$filename" ]; then
-              echo "Processing: $filename"
-              
-              # Add the Chapter Header
               echo -e "\n$header_str\n" >> combined.md
               
-              # Unique ID for footnotes
               FILE_ID=$(echo "$filename" | md5sum | cut -c1-5)
 
-              # THE CLEANING PIPELINE
-              # 1. perl: Removes the backspace character (\x08) and all other 
-              #    non-tab/non-newline control characters (\x00-\x1F).
-              # 2. perl: Strips Obsidian YAML frontmatter.
-              # 3. sed: Safeguards horizontal rules and uniquifies footnotes.
+              # Cleaning pipeline
+              # We use perl to strip control chars and frontmatter
               perl -pe 's/[\x00-\x08\x0B\x0C\x0E-\x1F]//g' "$filename" | \
               perl -0777 -pe 's/^---\s*.*?\n---\s*\n//s' | \
               sed "s/^---/***/" | \
               sed -r "s/\[\^([0-9]+)\]/[^\1-$FILE_ID]/g" >> combined.md
               
-              echo -e "\n" >> combined.md
+              # If the file ends, we ensure any open tcolorbox is closed
+              echo -e "\n\subsubboxend\n" >> combined.md
             fi
           done < manifest.txt
 
-          # Final sweep for Wikilinks
           sed -i 's/\[\[//g; s/\]\]//g' combined.md
 
       - name: Run Pandoc
@@ -61,7 +51,6 @@ jobs:
             --include-in-header=preamble.tex
             --toc
             --toc-depth=1
-            --number-sections
             --pdf-engine=pdflatex
             -V colorlinks=true
 
