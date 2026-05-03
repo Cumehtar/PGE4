@@ -1,8 +1,11 @@
 \usepackage{titlesec}
 \usepackage{geometry}
-\usepackage[most]{tcolorbox}
 
-% 1. Wide margins for sidenotes
+% 1. Only number Level 1 headers (# Chapters)
+% 0 = parts, 1 = chapters/sections, 2 = subsections
+\setcounter{secnumdepth}{1}
+
+% 2. Wide margins for sidenotes
 \geometry{
   left=1in, 
   right=2.5in, 
@@ -11,7 +14,7 @@
   footskip=0.5in
 }
 
-% 2. Centered Chapters (#)
+% 3. Centered Chapters (#) in the middle of the page
 \titleformat{\section}[display]
   {\normalfont\huge\bfseries\centering}
   {}
@@ -19,30 +22,7 @@
   {\vspace{6cm}} 
 [\vfill\clearpage]
 
-% 3. Redefine footnotes as sidenotes
+% 4. Redefine footnotes as sidenotes
 \renewcommand{\footnote}[1]{%
   \marginpar{\raggedright\footnotesize #1}%
 }
-
-% 4. Fix: Boxed Subsubsections (###)
-% We define a custom command to handle the title inside a box
-\newcommand{\boxedsubsubsection}[1]{%
-  \begin{tcolorbox}[
-    colback=white,
-    colframe=black,
-    sharp corners,
-    boxrule=0.8pt,
-    fonttitle=\bfseries,
-    title=#1,
-    after skip=10pt
-  ]
-}
-
-\titleformat{\subsubsection}
-  {\normalfont}
-  {}
-  {0pt}
-  {\boxedsubsubsection}
-
-% Command to close the box
-\newcommand{\subsubboxend}{\end{tcolorbox}}
