@@ -3,9 +3,8 @@
 \usepackage[framemethod=TikZ]{mdframed}
 \usepackage{xcolor}
 \usepackage[T1]{fontenc}
-\usepackage{etoolbox}
 
-% 1. Geometry (Standard wide margin)
+% 1. Geometry - Wide right margin for sidenotes and overhang
 \geometry{
   left=1in, 
   right=2.5in, 
@@ -14,7 +13,7 @@
   footskip=0.5in
 }
 
-% 2. Perfectly Centered Chapters
+% 2. Perfectly Centered Chapters (#)
 \titleformat{\section}[display]
   {\normalfont\huge\bfseries\centering}
   {}
@@ -22,48 +21,28 @@
   {\vspace*{\fill}} 
 [\vfill\clearpage]
 
-% 3. "Handwritten" Sidenotes (Safe Mono)
+% 3. Handwritten-style Sidenotes (Monospace Italic)
 \renewcommand{\footnote}[1]{%
   \marginpar{\raggedright\ttfamily\itshape\scriptsize #1}%
 }
 
-% 4. Native Overhanging Box Logic
-% We define a command to start a "wide" environment using a list
-\newcommand{\startoverhang}{%
+% 4. The Overhang Environment (###)
+% This environment pushes 1.5in into the side margin
+\newenvironment{OverhangBox}[1]{%
   \begin{list}{}{
-    \leftmargin=0pt
-    \rightmargin=-1.5in
-    \listparindent=\parindent
-    \itemindent=\parindent
-    \parsep=\parskip
+    \leftmargin=0pt \rightmargin=-1.5in
+    \listparindent=\parindent \itemindent=\parindent \parsep=\parskip
   }\item[]
   \begin{mdframed}[
-    linecolor=black,
-    linewidth=1.5pt,
-    backgroundcolor=white,
-    innertopmargin=10pt,
-    innerbottommargin=10pt,
-    innerleftmargin=10pt,
-    innerrightmargin=10pt,
-    skipabove=20pt,
-    skipbelow=20pt
+    linecolor=black, linewidth=1.5pt, backgroundcolor=white,
+    innertopmargin=10pt, innerbottommargin=10pt,
+    innerleftmargin=10pt, innerrightmargin=10pt,
+    skipabove=20pt, skipbelow=20pt
   ]
-}
-
-\newcommand{\closeoverhang}{%
+  \textbf{\large #1}\par\medskip
+}{%
   \endmdframed\end{list}%
 }
 
-% 5. Map Subsubsection (###) to the native overhang
-\titleformat{\subsubsection}[block]
-  {\normalfont\bfseries\large}
-  {}
-  {0pt}
-  {\startoverhang}
-
-% 6. Safety Hooks to close boxes automatically
-\pretocmd{\section}{\closeoverhang}{}{}
-\pretocmd{\subsection}{\closeoverhang}{}{}
-
-% Ensure B&W links
+% Ensure links and table of contents are strictly Black & White
 \usepackage[hidelinks]{hyperref}
