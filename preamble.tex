@@ -1,55 +1,51 @@
 \usepackage{titlesec}
 \usepackage{geometry}
-\usepackage[framemethod=TikZ]{mdframed}
+\usepackage{multicol}
 \usepackage{xcolor}
 \usepackage[T1]{fontenc}
+\usepackage{etoolbox}
 
-% 1. Geometry - Standard margins with a large right "canvas"
+% 1. Geometry - Standard margins for sidenotes
 \geometry{
   left=1in, 
   right=2.5in, 
   marginparwidth=2in, 
-  marginparsep=0.1in,
+  marginparsep=0.2in,
   footskip=0.5in
 }
 
-% 2. Perfectly Centered Chapters (#)
+% 2. Footnotes as Sidenotes (Handwritten style)
+\renewcommand{\footnote}[1]{%
+  \marginpar{\raggedright\ttfamily\itshape\scriptsize #1}%
+}
+
+% 3. Header Styles & Automatic Column Switching
+
+% Level 1 (#): Centered Chapter, starts 1-column mode
 \titleformat{\section}[display]
   {\normalfont\huge\bfseries\centering}
   {}
   {0pt}
-  {\vspace*{\fill}} 
-[\vfill\clearpage]
+  {\begin{multicols}{1}\vspace*{\fill}} 
+[\vfill\clearpage\end{multicols}]
 
-% 3. Sidenotes - Positioned for B&W contrast
-\renewcommand{\footnote}[1]{%
-  \marginpar{\raggedright\ttfamily\itshape\tiny #1}%
-}
+% Level 2 (##): 3-Column Layout (Data/Index Style)
+\titleformat{\subsection}
+  {\end{multicols}\clearpage\begin{multicols}{3}\normalfont\Large\bfseries}
+  {}
+  {0pt}
+  {}
+  [\vspace{10pt}\hrule\vspace{10pt}]
 
-% 4. The "Big Box" Overhang Environment (###)
-% Pushes -2.2in into the margin for maximum width
-\newenvironment{OverhangBox}[1]{%
-  \begin{list}{}{
-    \leftmargin=0pt \rightmargin=-2.2in
-    \listparindent=\parindent \itemindent=\parindent \parsep=\parskip
-  }\item[]
-  \begin{mdframed}[
-    linecolor=black, 
-    linewidth=2pt,          % Thicker border for "Big Box" feel
-    backgroundcolor=white,
-    innertopmargin=15pt, 
-    innerbottommargin=15pt,
-    innerleftmargin=15pt, 
-    innerrightmargin=15pt,
-    skipabove=25pt, 
-    skipbelow=25pt,
-    splitbottomskip=10pt,   % Settings for clean page breaks
-    splittopskip=10pt,
-    breakable=true          % Ensure it breaks across pages
-  ]
-  {\interlinepenalty=10000 \noindent\huge\bfseries #1}\par\medskip\hrule\medskip
-}{%
-  \endmdframed\end{list}%
-}
+% Level 3 (###): 2-Column Layout (Standard Content)
+\titleformat{\subsubsection}
+  {\end{multicols}\begin{multicols}{2}\normalfont\large\bfseries}
+  {}
+  {0pt}
+  {}
+  [\vspace{5pt}\hrule\vspace{5pt}]
 
+% 4. Global Settings
+\setlength{\columnsep}{20pt} % Space between columns
+\setlength{\columnseprule}{0.4pt} % Thin vertical line between columns
 \usepackage[hidelinks]{hyperref}
