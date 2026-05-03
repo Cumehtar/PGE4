@@ -6,7 +6,7 @@
 \usepackage{etoolbox}
 \usepackage{longtable}
 \usepackage{booktabs}
-\usepackage{array} % Required for advanced table manipulation
+\usepackage{array}
 
 % 1. Geometry
 \geometry{
@@ -22,15 +22,21 @@
   \marginpar{\raggedright\ttfamily\itshape\scriptsize #1}%
 }
 
-% 3. Robust Table Patch
-% This version handles the [] and {} arguments Pandoc throws at it
+% 3. The Final Table Patch
+% We nullify longtable-specific header/footer commands that Pandoc generates
 \makeatletter
+\newcommand{\LT@c@ption}[3][]{} % Fixes potential caption issues
 \let\oldlongtable\longtable
 \let\endoldlongtable\endlongtable
 
-\renewenvironment{longtable}[2][]{% 
+\renewenvironment{longtable}[2][]{%
+  % Define longtable internal commands to do nothing
+  \def\endhead{}%
+  \def\endfirsthead{}%
+  \def\endfoot{}%
+  \def\endlastfoot{}%
+  \def\caption{\LT@c@ption}%
   \begin{center}
-  % If the second argument (alignment) is empty, default to 'l'
   \if\relax\detokenize{#2}\relax
     \begin{tabular}{l}
   \else
@@ -50,7 +56,7 @@
   \ifbool{columnOpen}{\end{multicols}\boolfalse{columnOpen}}{}%
 }
 
-% 5. Header Redefinitions (The Wrapper Method)
+% 5. Header Redefinitions
 \let\oldsection\section
 \renewcommand{\section}[1]{\forceClose\oldsection{#1}}
 
