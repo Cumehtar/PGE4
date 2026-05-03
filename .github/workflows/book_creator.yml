@@ -1,52 +1,42 @@
-name: Guidebook Export
+name: Export Guidebook
 
 on:
   workflow_dispatch:
 
 jobs:
-  convert:
-    runs-on: ubuntu-24.04
+  build:
+    runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Assemble Markdown
+      - name: Assemble
         run: |
-          # Initialize combined file
           echo -e "---\ntitle: Vault Export\n---\n" > combined.md
-
-          while IFS='|' read -r raw_filename header_str || [ -n "$raw_filename" ]; do
-            # Scrub filename
-            filename=$(echo "$raw_filename" | sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//' | tr -d '\r')
-            
-            if [ -n "$filename" ] && [ -f "$filename" ]; then
-              echo -e "\n$header_str\n" >> combined.md
-              
-              FILE_ID=$(echo "$filename" | md5sum | cut -c1-5)
-              perl -0777 -pe 's/^---\s*.*?\n---\s*\n//s' "$filename" | \
-              sed -r "s/\[\^([0-9]+)\]/[^\1-$FILE_ID]/g" >> combined.md
-              echo -e "\n" >> combined.md
+          while IFS='|' read -r f h || [ -n "$f" ]; do
+            fname=$(echo "$f" | xargs) # Clean whitespace
+            if [ -f "$fname" ]; then
+              echo -e "\n$h\n" >> combined.md
+              # Remove YAML and append content
+              sed '1{/^---$/{:a;n;/^---$/!ba;d}}' "$fname" >> combined.md
             fi
           done < manifest.txt
-
+          # Clean wikilinks
           sed -i 's/\[\[//g; s/\]\]//g' combined.md
 
-      - name: Run Pandoc
+      - name: Pandoc
         uses: docker://pandoc/extra:3.9
         with:
           args: >
             combined.md
-            --output=vault_export.pdf
+            -o vault_export.pdf
             --include-in-header=preamble.tex
             --toc
-            --toc-depth=2
             --pdf-engine=pdflatex
-            -V colorlinks=false
 
-      - name: Upload Artifacts
+      - name: Upload
         uses: actions/upload-artifact@v4
         with:
-          name: guidebook-files
+          name: export-files
           path: |
             vault_export.pdf
             combined.md
