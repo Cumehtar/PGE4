@@ -10,7 +10,7 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Assemble and Clean Markdown
+      - name: Assemble Markdown
         run: |
           mkdir -p output
           
@@ -21,26 +21,30 @@ jobs:
           fi
 
           while IFS='|' read -r raw_filename header_str || [ -n "$raw_filename" ]; do
+            
             filename=$(echo "$raw_filename" | sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//' | tr -d '\r')
             
             if [ -n "$filename" ] && [ -f "$filename" ]; then
-              # 1. Add the main file header
+              echo "Processing: $filename"
+              
+              # Add the Chapter Header
               echo -e "\n$header_str\n" >> combined.md
               
               FILE_ID=$(echo "$filename" | md5sum | cut -c1-5)
 
-              # 2. Add Content with cleaning
-              # This removes control chars, strips frontmatter, and uniquifies footnotes
-              perl -pe 's/[\x00-\x08\x0B\x0C\x0E-\x1F]//g' "$filename" | \
-              perl -0777 -pe 's/^---\s*.*?\n---\s*\n//s' | \
+              # Minimal processing: 
+              # 1. Strip Obsidian YAML frontmatter
+              # 2. Swap horizontal rules
+              # 3. Unique footnote IDs
+              perl -0777 -pe 's/^---\s*.*?\n---\s*\n//s' "$filename" | \
               sed "s/^---/***/" | \
               sed -r "s/\[\^([0-9]+)\]/[^\1-$FILE_ID]/g" >> combined.md
               
-              # 3. Close the subsubsection box at the end of every file
-              echo -e "\n\subsubboxend\n" >> combined.md
+              echo -e "\n" >> combined.md
             fi
           done < manifest.txt
 
+          # Remove Wikilinks
           sed -i 's/\[\[//g; s/\]\]//g' combined.md
 
       - name: Run Pandoc
@@ -55,8 +59,10 @@ jobs:
             --pdf-engine=pdflatex
             -V colorlinks=true
 
-      - name: Upload PDF
+      - name: Upload PDF and Merged MD
         uses: actions/upload-artifact@v4
         with:
-          name: vault-pdf
-          path: output/vault_export.pdf
+          name: vault-export-package
+          path: |
+            output/vault_export.pdf
+            combined.md
