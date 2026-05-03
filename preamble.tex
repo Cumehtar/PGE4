@@ -6,7 +6,7 @@
 \usepackage{longtable}
 \usepackage{booktabs}
 
-% 1. Geometry - Maintaining the wide margin for sidenotes
+% 1. Geometry
 \geometry{
   left=1in, 
   right=2.5in, 
@@ -15,27 +15,22 @@
   footskip=0.5in
 }
 
-% 2. Sidenotes (Handwritten style)
+% 2. Sidenotes
 \renewcommand{\footnote}[1]{%
   \marginpar{\raggedright\ttfamily\itshape\scriptsize #1}%
 }
 
-% 3. The "New Page" Rule
-% This forces a clear page BEFORE every #, ##, and ### header
+% 3. New Page for every header level
 \newcommand{\sectionbreak}{\clearpage}
 
-% 4. Header Styling
-% Level 1 (#): Vertically Centered Splash Page
+% 4. Header Styles
 \titleformat{\section}[display]
   {\normalfont\huge\bfseries\centering}{}{0pt}{\vspace*{\fill}}[\vfill]
 
-% Level 2 (##): Large Header with Rule
 \titleformat{\subsection}
   {\normalfont\Large\bfseries}{}{0pt}{}[\vspace{10pt}\hrule]
 
-% Level 3 (###): Standard Header with Rule
 \titleformat{\subsubsection}
   {\normalfont\large\bfseries}{}{0pt}{}[\vspace{5pt}\hrule]
 
-% 5. Settings
 \usepackage[hidelinks]{hyperref}
