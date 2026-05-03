@@ -3,8 +3,10 @@
 \usepackage[framemethod=TikZ]{mdframed}
 \usepackage{xcolor}
 \usepackage[T1]{fontenc}
+\usepackage{etoolbox}
+\usepackage{changepage} % Required for margin overhanging
 
-% 1. Wide margins for sidenotes
+% 1. Geometry Setup (Wide right margin for notes and overhang)
 \geometry{
   left=1in, 
   right=2.5in, 
@@ -13,22 +15,24 @@
   footskip=0.5in
 }
 
-% 2. Centered Chapters (#)
+% 2. Perfectly Centered Chapters (#)
+% Uses flexible "springs" (\fill) to find the vertical center of the text block
 \titleformat{\section}[display]
   {\normalfont\huge\bfseries\centering}
   {}
   {0pt}
-  {\vspace{6cm}} 
+  {\vspace*{\fill}} 
 [\vfill\clearpage]
 
-% 3. Handwritten-style Sidenotes (Using Standard Monospace)
-% We use \ttfamily (Typewriter) and \itshape (Italic) for a "noted" look
+% 3. "Handwritten" Sidenotes
+% Using Italic Typewriter font for a scratchy, B&W-safe organic look
 \renewcommand{\footnote}[1]{%
   \marginpar{\raggedright\ttfamily\itshape\scriptsize #1}%
 }
 
-% 4. Black and White Framed Subsubsections (###)
-\mdfdefinestyle{sidebarStyle}{
+% 4. Overhanging Subsubsection Boxes (###)
+% Pushes 1.5 inches into the 2.5 inch margin
+\mdfdefinestyle{overhangStyle}{
     linecolor=black,
     linewidth=1.5pt,
     backgroundcolor=white,
@@ -36,13 +40,26 @@
     innerbottommargin=10pt,
     innerleftmargin=10pt,
     innerrightmargin=10pt,
-    skipabove=15pt,
-    skipbelow=15pt
+    skipabove=20pt,
+    skipbelow=20pt,
+    rightmargin=-1.5in
 }
 
 \titleformat{\subsubsection}[block]
   {\normalfont\bfseries\large}
   {}
   {0pt}
-  {\begin{mdframed}[style=sidebarStyle]}
-  [\end{mdframed}]
+  {\begin{adjustwidth}{0pt}{-1.5in}
+   \begin{mdframed}[style=overhangStyle]}
+
+% 5. Pure LaTeX Safety Hooks
+% This closes the box/margin adjustment whenever a higher-level header starts
+\newcommand{\closeoverhang}{%
+  \unskip\strut\endmdframed\end{adjustwidth}%
+}
+
+\pretocmd{\section}{\closeoverhang}{}{}
+\pretocmd{\subsection}{\closeoverhang}{}{}
+
+% Ensure links are strictly Black & White
+\usepackage[hidelinks]{hyperref}
