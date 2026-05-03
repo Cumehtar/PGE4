@@ -1,4 +1,4 @@
-name: Vault Guidebook Export
+name: Multi-Column Vault Export
 
 on:
   workflow_dispatch:
@@ -12,65 +12,44 @@ jobs:
 
       - name: Assemble Markdown
         run: |
+          mkdir -p output
           
-          # Initialize combined file with metadata
           if [ -f "metadata.yaml" ]; then
             cat metadata.yaml > combined.md
           else
-            echo -e "---\ntitle: Vault Export\n---\n" > combined.md
+            echo -e "---\ntitle: Vault Documentation\n---\n" > combined.md
           fi
 
-          # Process files based on manifest.txt
           while IFS='|' read -r raw_filename header_str || [ -n "$raw_filename" ]; do
             filename=$(echo "$raw_filename" | sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//' | tr -d '\r')
             
             if [ -n "$filename" ] && [ -f "$filename" ]; then
-              # Append the level 1 or 2 header from the manifest
               echo -e "\n$header_str\n" >> combined.md
               
-              # Generate a unique ID for footnotes within this file
               FILE_ID=$(echo "$filename" | md5sum | cut -c1-5)
-
-              if grep -q "^### " "$filename"; then
-                # FILE CONTAINS A BOX: 
-                # 1. Convert ### Header to \begin{OverhangBox}{Header}
-                # 2. Strip frontmatter
-                # 3. Rename footnotes to avoid collisions
-                sed 's/^### \(.*\)/\\begin{OverhangBox}{\1}/' "$filename" | \
-                perl -0777 -pe 's/^---\s*.*?\n---\s*\n//s' | \
-                sed -r "s/\[\^([0-9]+)\]/[^\1-$FILE_ID]/g" >> combined.md
-                
-                # 4. Explicitly close the environment
-                echo -e "\n\\end{OverhangBox}\n" >> combined.md
-              else
-                # STANDARD FILE:
-                perl -0777 -pe 's/^---\s*.*?\n---\s*\n//s' "$filename" | \
-                sed -r "s/\[\^([0-9]+)\]/[^\1-$FILE_ID]/g" >> combined.md
-              fi
+              
+              # Strip YAML frontmatter and rename footnotes
+              perl -0777 -pe 's/^---\s*.*?\n---\s*\n//s' "$filename" | \
+              sed -r "s/\[\^([0-9]+)\]/[^\1-$FILE_ID]/g" >> combined.md
               
               echo -e "\n" >> combined.md
             fi
           done < manifest.txt
 
-          # Strip Obsidian Wikilinks [[ ]]
+          # Cleanup wikilinks
           sed -i 's/\[\[//g; s/\]\]//g' combined.md
+
+          # Ensure the document ends by closing any open multicols
+          echo -e "\n\n\\end{multicols}\n" >> combined.md
 
       - name: Run Pandoc
         uses: docker://pandoc/extra:3.9
         with:
           args: >
             combined.md
-            --output=vault_export.pdf
+            --output=output/vault_export.pdf
             --include-in-header=preamble.tex
             --toc
-            --toc-depth=1
+            --toc-depth=2
             --pdf-engine=pdflatex
             -V colorlinks=false
-
-      - name: Upload Artifacts
-        uses: actions/upload-artifact@v4
-        with:
-          name: guidebook-package
-          path: |
-            vault_export.pdf
-            combined.md
