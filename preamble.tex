@@ -1,5 +1,6 @@
 \usepackage{titlesec}
 \usepackage{geometry}
+\usepackage[most]{tcolorbox}
 
 % 1. Wide margins for sidenotes
 \geometry{
@@ -11,6 +12,7 @@
 }
 
 % 2. Centered Chapters (#) in the middle of the page
+% \section corresponds to Level 1 (#) headers
 \titleformat{\section}[display]
   {\normalfont\huge\bfseries\centering}
   {}
@@ -22,3 +24,25 @@
 \renewcommand{\footnote}[1]{%
   \marginpar{\raggedright\footnotesize #1}%
 }
+
+% 4. Turn ### Subsubsections into Framed Boxes
+% This style creates a box where the title is inside the frame
+\titleformat{\subsubsection}
+  {\normalfont}
+  {}
+  {0pt}
+  {\begin{tcolorbox}[
+    colback=white,
+    colframe=black,
+    sharp corners,
+    boxrule=0.8pt,
+    fonttitle=\bfseries,
+    title=#1,
+    left=5pt, right=5pt, top=5pt, bottom=5pt
+  ]\ignorespaces}
+
+% This "closes" the box after the subsubsection content ends
+\newcommand{\subsubboxend}{\end{tcolorbox}}
+
+% Note: Since titlesec doesn't easily "wrap" following text, 
+% the text following ### will be inside the box until the next header.
