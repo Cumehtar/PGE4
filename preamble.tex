@@ -14,20 +14,37 @@
   footskip=0.5in
 }
 
-% 2. Footnotes as Sidenotes
+% 2. Sidenotes
 \renewcommand{\footnote}[1]{%
   \marginpar{\raggedright\ttfamily\itshape\scriptsize #1}%
 }
 
-% 3. Switch Logic
+% 3. Manual Column Logic (No Hooks)
 \newbool{columnOpen}
 \boolfalse{columnOpen}
 
-\newcommand{\safeClose}{%
+\newcommand{\forceClose}{%
   \ifbool{columnOpen}{\end{multicols}\boolfalse{columnOpen}}{}%
 }
 
-% 4. Header Styles (Clean Formatting Only)
+% 4. Redefine Headers to handle their own columns
+% We use \let to save the original pandoc/latex commands
+\let\oldsection\section
+\renewcommand{\section}[1]{\forceClose\oldsection{#1}}
+
+\let\oldsubsection\subsection
+\renewcommand{\subsection}[1]{%
+  \forceClose\oldsubsection{#1}%
+  \begin{multicols}{3}\booltrue{columnOpen}%
+}
+
+\let\oldsubsubsection\subsubsection
+\renewcommand{\subsubsection}[1]{%
+  \forceClose\oldsubsubsection{#1}%
+  \begin{multicols}{2}\booltrue{columnOpen}%
+}
+
+% 5. Styling via titlesec (Now purely for visuals, no environments)
 \titleformat{\section}[display]
   {\normalfont\huge\bfseries\centering}{}{0pt}{\vspace*{\fill}}[\vfill\clearpage]
 
@@ -37,19 +54,9 @@
 \titleformat{\subsubsection}
   {\normalfont\large\bfseries}{}{0pt}{}[\vspace{5pt}\hrule\vspace{5pt}]
 
-% 5. The "Bouncer" Hooks (The real fix)
-% Before any header, close columns.
-\pretocmd{\section}{\safeClose}{}{}
-\pretocmd{\subsection}{\safeClose}{}{}
-\pretocmd{\subsubsection}{\safeClose}{}{}
-
-% After Sub/Subsub headers, open columns.
-\apptocmd{\subsection}{\begin{multicols}{3}\booltrue{columnOpen}}{}{}
-\apptocmd{\subsubsection}{\begin{multicols}{2}\booltrue{columnOpen}}{}{}
-
 % 6. Settings
 \setlength{\columnsep}{20pt}
 \setlength{\columnseprule}{0.4pt}
 \usepackage[hidelinks]{hyperref}
 
-\AtEndDocument{\safeClose}
+\AtEndDocument{\forceClose}
