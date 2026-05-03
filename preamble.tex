@@ -1,11 +1,9 @@
 \usepackage{titlesec}
 \usepackage{geometry}
+\usepackage[framemethod=TikZ]{mdframed}
+\usepackage{xcolor}
 
-% 1. Only number Level 1 headers (# Chapters)
-% 0 = parts, 1 = chapters/sections, 2 = subsections
-\setcounter{secnumdepth}{1}
-
-% 2. Wide margins for sidenotes
+% 1. Wide margins for sidenotes
 \geometry{
   left=1in, 
   right=2.5in, 
@@ -14,7 +12,7 @@
   footskip=0.5in
 }
 
-% 3. Centered Chapters (#) in the middle of the page
+% 2. Centered Chapters (#) - No numbers
 \titleformat{\section}[display]
   {\normalfont\huge\bfseries\centering}
   {}
@@ -22,7 +20,29 @@
   {\vspace{6cm}} 
 [\vfill\clearpage]
 
-% 4. Redefine footnotes as sidenotes
+% 3. Redefine footnotes as sidenotes
 \renewcommand{\footnote}[1]{%
   \marginpar{\raggedright\footnotesize #1}%
 }
+
+% 4. Black and White Framed Subsubsections (###)
+\mdfdefinestyle{sidebarStyle}{
+    linecolor=black,
+    linewidth=1.5pt,    % Thicker line for a "bold" B&W look
+    backgroundcolor=white,
+    innertopmargin=10pt,
+    innerbottommargin=10pt,
+    innerleftmargin=10pt,
+    innerrightmargin=10pt,
+    skipabove=15pt,
+    skipbelow=15pt,
+    needlines=5
+}
+
+% Re-mapping ### to the mdframed environment
+\titleformat{\subsubsection}[block]
+  {\normalfont\bfseries\large}
+  {}
+  {0pt}
+  {\begin{mdframed}[style=sidebarStyle]}
+  [\end{mdframed}]
