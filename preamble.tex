@@ -2,8 +2,6 @@
 \usepackage{geometry}
 \usepackage[framemethod=TikZ]{mdframed}
 \usepackage{xcolor}
-% Standard handwriting font
-\usepackage{calligra}
 \usepackage[T1]{fontenc}
 
 % 1. Wide margins for sidenotes
@@ -23,9 +21,10 @@
   {\vspace{6cm}} 
 [\vfill\clearpage]
 
-% 3. Handwritten Sidenotes (Black & White)
+% 3. Handwritten-style Sidenotes (Using Standard Monospace)
+% We use \ttfamily (Typewriter) and \itshape (Italic) for a "noted" look
 \renewcommand{\footnote}[1]{%
-  \marginpar{\raggedright\calligra\small #1}%
+  \marginpar{\raggedright\ttfamily\itshape\scriptsize #1}%
 }
 
 % 4. Black and White Framed Subsubsections (###)
@@ -39,7 +38,6 @@
     innerrightmargin=10pt,
     skipabove=15pt,
     skipbelow=15pt
-    % 'needlines' removed to fix kvsetkeys error
 }
 
 \titleformat{\subsubsection}[block]
