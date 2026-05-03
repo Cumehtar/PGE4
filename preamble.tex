@@ -2,6 +2,9 @@
 \usepackage{geometry}
 \usepackage[framemethod=TikZ]{mdframed}
 \usepackage{xcolor}
+% Standard handwriting font
+\usepackage{calligra}
+\usepackage[T1]{fontenc}
 
 % 1. Wide margins for sidenotes
 \geometry{
@@ -12,7 +15,7 @@
   footskip=0.5in
 }
 
-% 2. Centered Chapters (#) - No numbers
+% 2. Centered Chapters (#)
 \titleformat{\section}[display]
   {\normalfont\huge\bfseries\centering}
   {}
@@ -20,26 +23,25 @@
   {\vspace{6cm}} 
 [\vfill\clearpage]
 
-% 3. Redefine footnotes as sidenotes
+% 3. Handwritten Sidenotes (Black & White)
 \renewcommand{\footnote}[1]{%
-  \marginpar{\raggedright\footnotesize #1}%
+  \marginpar{\raggedright\calligra\small #1}%
 }
 
 % 4. Black and White Framed Subsubsections (###)
 \mdfdefinestyle{sidebarStyle}{
     linecolor=black,
-    linewidth=1.5pt,    % Thicker line for a "bold" B&W look
+    linewidth=1.5pt,
     backgroundcolor=white,
     innertopmargin=10pt,
     innerbottommargin=10pt,
     innerleftmargin=10pt,
     innerrightmargin=10pt,
     skipabove=15pt,
-    skipbelow=15pt,
-    needlines=5
+    skipbelow=15pt
+    % 'needlines' removed to fix kvsetkeys error
 }
 
-% Re-mapping ### to the mdframed environment
 \titleformat{\subsubsection}[block]
   {\normalfont\bfseries\large}
   {}
