@@ -4,9 +4,8 @@
 \usepackage{xcolor}
 \usepackage[T1]{fontenc}
 \usepackage{etoolbox}
-\usepackage{changepage} % Required for margin overhanging
 
-% 1. Geometry Setup (Wide right margin for notes and overhang)
+% 1. Geometry (Standard wide margin)
 \geometry{
   left=1in, 
   right=2.5in, 
@@ -15,8 +14,7 @@
   footskip=0.5in
 }
 
-% 2. Perfectly Centered Chapters (#)
-% Uses flexible "springs" (\fill) to find the vertical center of the text block
+% 2. Perfectly Centered Chapters
 \titleformat{\section}[display]
   {\normalfont\huge\bfseries\centering}
   {}
@@ -24,15 +22,22 @@
   {\vspace*{\fill}} 
 [\vfill\clearpage]
 
-% 3. "Handwritten" Sidenotes
-% Using Italic Typewriter font for a scratchy, B&W-safe organic look
+% 3. "Handwritten" Sidenotes (Safe Mono)
 \renewcommand{\footnote}[1]{%
   \marginpar{\raggedright\ttfamily\itshape\scriptsize #1}%
 }
 
-% 4. Overhanging Subsubsection Boxes (###)
-% Pushes 1.5 inches into the 2.5 inch margin
-\mdfdefinestyle{overhangStyle}{
+% 4. Native Overhanging Box Logic
+% We define a command to start a "wide" environment using a list
+\newcommand{\startoverhang}{%
+  \begin{list}{}{
+    \leftmargin=0pt
+    \rightmargin=-1.5in
+    \listparindent=\parindent
+    \itemindent=\parindent
+    \parsep=\parskip
+  }\item[]
+  \begin{mdframed}[
     linecolor=black,
     linewidth=1.5pt,
     backgroundcolor=white,
@@ -41,25 +46,24 @@
     innerleftmargin=10pt,
     innerrightmargin=10pt,
     skipabove=20pt,
-    skipbelow=20pt,
-    rightmargin=-1.5in
+    skipbelow=20pt
+  ]
 }
 
+\newcommand{\closeoverhang}{%
+  \endmdframed\end{list}%
+}
+
+% 5. Map Subsubsection (###) to the native overhang
 \titleformat{\subsubsection}[block]
   {\normalfont\bfseries\large}
   {}
   {0pt}
-  {\begin{adjustwidth}{0pt}{-1.5in}
-   \begin{mdframed}[style=overhangStyle]}
+  {\startoverhang}
 
-% 5. Pure LaTeX Safety Hooks
-% This closes the box/margin adjustment whenever a higher-level header starts
-\newcommand{\closeoverhang}{%
-  \unskip\strut\endmdframed\end{adjustwidth}%
-}
-
+% 6. Safety Hooks to close boxes automatically
 \pretocmd{\section}{\closeoverhang}{}{}
 \pretocmd{\subsection}{\closeoverhang}{}{}
 
-% Ensure links are strictly Black & White
+% Ensure B&W links
 \usepackage[hidelinks]{hyperref}
