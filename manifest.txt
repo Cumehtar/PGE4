@@ -137,7 +137,7 @@ docs/PGE Texts/Weird Lore/An Accounting of the Gods of the North.md|## An Accoun
 docs/PGE Texts/Weird Lore/An Examination of Magic in the Snow-Throat Commonwealth.md|## An Examination of Magic in the Snow-Throat Commonwealth
 docs/PGE Texts/Weird Lore/The First Cant of Ysmir.md|## The First Cant of Ysmir
 docs/PGE Texts/Weird Lore/Understanding the Fire-Scholar.md|## Understanding the Fire-Scholar
-docs/PGE Texts/Chapters/Chapter. Totambu Yokedate.md|# Totambu Yokedate
-docs/PGE Texts/Cutouts/The Yokedate Ordonnance of 4E399.md|## The Yokedate Ordonnance of 4E399
 docs/PGE Texts/Chapters/Chapter. Wilds of Bloodtoil.md|# Wilds of Bloodtoil
 docs/PGE Texts/Sidebars/The Green Prophecy in Bloodtoil.md|### The Green Prophecy in Bloodtoil
+docs/PGE Texts/Chapters/Chapter. Totambu Yokedate.md|# Totambu Yokedate
+docs/PGE Texts/Cutouts/The Yokedate Ordonnance of 4E399.md|## The Yokedate Ordonnance of 4E399
