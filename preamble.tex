@@ -1,14 +1,12 @@
 \usepackage{titlesec}
 \usepackage{geometry}
-\usepackage{multicol}
 \usepackage{xcolor}
 \usepackage[T1]{fontenc}
 \usepackage{etoolbox}
 \usepackage{longtable}
 \usepackage{booktabs}
-\usepackage{array}
 
-% 1. Geometry
+% 1. Geometry - Maintaining the wide margin for sidenotes
 \geometry{
   left=1in, 
   right=2.5in, 
@@ -17,73 +15,27 @@
   footskip=0.5in
 }
 
-% 2. Sidenotes
+% 2. Sidenotes (Handwritten style)
 \renewcommand{\footnote}[1]{%
   \marginpar{\raggedright\ttfamily\itshape\scriptsize #1}%
 }
 
-% 3. The Final Table Patch
-% We nullify longtable-specific header/footer commands that Pandoc generates
-\makeatletter
-\newcommand{\LT@c@ption}[3][]{} % Fixes potential caption issues
-\let\oldlongtable\longtable
-\let\endoldlongtable\endlongtable
+% 3. The "New Page" Rule
+% This forces a clear page BEFORE every #, ##, and ### header
+\newcommand{\sectionbreak}{\clearpage}
 
-\renewenvironment{longtable}[2][]{%
-  % Define longtable internal commands to do nothing
-  \def\endhead{}%
-  \def\endfirsthead{}%
-  \def\endfoot{}%
-  \def\endlastfoot{}%
-  \def\caption{\LT@c@ption}%
-  \begin{center}
-  \if\relax\detokenize{#2}\relax
-    \begin{tabular}{l}
-  \else
-    \begin{tabular}{#2}
-  \fi
-}{%
-  \end{tabular}
-  \end{center}
-}
-\makeatother
-
-% 4. Column Switch Logic
-\newbool{columnOpen}
-\boolfalse{columnOpen}
-
-\newcommand{\forceClose}{%
-  \ifbool{columnOpen}{\end{multicols}\boolfalse{columnOpen}}{}%
-}
-
-% 5. Header Redefinitions
-\let\oldsection\section
-\renewcommand{\section}[1]{\forceClose\oldsection{#1}}
-
-\let\oldsubsection\subsection
-\renewcommand{\subsection}[1]{%
-  \forceClose\oldsubsection{#1}%
-  \begin{multicols}{3}\booltrue{columnOpen}%
-}
-
-\let\oldsubsubsection\subsubsection
-\renewcommand{\subsubsection}[1]{%
-  \forceClose\oldsubsubsection{#1}%
-  \begin{multicols}{2}\booltrue{columnOpen}%
-}
-
-% 6. Visual Styling
+% 4. Header Styling
+% Level 1 (#): Vertically Centered Splash Page
 \titleformat{\section}[display]
-  {\normalfont\huge\bfseries\centering}{}{0pt}{\vspace*{\fill}}[\vfill\clearpage]
+  {\normalfont\huge\bfseries\centering}{}{0pt}{\vspace*{\fill}}[\vfill]
 
+% Level 2 (##): Large Header with Rule
 \titleformat{\subsection}
-  {\normalfont\Large\bfseries}{}{0pt}{}[\vspace{10pt}\hrule\vspace{10pt}]
+  {\normalfont\Large\bfseries}{}{0pt}{}[\vspace{10pt}\hrule]
 
+% Level 3 (###): Standard Header with Rule
 \titleformat{\subsubsection}
-  {\normalfont\large\bfseries}{}{0pt}{}[\vspace{5pt}\hrule\vspace{5pt}]
+  {\normalfont\large\bfseries}{}{0pt}{}[\vspace{5pt}\hrule]
 
-\setlength{\columnsep}{20pt}
-\setlength{\columnseprule}{0.4pt}
+% 5. Settings
 \usepackage[hidelinks]{hyperref}
-
-\AtEndDocument{\forceClose}
