@@ -32,8 +32,10 @@ docs/PGE Texts/Locations/Thane-baronies of Whorthgaria. Rorikstead.md|## Thane-b
 docs/PGE Texts/Sidebars/Editor's Note. The Great Steppe.md|### Editor's Note. The Great Steppe
 docs/PGE Texts/Sidebars/Fauna of the Great Steppe. Slide-Rock Bolters.md|### Fauna of the Great Steppe. Slide-Rock Bolters
 docs/PGE Texts/Sidebars/On the arms and armaments of Wrothgaria.md|### On the arms and armaments of Wrothgaria
-docs/PGE Texts/Chapters/Sub-Chapter. Bjoulsae Horsemen.md|## Sub-Chapter. Bjoulsae Horsemen
+docs/PGE Texts/Chapters/Sub-Chapter. Bjoulsae Horsemen.md|# Sub-Chapter. Bjoulsae Horsemen
 docs/PGE Texts/Chapters/Chapter. Iliac League.md|# Iliac League
+docs/PGE Texts/Festivals/Iliac Bay. The Morning Star.md|# The Morning Star
+docs/PGE Texts/Sidebars/On Knighthood in Iliac Bay.md|# On Knighthood in Iliac Bay
 docs/PGE Texts/Cutouts/Souls, A Primer.md|## Souls, A Primer
 docs/PGE Texts/Cutouts/What the Mother Navigators Taught to Me.md|## What the Mother Navigators Taught to Me
 docs/PGE Texts/Festivals/Iliac Bay. Balfiera Regatta.md|## Iliac Bay. Balfiera Regatta
