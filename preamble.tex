@@ -5,10 +5,26 @@
 \usepackage{longtable, booktabs}
 \usepackage{fancyhdr}
 \usepackage[hidelinks]{hyperref}
-\usepackage{emptypage} % <--- ADD THIS: Removes headers/footers from empty pages
 
-% ... [Font and Geometry configurations remain the same] ...
 
+[span_0](start_span)\usepackage{fontspec}[span_0](end_span)
+[span_1](start_span)\usepackage{titlesec}[span_1](end_span)
+[span_2](start_span)\usepackage{geometry}[span_2](end_span)
+[span_3](start_span)\usepackage{longtable, booktabs}[span_3](end_span)
+[span_4](start_span)\usepackage{fancyhdr}[span_4](end_span)
+[span_5](start_span)\usepackage[hidelinks]{hyperref}[span_5](end_span)
+
+% --- CLEAN CLEAR PAGES ---
+% This redefines \cleardoublepage to ensure the empty page is actually empty
+\makeatletter
+\def\cleardoublepage{\clearpage\if@twoside \ifodd\c@page\else
+  \hbox{}
+  \thispagestyle{empty}
+  \newpage
+  \if@twocolumn\hbox{}\newpage\fi\fi\fi}
+\makeatother
+
+%  [Font and Geometry configurations ]
 \pagestyle{fancy}
 \fancyhf{} 
 
@@ -17,12 +33,14 @@
 
 % Header/Footer configuration
 \fancyhead[RE,LO]{\headerfont\footnotesize\leftmark}
-\fancyfoot[LE,RO]{\headerfont\footnotesize\thepage}
+\fancyhead[LE,RO]{\headerfont\footnotesize\thepage}
+\fancyfoot[C]{}
 
 % --- SECTION/CHAPTER FORMATTING ---
 
-[span_0](start_span)% Ensure section-title pages remain empty[span_0](end_span)
+% Ensure section-title pages remain empty
 \assignpagestyle{\section}{empty}
+\renewcommand{\headrulewidth}{0pt}
 
 % Redefining section breaks to ensure they don't carry headers
 \newcommand{\sectionbreak}{\cleardoublepage}
