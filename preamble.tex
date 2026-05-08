@@ -2,6 +2,7 @@
 \usepackage{titlesec}
 \usepackage{geometry}
 \usepackage{longtable, booktabs}
+\usepackage{fancyhdr}
 \usepackage[hidelinks]{hyperref}
 
 % --- FONT CONFIGURATION ---
@@ -23,6 +24,7 @@
 % 'twoside' enables mirrored margins (inner/outer)
 % Increased 'outer' and 'marginparwidth' for bigger sidebars
 \geometry{
+  a4paper,
   twoside,
   inner=0.75in, 
   outer=3.5in, 
@@ -30,6 +32,19 @@
   marginparsep=0.25in,
   footskip=0.5in
 }
+
+\pagestyle{fancy}
+\fancyhf{} % Clear default headers/footers
+
+% Configuration for mirrored headers
+% LE = Left Even, RO = Right Odd (places title on the outer edges)
+\renewcommand{\sectionmark}[1]{\markboth{#1}{}} 
+\fancyhead[LE,RO]{\headerfont\footnotesize\leftmark}
+\fancyfoot[C]{\thepage} % Keeps page number centered in the footer
+
+% Ensure the isolated section title pages remain completely blank (no headers)
+\assignpagestyle{\section}{empty}
+
 
 % --- SIDENOTE CONFIGURATION ---
 \renewcommand{\footnote}[1]{%
@@ -44,6 +59,7 @@
 % --- SECTION/CHAPTER FORMATTING ---
 
 \newcommand{\sectionbreak}{\clearpage}
+\newcommand{\subsectionbreak}{\clearpage}
 
 % This centers the header vertically on its own page
 % and \clearpage at the end ensures no text follows it on the same page
@@ -55,7 +71,7 @@
   [\vfill\clearpage]
 
 \titleformat{\subsection}
-  {\headerfont\Large}{}{0pt}{}[\vspace{10pt}\hrule]
+  {\headerfont\large}{}{0pt}{}[\vspace{10pt}\hrule]
 
 \titleformat{\subsubsection}
   {\headerfont\large}{}{0pt}{}[\vspace{5pt}\hrule]
