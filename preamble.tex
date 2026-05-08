@@ -5,10 +5,21 @@
 \usepackage{longtable, booktabs}
 \usepackage{fancyhdr}
 \usepackage[hidelinks]{hyperref}
+\usepackage{multicol} % For lightweight double columns
+\usepackage{sidenotes} % For better margin note handling
 
+% --- CLEAN CLEAR PAGES ---
+% Redefines \cleardoublepage to ensure that pages inserted to maintain 
+% right-hand starts are completely empty (no headers/footers).
+\makeatletter
+\def\cleardoublepage{\clearpage\if@twoside \ifodd\c@page\else
+  \hbox{}
+  \thispagestyle{empty}
+  \newpage
+  \if@twocolumn\hbox{}\newpage\fi\fi\fi}
+\makeatother
 
 % --- FONT CONFIGURATION ---
-
 \setmainfont{Belleza-Regular.ttf}[
     Path = ./fonts/
 ]
@@ -23,7 +34,6 @@
 
 % --- LAYOUT & MARGINS ---
 % 'twoside' enables mirrored margins (inner/outer)
-% Increased 'outer' and 'marginparwidth' for bigger sidebars
 \geometry{
   a4paper,
   twoside,
@@ -34,41 +44,53 @@
   footskip=0.5in
 }
 
+% --- COLUMN SETUP ---
+\setlength{\columnsep}{0.25in}
+\newenvironment{twocol}{\begin{multicols}{2}}{\end{multicols}}
 
-% --- CLEAN CLEAR PAGES ---
-% This redefines \cleardoublepage to ensure the empty page is actually empty
-\makeatletter
-\def\cleardoublepage{\clearpage\if@twoside \ifodd\c@page\else
-  \hbox{}
-  \thispagestyle{empty}
-  \newpage
-  \if@twocolumn\hbox{}\newpage\fi\fi\fi}
-\makeatother
-
-%  [Font and Geometry configurations ]
+% --- PAGE STYLE & HEADERS ---
 \pagestyle{fancy}
-\fancyhf{} 
+\fancyhf{} % Clear defaults
 
-% --- CENTERING LOGIC ---
+% CENTERING LOGIC: Shift headers/footers to center on the physical paper
 \fancyhfoffset[LE,RO]{0.5\dimexpr\marginparwidth+\marginparsep\relax}
 
-% Header/Footer configuration
+% Header: Section title on the inner side, Page number on the outer side
 \fancyhead[RE,LO]{\headerfont\footnotesize\leftmark}
 \fancyhead[LE,RO]{\headerfont\footnotesize\thepage}
+
+% Footer: Empty
 \fancyfoot[C]{}
+
+% Remove the header line for a cleaner look
+\renewcommand{\headrulewidth}{0pt}
+
+% --- SIDENOTE CONFIGURATION ---
+% Redirects standard footnotes to the sidenotes package logic
+\makeatletter
+\renewcommand{\@sidenotes@sidenotetext}[1]{%
+  \marginpar{%
+    \raggedright
+    \sidebarfont
+    \footnotesize
+    \ignorespaces #1
+  }%
+}
+\makeatother
+\let\footnote\sidenote
 
 % --- SECTION/CHAPTER FORMATTING ---
 
-% Ensure section-title pages remain empty
+% Ensure the page containing the section title is empty
 \assignpagestyle{\section}{empty}
-\renewcommand{\headrulewidth}{0pt}
 
-% Redefining section breaks to ensure they don't carry headers
+% Section breaks to ensure sections start on odd pages
 \newcommand{\sectionbreak}{\cleardoublepage}
 \newcommand{\subsectionbreak}{\clearpage}
 \newcommand{\subsubsectionbreak}{\clearpage}
 
-% This centers the header vertically on its own page
+% Vertical centering for Section Titles on their own page
+% The \cleardoublepage in the suffix ensures content starts on the next odd page
 \titleformat{\section}[display]
   {\headerfont\huge\centering}
   {}
