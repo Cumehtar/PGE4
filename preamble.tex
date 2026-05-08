@@ -1,18 +1,29 @@
-\usepackage[T1]{fontenc}
+\usepackage{fontspec}
 \usepackage{titlesec}
 \usepackage{geometry}
 \usepackage{longtable, booktabs}
 \usepackage[hidelinks]{hyperref}
 
-% --- COMPATIBLE ARCHAIC FONTS ---
-% Palatino is a classic humanist serif (standard in all TeX distros)
-\usepackage{palatino} 
-% pzc is the PostScript Zapf Chancery font (standard cursive)
-\newcommand{\handwriting}{\fontfamily{pzc}\selectfont}
-% pbk is Bookman, which is heavy and "old-press" looking
-\newcommand{\headerfont}{\fontfamily{pbk}\selectfont}
+% --- FONT CONFIGURATION FROM LOCAL DIRECTORY ---
 
-% 1. Geometry & Margin setup
+% 1. Main Body Font (e.g., Garamond)
+\setmainfont{Asul-Regular.ttf.ttf}[
+    Path = ./fonts/,
+    BoldFont = Asul-Bold.ttf
+]
+
+% 2. Header Font (e.g., An Archaic Uncial or Blackletter)
+\newfontfamily\headerfont{Kaya_Medium.otf}[
+    Path = ./fonts/
+]
+
+% 3. Sidebar/Handwritten Font
+\newfontfamily\sidebarfont{khand.ttf}[
+    Path = ./fonts/
+]
+
+% --- LAYOUT & MARGINS ---
+
 \geometry{
   left=1in, 
   right=2.5in, 
@@ -21,27 +32,27 @@
   footskip=0.5in
 }
 
-% 2. Sidenote definition (Using Zapf Chancery for handwritten feel)
+% 4. Sidenote definition using the local sidebar font
 \renewcommand{\footnote}[1]{%
   \marginpar{%
     \raggedright
-    \handwriting
-    \large % Chancery runs small, so large looks like normal handwriting
+    \sidebarfont
+    \small 
     #1
   }%
 }
 
-% 3. Header formatting & Page breaking
+% 5. Header formatting
 \newcommand{\sectionbreak}{\clearpage}
 
-% # Header: Centered on its own page
+% # Header: Centered
 \titleformat{\section}[display]
-  {\headerfont\huge\bfseries\centering}{}{0pt}{\vspace*{\fill}}[\vfill]
+  {\headerfont\huge\centering}{}{0pt}{\vspace*{\fill}}[\vfill]
 
 % ## Header: Large with a rule
 \titleformat{\subsection}
-  {\headerfont\Large\bfseries}{}{0pt}{}[\vspace{10pt}\hrule]
+  {\headerfont\Large}{}{0pt}{}[\vspace{10pt}\hrule]
 
 % ### Header: Normal with a rule
 \titleformat{\subsubsection}
-  {\headerfont\large\bfseries}{}{0pt}{}[\vspace{5pt}\hrule]
+  {\headerfont\large}{}{0pt}{}[\vspace{5pt}\hrule]
