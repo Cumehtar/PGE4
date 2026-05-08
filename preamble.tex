@@ -4,55 +4,58 @@
 \usepackage{longtable, booktabs}
 \usepackage[hidelinks]{hyperref}
 
-% --- FONT CONFIGURATION FROM LOCAL DIRECTORY ---
+% --- FONT CONFIGURATION ---
 
-% 1. Main Body Font (e.g., Garamond)
 \setmainfont{Asul-Regular.ttf.ttf}[
     Path = ./fonts/,
     BoldFont = Asul-Bold.ttf
 ]
 
-% 2. Header Font (e.g., An Archaic Uncial or Blackletter)
 \newfontfamily\headerfont{Kaya_Medium.otf}[
     Path = ./fonts/
 ]
 
-% 3. Sidebar/Handwritten Font
 \newfontfamily\sidebarfont{khand.ttf}[
     Path = ./fonts/
 ]
 
 % --- LAYOUT & MARGINS ---
-
+% 'twoside' enables mirrored margins (inner/outer)
+% Increased 'outer' and 'marginparwidth' for bigger sidebars
 \geometry{
-  left=1in, 
-  right=2.5in, 
-  marginparwidth=2in, 
-  marginparsep=0.2in,
+  twoside,
+  inner=0.75in, 
+  outer=3.5in, 
+  marginparwidth=3in, 
+  marginparsep=0.25in,
   footskip=0.5in
 }
 
-% 4. Sidenote definition using the local sidebar font
+% --- SIDENOTE CONFIGURATION ---
 \renewcommand{\footnote}[1]{%
   \marginpar{%
     \raggedright
     \sidebarfont
-    \small 
+    \footnotesize % Changed from \small to \footnotesize for smaller text
     #1
   }%
 }
 
-% 5. Header formatting
+% --- SECTION/CHAPTER FORMATTING ---
+
 \newcommand{\sectionbreak}{\clearpage}
 
-% # Header: Centered
+% This centers the header vertically on its own page
+% and \clearpage at the end ensures no text follows it on the same page
 \titleformat{\section}[display]
-  {\headerfont\huge\centering}{}{0pt}{\vspace*{\fill}}[\vfill]
+  {\headerfont\huge\centering}
+  {}
+  {0pt}
+  {\vspace*{\fill}}
+  [\vfill\clearpage]
 
-% ## Header: Large with a rule
 \titleformat{\subsection}
   {\headerfont\Large}{}{0pt}{}[\vspace{10pt}\hrule]
 
-% ### Header: Normal with a rule
 \titleformat{\subsubsection}
   {\headerfont\large}{}{0pt}{}[\vspace{5pt}\hrule]
