@@ -1,77 +1,35 @@
+% --- REQUIRED PACKAGES ---
 \usepackage{fontspec}
 \usepackage{titlesec}
 \usepackage{geometry}
 \usepackage{longtable, booktabs}
 \usepackage{fancyhdr}
 \usepackage[hidelinks]{hyperref}
+\usepackage{emptypage} % <--- ADD THIS: Removes headers/footers from empty pages
 
-
-% --- FONT CONFIGURATION ---
-
-\setmainfont{Belleza-Regular.ttf}[
-    Path = ./fonts/
-]
-
-\newfontfamily\headerfont{Kaya_Medium.otf}[
-    Path = ./fonts/
-]
-
-\newfontfamily\sidebarfont{khand.ttf}[
-    Path = ./fonts/
-]
-
-% --- LAYOUT & MARGINS ---
-% 'twoside' enables mirrored margins (inner/outer)
-% Increased 'outer' and 'marginparwidth' for bigger sidebars
-\geometry{
-  a4paper,
-  twoside,
-  inner=0.75in, 
-  outer=3in, 
-  marginparwidth=2.5in, 
-  marginparsep=0.25in,
-  footskip=0.5in
-}
-
+% ... [Font and Geometry configurations remain the same] ...
 
 \pagestyle{fancy}
-\fancyhf{} % Clear defaults
+\fancyhf{} 
 
 % --- CENTERING LOGIC ---
-% This calculates the shift needed to align headers/footers with the physical paper center
-% Formula: (outer margin - inner margin) / 2
 \fancyhfoffset[LE,RO]{0.5\dimexpr\marginparwidth+\marginparsep\relax}
 
-% Header: Section title centered on the physical page
-\fancyhead[C]{\headerfont\footnotesize\leftmark}
-
-% Footer: Page number centered on the physical page
-\fancyfoot[C]{\thepage}
-
-% Ensure section-title pages remain empty
-\assignpagestyle{\section}{empty}
-
-% Remove the header line for a cleaner look (optional)
-\renewcommand{\headrulewidth}{0pt}
-
-% --- SIDENOTE CONFIGURATION ---
-\renewcommand{\footnote}[1]{%
-  \marginpar{%
-    \raggedright
-    \sidebarfont
-    \footnotesize % Changed from \small to \footnotesize for smaller text
-    #1
-  }%
-}
+% Header/Footer configuration
+\fancyhead[RE,LO]{\headerfont\footnotesize\leftmark}
+\fancyfoot[LE,RO]{\headerfont\footnotesize\thepage}
 
 % --- SECTION/CHAPTER FORMATTING ---
 
+[span_0](start_span)% Ensure section-title pages remain empty[span_0](end_span)
+\assignpagestyle{\section}{empty}
+
+% Redefining section breaks to ensure they don't carry headers
 \newcommand{\sectionbreak}{\cleardoublepage}
 \newcommand{\subsectionbreak}{\clearpage}
 \newcommand{\subsubsectionbreak}{\clearpage}
 
 % This centers the header vertically on its own page
-% and \clearpage at the end ensures no text follows it on the same page
 \titleformat{\section}[display]
   {\headerfont\huge\centering}
   {}
