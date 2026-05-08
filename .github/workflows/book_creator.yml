@@ -49,7 +49,7 @@ jobs:
             -o vault_export.pdf
             --include-in-header=preamble.tex
             --toc
-            --pdf-engine=pdflatex
+            --pdf-engine=lualatex
 
       - name: Upload Artifacts
         uses: actions/upload-artifact@v4
