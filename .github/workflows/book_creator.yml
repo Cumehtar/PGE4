@@ -12,7 +12,7 @@ jobs:
 
       - name: Assemble Document
         run: |
-          # 1. Start with metadata.yaml or a default header
+          # 1. Initialize combined document with metadata
           if [ -f "metadata.yaml" ]; then
             cat metadata.yaml > combined.md
             echo -e "\n" >> combined.md
@@ -20,25 +20,34 @@ jobs:
             echo -e "---\ntitle: Vault Export\n---\n" > combined.md
           fi
 
-          # 2. Process the manifest
+          # 2. Process the manifest and avoid footnote collisions
           while IFS='|' read -r f h || [ -n "$f" ]; do
-            # Trim whitespace and remove Windows carriage returns safely
+            # Trim whitespace and Windows carriage returns safely
             fname=$(echo "$f" | sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//' | tr -d '\r')
             
             if [ -n "$fname" ] && [ -f "$fname" ]; then
-              echo "Adding: $fname"
+              echo "Processing: $fname"
+              
+              # Create a unique prefix from filename to prevent duplicate footnote errors
+              # This turns [^1] into [^Filename1]
+              fprefix=$(echo "$fname" | tr -dc 'a-zA-Z0-9')
+              
               # Append the header level from manifest (e.g., #, ##)
               echo -e "\n$h\n" >> combined.md
               
-              # Strip YAML frontmatter from individual files and append content
-              sed '1{/^---$/{:a;n;/^---$/!ba;d}}' "$fname" >> combined.md
+              # Process the file: 
+              # - Strip YAML frontmatter
+              # - Prefix every footnote reference and definition
+              sed '1{/^---$/{:a;n;/^---$/!ba;d}}' "$fname" | \
+              sed "s/\[\^/\[\^${fprefix}-/g" >> combined.md
+              
               echo -e "\n" >> combined.md
             else
               [ -n "$fname" ] && echo "Warning: File not found -> $fname"
             fi
           done < manifest.txt
 
-          # 3. Clean up Obsidian-specific syntax
+          # 3. Clean up Obsidian-specific syntax (Remove [[ ]])
           sed -i 's/\[\[//g; s/\]\]//g' combined.md
 
       - name: Run Pandoc
