@@ -1,4 +1,4 @@
-![[docs/PGE Texts/Art/New-winterhold.png]]
+![](../Art/New-winterhold.png)
 
 *Traders sailing along the northern coast of the Commonwealth are advised to put in at the port of New Winterhold. The port was founded after the Silver Plague in a successful attempt to reinvigorate the city of Winterhold, formerly a decrepit collection of shacks and ruins huddled around the College. Today, the port is one of the most important stops along the northern trade-lanes: the College of Old Winterhold regularly has enchanted items for purchase and export, highly sought-after Winterhold soaps may be bought from artisans, and food supplies can be restocked with fresh fish, horker, and whale.* 
 
