@@ -55,7 +55,7 @@ jobs:
         with:
           args: >
             combined.md
-            -f markdown
+            -f markdown-smart
             -o vault_export.pdf
             --include-in-header=preamble.tex
             --toc
