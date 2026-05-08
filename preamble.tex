@@ -6,6 +6,35 @@
 \usepackage{fancyhdr}
 \usepackage[hidelinks]{hyperref}
 
+
+% --- FONT CONFIGURATION ---
+
+\setmainfont{Belleza-Regular.ttf}[
+    Path = ./fonts/
+]
+
+\newfontfamily\headerfont{Kaya_Medium.otf}[
+    Path = ./fonts/
+]
+
+\newfontfamily\sidebarfont{khand.ttf}[
+    Path = ./fonts/
+]
+
+% --- LAYOUT & MARGINS ---
+% 'twoside' enables mirrored margins (inner/outer)
+% Increased 'outer' and 'marginparwidth' for bigger sidebars
+\geometry{
+  a4paper,
+  twoside,
+  inner=0.75in, 
+  outer=3in, 
+  marginparwidth=2.5in, 
+  marginparsep=0.25in,
+  footskip=0.5in
+}
+
+
 % --- CLEAN CLEAR PAGES ---
 % This redefines \cleardoublepage to ensure the empty page is actually empty
 \makeatletter
