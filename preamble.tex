@@ -4,6 +4,9 @@
 \usepackage{longtable, booktabs}
 \usepackage{fancyhdr}
 \usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[skip=14pt plus 2pt, indent=0pt]{parskip}
+
 
 % --- FONT CONFIGURATION ---
 
@@ -33,7 +36,6 @@
   footskip=0.5in
 }
 
-\usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhf{} % Clear defaults
 
@@ -66,8 +68,9 @@
 
 % --- SECTION/CHAPTER FORMATTING ---
 
-\newcommand{\sectionbreak}{\clearpage}
+\newcommand{\sectionbreak}{\cleardoublepage}
 \newcommand{\subsectionbreak}{\clearpage}
+\newcommand{\subsubsectionbreak}{\clearpage}
 
 % This centers the header vertically on its own page
 % and \clearpage at the end ensures no text follows it on the same page
@@ -76,7 +79,7 @@
   {}
   {0pt}
   {\vspace*{\fill}}
-  [\vfill\clearpage]
+  [\vfill\cleardoublepage]
 
 \titleformat{\subsection}
   {\headerfont\large\centering}{}{10pt}{}
