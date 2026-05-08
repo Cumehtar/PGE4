@@ -4,14 +4,13 @@
 \usepackage{longtable, booktabs}
 \usepackage[hidelinks]{hyperref}
 
-\usepackage[utf8]{inputenc}
-
-% --- ARCHAIC & HANDWRITTEN FONTS ---
-\usepackage{ebgaramond} % Main body (Renaissance Serif)
-\usepackage{auncial}    % Headers (Medieval Uncial)
-\usepackage{calligra}   % Sidebar (Handwritten Calligraphy)
-% -----------------------------------
-
+% --- COMPATIBLE ARCHAIC FONTS ---
+% Palatino is a classic humanist serif (standard in all TeX distros)
+\usepackage{palatino} 
+% pzc is the PostScript Zapf Chancery font (standard cursive)
+\newcommand{\handwriting}{\fontfamily{pzc}\selectfont}
+% pbk is Bookman, which is heavy and "old-press" looking
+\newcommand{\headerfont}{\fontfamily{pbk}\selectfont}
 
 % 1. Geometry & Margin setup
 \geometry{
@@ -22,28 +21,27 @@
   footskip=0.5in
 }
 
-% 2. Sidenote definition: Now using Calligra for a handwritten look
+% 2. Sidenote definition (Using Zapf Chancery for handwritten feel)
 \renewcommand{\footnote}[1]{%
   \marginpar{%
     \raggedright
-    \calligra % Switch to calligraphic font
-    \small    % Calligra runs small, so 'small' or 'normalsize' works best
+    \handwriting
+    \large % Chancery runs small, so large looks like normal handwriting
     #1
   }%
 }
 
-
 % 3. Header formatting & Page breaking
 \newcommand{\sectionbreak}{\clearpage}
 
-% # Header: Centered on its own page using Uncial script
+% # Header: Centered on its own page
 \titleformat{\section}[display]
-  {\unclfamily\huge\centering}{}{0pt}{\vspace*{\fill}}[\vfill]
+  {\headerfont\huge\bfseries\centering}{}{0pt}{\vspace*{\fill}}[\vfill]
 
 % ## Header: Large with a rule
 \titleformat{\subsection}
-  {\unclfamily\Large}{}{0pt}{}[\vspace{10pt}\hrule]
+  {\headerfont\Large\bfseries}{}{0pt}{}[\vspace{10pt}\hrule]
 
 % ### Header: Normal with a rule
 \titleformat{\subsubsection}
-  {\unclfamily\large}{}{0pt}{}[\vspace{5pt}\hrule]
+  {\headerfont\large\bfseries}{}{0pt}{}[\vspace{5pt}\hrule]
