@@ -5,6 +5,9 @@
 \usepackage{longtable, booktabs}
 \usepackage{fancyhdr}
 \usepackage[hidelinks]{hyperref}
+\usepackage{newunicodechar}
+\newunicodechar{’}{'} 
+
 
 % --- CLEAN CLEAR PAGES ---
 % Redefines \cleardoublepage to ensure that pages inserted to maintain 
@@ -18,19 +21,20 @@
 \makeatother
 
 % --- FONT CONFIGURATION ---
-\setmainfont{DAYROM__.ttf}[
+\setmainfont{Flanker Griffo.otf}[
     Path = ./fonts/,
-    Ligatures=TeX
+    BoldFont = Flanker Griffo Bold.otf,
+    ItalicFont = Flanker Griffo Italic.otf,
+    BoldItalicFont = Flanker Griffo Italic Bold.otf
 ]
 
+
 \newfontfamily\headerfont{Kaya_Medium.otf}[
-    Path = ./fonts/,
-    Ligatures=TeX
+    Path = ./fonts/
 ]
 
 \newfontfamily\sidebarfont{khand.ttf}[
-    Path = ./fonts/,
-    Ligatures=TeX
+    Path = ./fonts/
 ]
 
 % --- LAYOUT & MARGINS ---
