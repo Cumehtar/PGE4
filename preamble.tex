@@ -5,8 +5,6 @@
 \usepackage{longtable, booktabs}
 \usepackage{fancyhdr}
 \usepackage[hidelinks]{hyperref}
-\usepackage{multicol} % For lightweight double columns
-\usepackage{sidenotes} % For better margin note handling
 
 % --- CLEAN CLEAR PAGES ---
 % Redefines \cleardoublepage to ensure that pages inserted to maintain 
@@ -67,8 +65,7 @@
 
 % --- SIDENOTE CONFIGURATION ---
 % Redirects standard footnotes to the sidenotes package logic
-\makeatletter
-\renewcommand{\@sidenotes@sidenotetext}[1]{%
+\renewcommand{\footnote}[1]{%
   \marginpar{%
     \raggedright
     \sidebarfont
@@ -76,8 +73,6 @@
     \ignorespaces #1
   }%
 }
-\makeatother
-\let\footnote\sidenote
 
 % --- SECTION/CHAPTER FORMATTING ---
 
