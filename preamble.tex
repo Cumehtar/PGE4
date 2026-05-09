@@ -9,9 +9,6 @@
 
 \makeindex
 
-% Only include \section titles in the Table of Contents
-\setcounter{tocdepth}{0}
-
 % --- CLEAN CLEAR PAGES ---
 % Redefines \cleardoublepage to ensure that pages inserted to maintain 
 % right-hand starts are completely empty (no headers/footers).
@@ -115,17 +112,17 @@
 \author{Cheydinhal Geographic Society}
 \date{year 401 of Fourth Era}
 
-% --- TOC STYLE ---
-\usepackage{tocloft}
-\makeatletter
-\renewcommand{\@cftmaketoctitle}{} % Removes the "Contents" title
-\makeatother
 
-% --- AUTOMATED FRONT MATTER ---
+% --- TITLE METADATA ---
+\title{The Imperial Guidebook}
+\author{Vol. IV: The West}
+\date{\today}
+
+% --- AUTOMATED FRONT MATTER (No tocloft needed) ---
 \AtBeginDocument{
-    % 1. Create a Classical Title Page
+    % 1. Simple Title Page
     \begin{titlepage}
-        \newgeometry{margin=1in} % Center the title on the whole page
+        \newgeometry{margin=1.5in} 
         \centering
         \vspace*{5cm}
         {\Huge\headerfont \@title \par}
@@ -138,18 +135,21 @@
     \restoregeometry
     \cleardoublepage
 
-    % 2. Titleless Table of Contents
-    \begin{center}
-        \headerfont\Huge Contents
-    \end{center}
-    \vspace{2em}
+    % 2. Simple TOC (Titleless)
+    \newpage
+    \newgeometry{margin=1.5in}
     
-    % Use a slightly wider margin for TOC so it doesn't look cramped
-    \newgeometry{inner=1.5in, outer=1.5in} 
-    \tableofcontents
+    % This is the "old school" way to kill the TOC title
+    \section*{} % Create an empty section to clear space
+    \vspace{-4em} % Pull the TOC up
+    \makeatletter
+    \setcounter{tocdepth}{0}
+    \@starttoc{toc} % Manually trigger the TOC stream without the header
+    \makeatother
+    
+    \newpage
     \restoregeometry
-    
     \cleardoublepage
-    % Reset page numbering to 1 for the start of the content
     \pagenumbering{arabic}
 }
+
