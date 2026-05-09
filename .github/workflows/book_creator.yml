@@ -60,9 +60,8 @@ jobs:
             --include-in-header=preamble.tex
             --include-before-body=front.tex
             --include-after-body=postamble.tex
-            --toc
-            -V makeindex=true
-            --pdf-engine=lualatex
+            --pdf-engine=latexmk
+            --pdf-engine-opt=-pdflua
             --pdf-engine-opt=-shell-escape
             --resource-path=.:"docs/PGE Texts/Art/"
 
