@@ -58,10 +58,9 @@ jobs:
             -o vault_export.pdf
             --include-in-header=preamble.tex
             --include-after-body=postamble.tex
-            --toc
-            --toc-depth=1
             -V makeindex=true
             --pdf-engine=lualatex
+            --pdf-engine-opt=-shell-escape
             --resource-path=.:"docs/PGE Texts/Art/"
 
       - name: Upload Artifacts
