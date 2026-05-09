@@ -47,7 +47,11 @@ jobs:
             fi
           done < manifest.txt
 
-          # 3. Clean up Obsidian-specific syntax (Remove [[ ]])
+          # 3. Convert Obsidian links to Index tags
+          # This replaces [[Term]] with Term\index{Term}
+          sed -i 's/\[\[\([^]]*\)\]\]/\1\\index{\1}/g' combined.md
+
+          # 4. Clean up Obsidian-specific syntax (Remove [[ ]])
           sed -i 's/\[\[//g; s/\]\]//g' combined.md
 
       - name: Run Pandoc
