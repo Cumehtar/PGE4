@@ -12,14 +12,9 @@ jobs:
 
       - name: Assemble Document
         run: |
-          # 1. Initialize combined document with metadata
-          if [ -f "metadata.yaml" ]; then
-            cat metadata.yaml > combined.md
-            echo -e "\n" >> combined.md
-          else
-            echo -e "---\ntitle: Vault Export\n---\n" > combined.md
-          fi
-
+          # 1. Initialize combined document 
+          > combined.md
+          
           # 2. Process the manifest and avoid footnote collisions
           while IFS='|' read -r f h || [ -n "$f" ]; do
             # Trim whitespace and Windows carriage returns safely
