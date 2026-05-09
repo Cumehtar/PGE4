@@ -16,12 +16,13 @@
 
 % 2. Table of Contents
 \newgeometry{margin=1.5in}
-\section*{} % Visual spacer
-\vspace{-4em} 
+\makeatletter
+\renewcommand{\contentsname}{} % Ensures no "Contents" title is printed twice
 \setcounter{tocdepth}{0} 
 \tableofcontents 
+\makeatother
 \restoregeometry
 \cleardoublepage
 
-% 3. Reset for main content
+% 3. Reset
 \pagenumbering{arabic}
