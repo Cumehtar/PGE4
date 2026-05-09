@@ -59,6 +59,7 @@ jobs:
             -o vault_export.pdf
             --include-in-header=preamble.tex
             --toc
+            --toc-depth=1
             --pdf-engine=lualatex
             --resource-path=.:"docs/PGE Texts/Art/"
 
