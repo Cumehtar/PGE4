@@ -1,0 +1,27 @@
+
+% 1. Title Page
+\begin{titlepage}
+    \newgeometry{margin=1.5in} 
+    \centering
+    \vspace*{5cm}
+    {\Huge\headerfont Potentate's Guide to the Environs \par}
+    \vspace{1.5cm}
+    {\Large\headerfont Cheydinhal Geographic Society \par}
+    \vfill
+    {\large\headerfont year 401 of Fourth Era \par}
+    \thispagestyle{empty}
+\end{titlepage}
+\restoregeometry
+\cleardoublepage
+
+% 2. Table of Contents
+\newgeometry{margin=1.5in}
+\section*{} % Visual spacer
+\vspace{-4em} 
+\setcounter{tocdepth}{0} 
+\tableofcontents 
+\restoregeometry
+\cleardoublepage
+
+% 3. Reset for main content
+\pagenumbering{arabic}
