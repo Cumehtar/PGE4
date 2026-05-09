@@ -62,6 +62,7 @@ jobs:
             -f markdown-smart
             -o vault_export.pdf
             --include-in-header=preamble.tex
+            --include-after-body=postamble.tex
             --toc
             --toc-depth=1
             -V makeindex=true
