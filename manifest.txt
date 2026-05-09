@@ -42,8 +42,8 @@ docs/PGE Texts/Sidebars/Advertisement. Travel Notations from Rivenspire.md|### A
 docs/PGE Texts/Weird Lore/Druid Creed.md|## Druid Creed
 docs/PGE Texts/Weird Lore/Werewords.md|## Werewords
 docs/PGE Texts/Chapters/Chapter. Iliac League.md|# Iliac League
-docs/PGE Texts/Festivals/Iliac Bay. The Morning Star.md|# The Morning Star
-docs/PGE Texts/Sidebars/On Knighthood in Iliac Bay.md|# On Knighthood in Iliac Bay
+docs/PGE Texts/Festivals/Iliac Bay. The Morning Star.md|## The Morning Star
+docs/PGE Texts/Sidebars/On Knighthood in Iliac Bay.md|## On Knighthood in Iliac Bay
 docs/PGE Texts/Cutouts/Souls, A Primer.md|## Souls, A Primer
 docs/PGE Texts/Festivals/Iliac Bay. Balfiera Regatta.md|## Iliac Bay. Balfiera Regatta
 docs/PGE Texts/Locations/Cath Bedruad of Camlorn.md|## Cath Bedruad of Camlorn
