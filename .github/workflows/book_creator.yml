@@ -57,6 +57,7 @@ jobs:
             -f markdown-smart
             -o vault_export.pdf
             --include-in-header=preamble.tex
+            --include-before-body=front.tex
             --include-after-body=postamble.tex
             -V makeindex=true
             --pdf-engine=lualatex
