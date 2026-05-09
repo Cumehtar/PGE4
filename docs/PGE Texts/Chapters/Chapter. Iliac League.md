@@ -1,6 +1,6 @@
 _(You turn to the second chapter. It smells faintly of sulphur, and small yellow crystals roll down the page.)_
 
-**Night Crawling on the Ground: The Iliac League**
+# Night Crawling on the Ground: The Iliac League
 
 When the [[Silver Plague]] struck it disintegrated the bureaucratic glue of regional governments. This, by itself, is unremarkable. It is also unremarkable that when urban centres suddenly find themselves _de jure_ independent, they quickly fall to whatever clique can organise the best militia. What _is_ remarkable, however, is that two centuries later, these cities have still yet to rebuild the unitary kingdoms they were once ejected from. As such, the [[Iliac League]] is, in many ways, a devolution of politics that could only have been achieved by races as parochial as the Redguards and the Bretons.
 
