@@ -107,3 +107,49 @@
 
 \titleformat{\subsubsection}
   {\headerfont\large}{}{5pt}{}
+
+
+% --- TITLE METADATA ---
+% Define these here so \maketitle or your custom title page can use them
+\title{Potentate's Guide to the Environs}
+\author{Cheydinhal Geographic Society}
+\date{year 401 of Fourth Era}
+
+% --- TOC STYLE ---
+\usepackage{tocloft}
+\makeatletter
+\renewcommand{\@cftmaketoctitle}{} % Removes the "Contents" title
+\makeatother
+
+% --- AUTOMATED FRONT MATTER ---
+\AtBeginDocument{
+    % 1. Create a Classical Title Page
+    \begin{titlepage}
+        \newgeometry{margin=1in} % Center the title on the whole page
+        \centering
+        \vspace*{5cm}
+        {\Huge\headerfont \@title \par}
+        \vspace{1.5cm}
+        {\Large\headerfont \@author \par}
+        \vfill
+        {\large\headerfont \@date \par}
+        \thispagestyle{empty}
+    \end{titlepage}
+    \restoregeometry
+    \cleardoublepage
+
+    % 2. Titleless Table of Contents
+    \begin{center}
+        \headerfont\Huge Contents
+    \end{center}
+    \vspace{2em}
+    
+    % Use a slightly wider margin for TOC so it doesn't look cramped
+    \newgeometry{inner=1.5in, outer=1.5in} 
+    \tableofcontents
+    \restoregeometry
+    
+    \cleardoublepage
+    % Reset page numbering to 1 for the start of the content
+    \pagenumbering{arabic}
+}
