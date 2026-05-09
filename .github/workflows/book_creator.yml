@@ -64,6 +64,7 @@ jobs:
             --include-in-header=preamble.tex
             --toc
             --toc-depth=1
+            -V makeindex=true
             --pdf-engine=lualatex
             --resource-path=.:"docs/PGE Texts/Art/"
 
