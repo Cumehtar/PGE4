@@ -54,11 +54,13 @@ jobs:
         with:
           args: >
             combined.md
+            --standalone
             -f markdown-smart
             -o vault_export.pdf
             --include-in-header=preamble.tex
             --include-before-body=front.tex
             --include-after-body=postamble.tex
+            --toc
             -V makeindex=true
             --pdf-engine=lualatex
             --pdf-engine-opt=-shell-escape
