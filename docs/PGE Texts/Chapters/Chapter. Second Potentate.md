@@ -30,7 +30,7 @@ Last but not the least, [[Port Katariah]]. The black gem of the Topal Bay, it is
 
 [^3]: Fat cats that bribe and maneuver to get to the top of their respective Guilds - but also honest people among them, fortunately.
 
-[^4]: That have been held by one Helseth Hlaalu for more than a century and a half as of now.
+[^4]: That have been held by one Hlaalu Helseth for more than a century and a half as of now.
 
 [^5]: Oh, yes, the riots and the strikes of 397 were glorious, the union of the laborers guilds paralyzed the whole country for weeks, pity they have decided not to push their luck and accepted the economic concessions.
 
