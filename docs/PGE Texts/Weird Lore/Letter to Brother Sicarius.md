@@ -14,7 +14,7 @@ The body of your so-called Unholy Matron has been taken from the sanctuary in Da
 This is a most generous offer for a guild of murderous outlaws. 
 Should you accept, you will return a list of all current members of your chapter who agree to these terms. Any who do not must be turned in to the Guard or executed. Any chapter that rejects these terms as a whole is of the understanding that they will be treated with utmost prejudice, and that their continued operation will be considered a slight against the Potentate and be returned as such, regardless of territorial jurisdiction. 
 To that end, this letter is laced with a poisonous powder, which entered your lungs the moment you opened it, and will take effect within minutes. The courier that delivered it has been instructed to wait outside, and will gladly provide the antidote in exchange for its return. I eagerly await your response.
--Esteemed Potentate Helseth Hlaalu*
+-Esteemed Potentate Hlaalu Helseth*
                                     
                                          ***
 
