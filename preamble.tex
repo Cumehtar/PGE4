@@ -107,18 +107,12 @@
 
 
 % --- TITLE METADATA ---
-% Define these here so \maketitle or your custom title page can use them
 \title{Potentate's Guide to the Environs}
 \author{Cheydinhal Geographic Society}
 \date{year 401 of Fourth Era}
 
-
-% --- TITLE METADATA ---
-\title{The Imperial Guidebook}
-\author{Vol. IV: The West}
-\date{\today}
-
-% --- AUTOMATED FRONT MATTER (No tocloft needed) ---
+% --- FRONT MATTER ---
+\makeatletter
 \AtBeginDocument{
     % 1. Simple Title Page
     \begin{titlepage}
@@ -138,18 +132,14 @@
     % 2. Simple TOC (Titleless)
     \newpage
     \newgeometry{margin=1.5in}
-    
-    % This is the "old school" way to kill the TOC title
     \section*{} % Create an empty section to clear space
     \vspace{-4em} % Pull the TOC up
     \makeatletter
     \setcounter{tocdepth}{0}
     \@starttoc{toc} % Manually trigger the TOC stream without the header
-    \makeatother
-    
     \newpage
     \restoregeometry
     \cleardoublepage
     \pagenumbering{arabic}
 }
-
+\makeatother
