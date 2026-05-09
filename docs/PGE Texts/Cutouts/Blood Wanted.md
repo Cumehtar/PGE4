@@ -1,6 +1,6 @@
 _A public service announcement in which a burgeoning biomedical institution educates an obviously uncertain audience about the mutualistic benefits of its bleeding edge practices, specifically vital donations to their burgeoning blood economy._
 
-# BLOOD WANTED
+**BLOOD WANTED**
 
 _BLOOD IS THE ESSENCE OF LIFE!_  
 _ALL ARE ANIMATED BY ITS SACRED CIRCULATION!_  
