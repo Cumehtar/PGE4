@@ -22,4 +22,4 @@ For those travelling the region, interactions with the Bjoulsae will always carr
     
 [^3]: The latest in a line of warlords trying to build a Bjoul nation. Sounds like he has most of the Veinhouse behind him, not so much the others.
     
-[^4]: If you’re wondering why the EEC knows so much about the Horsemen & how to interact with them, it’s because they’ve been hiring them as mercenaries for years. Give them some gold, tell them who to harass and not harass, promise land and titles. Always second-class to their GIG soldiers, but they keep coming.
+[^4]: The EEC knows so much about the Horsemen and how to interact with them because they’ve been hiring them as mercenaries for years. Give them some gold, tell them who to harass and not harass, promise land and titles. Always second-class to their GIG soldiers, but they keep coming.
