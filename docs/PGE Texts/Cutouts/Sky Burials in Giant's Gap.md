@@ -1,4 +1,4 @@
-An excerpt from Funerary Customs of Tamriel, 153rd Edition. Published 4e386.
+*An excerpt from Funerary Customs of Tamriel, 153rd Edition. Published 4e386.*
 
 …other forms of sky burials may be found across Snow-Throat. While the practices of [[Dragon Monks]] on the Throat of the World are most well-documented and formalized, they are by no means the standard.
 

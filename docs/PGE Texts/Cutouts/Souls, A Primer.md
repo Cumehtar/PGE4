@@ -26,7 +26,7 @@ Doran, U. (4E 347). A refutation of the Benevolence of Mara’s ideological warf
 
 Elisgan and Cassa. (4E 341). Souldust pollution in Woodhearth and environs. *Republic Ecology Review, 10*(1), 50-91.
 
-Galerion, V. (2E 581). Guild Memo on Soul Trapping. *Collected Texts of the Mages Guild,* pp. 399\*.\* 
+Galerion, V. (2E 581). Guild Memo on Soul Trapping. *Collected Texts of the Mages Guild,* pp. 399.
 
 Larethal, K. (4E 350). Souldust pollution re-examined. *[[University of Skywatch]] Magazine.*
 
