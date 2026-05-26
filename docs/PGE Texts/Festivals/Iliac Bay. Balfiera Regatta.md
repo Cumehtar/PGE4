@@ -30,8 +30,8 @@ The most outlandish-looking is the contestant from [[Soulrest]]. From the first 
 
 --
 
-[^1]They are cheap to build, that's their main advantage. Freehold and Sapiarchy designs are superior in every way, but you can't turn them out with the same speed as those clinker brigs.
+[^1]:They are cheap to build, that's their main advantage. Freehold and Sapiarchy designs are superior in every way, but you can't turn them out with the same speed as those clinker brigs.
 
-[^2]This bloated cow of a boat managed to run aground smack in the middle of the Iliac Bay. Independent holds worked well, though. So after the high tide she needed only three months to limp back to Port Katariah. Let us all hope they don't run aground in the middle of the ocean if and when they finally sail to Akavir. It's a fine bunch of lads and lasses serving on her, would be a pity to lose them.
+[^2]:This bloated cow of a boat managed to run aground smack in the middle of the Iliac Bay. Independent holds worked well, though. So after the high tide she needed only three months to limp back to Port Katariah. Let us all hope they don't run aground in the middle of the ocean if and when they finally sail to Akavir. It's a fine bunch of lads and lasses serving on her, would be a pity to lose them.
 
-[^3]If that's the ship I know as 'Kyne's Tits', then yes. Yes, they did.
+[^3]:If that's the ship I know as 'Kyne's Tits', then yes. Yes, they did.
