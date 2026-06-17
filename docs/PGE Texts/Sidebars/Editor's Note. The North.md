@@ -6,7 +6,7 @@ Historically, the North denotes Tamriel north of the Jeralls: a geographic disti
 
 So perhaps the North speaks to a form of government. Yet a Qarl from Wrothgaria will proudly declare herself a woman of the North whilst denouncing the moots of Snow-Throat, to say nothing of the Ard of Druadach and the blood rituals of the Free City of Orsinium.
 
-So too it is with faith. "The Gods of the North" speaks of the pantheon of Nords and Giants, yet says nothing of Druadach's heresies, nor the believers of Wrothgar & Karth's cathedrals, yet those are indisputably of the North too.
+So too it is with faith. "The Gods of the North" speaks of the pantheon of Nords and Giants, yet says nothing of Druadach's heresies, nor the believers of Wrothgar and Karth's cathedrals, yet those are indisputably of the North too.
 
 Is the North defined by trade and sea? No doubt in part - in the east the Dunmer of Solstheim who have traded ash and netch for ice and boar claim kinship with the Nords of Snow-Throat and Bretons of the Great Bay, bound together as their fates are by the icy waters of the Sea of Ghosts. Yet Bruma claims to be of the North, as do landlocked Orsinium and Druadach.
 
