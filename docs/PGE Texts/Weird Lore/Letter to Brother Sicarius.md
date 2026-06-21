@@ -5,19 +5,20 @@ This letter is for your eyes alone. I hope you have maintained order after the u
 The guild has been in disarray since the raid on the Dawnstar Sanctuary, especially those within Potentate territories, who have been hunted relentlessly.
 A week before the time of this writing, the majority of guild leaders received a missive via courier bearing the seal of the Potentate. It seems that Helseth knows the identities of nearly every one of us, with most presumably only being protected by the limited reach of his jurisdiction. However even this is not a reliable measure of safety, as he amply demonstrated by causing the death of Matron Galis shortly after she received the letter, through methods that will become clear to you as you read on.
 I assume that Matron Herna was in possession of the letter addressed to your chapter, and was unable to relay its contents to you before she was killed on her way back to your Sanctuary. I have therefore copied the contents into this letter so that you, as temporary master of the Daggerfall chapter, can make a decision for your Brothers.*
-                                    
-                                        ***
+___
 
-*To the leaders of all Dark Brotherhood Sanctuaries throughout Tamriel and its territories: 
-The Potentate has monitored your continued operation after the war, and it has been tolerated to a point. However, your organization has become outdated; even those of you that fall outside of our immediate reach will eventually be uprooted and scattered. I therefore offer you a new code to operate under, in service to and within the legal protection of the Potentate. I am aware that this is not a prospect that you will be eager to take up, and so I have made arrangements to assist in persuading you to consider my proposition. 
+To the leaders of all Dark Brotherhood Sanctuaries throughout Tamriel and its territories: 
+
+*The Potentate has monitored your continued operation after the war, and it has been tolerated to a point. However, your organization has become outdated; even those of you that fall outside of our immediate reach will eventually be uprooted and scattered. I therefore offer you a new code to operate under, in service to and within the legal protection of the Potentate. I am aware that this is not a prospect that you will be eager to take up, and so I have made arrangements to assist in persuading you to consider my proposition. 
 The body of your so-called Unholy Matron has been taken from the sanctuary in Dawnstar, and the one bearing the title of “Listener” has been disposed of. If you wish to continue to receive contracts, you will do so exclusively from me. In exchange, you may continue to venerate the Night Mother, and be allowed to access and maintain her body. A hidden base of operations has been constructed for you, including a temple to Sithis, whom you may still worship with your service. You will be afforded protection and secrecy, and be well compensated for your efforts. 
 This is a most generous offer for a guild of murderous outlaws. 
 Should you accept, you will return a list of all current members of your chapter who agree to these terms. Any who do not must be turned in to the Guard or executed. Any chapter that rejects these terms as a whole is of the understanding that they will be treated with utmost prejudice, and that their continued operation will be considered a slight against the Potentate and be returned as such, regardless of territorial jurisdiction. 
 To that end, this letter is laced with a poisonous powder, which entered your lungs the moment you opened it, and will take effect within minutes. The courier that delivered it has been instructed to wait outside, and will gladly provide the antidote in exchange for its return. I eagerly await your response.
--Esteemed Potentate Hlaalu Helseth*
-                                    
-                                         ***
+
+-Esteemed Potentate Hlaalu Helseth
+___
 
 *Matron Galis refused to give up the letter, and instead ordered us to execute the courier. She succumbed to the poison before the deed was even finished. 
 We now face a difficult choice: to serve this tyrant, or to cease to operate altogether. However, some have embraced another path: a return to the days of old, when the Brotherhood answered to no central authority. We True Brothers will continue to serve Sithis, with or without the Unholy Matron. By the time you receive this our chapter will have already relocated, and you will receive no further contact. However, I hope you will refuse the Potentate’s blasphemous offer, and follow us in our earnest service to the Dread Lord. Remember the Music of Life.
--Genitris Nox, Night Mother of Sentinel*
+
+-Genitris Nox, Night Mother of Sentinel

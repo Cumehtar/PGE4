@@ -1,4 +1,4 @@
-Found in the notes of the theology student of [[Solitude Seminary]] that returned from the expedition to the southern Wrothgarian Mountains mad, and subsequently disappeared from his cell.
+Found in the notes of a theology student of the [[Solitude Seminary]] that returned from the expedition to the southern Wrothgarian Mountains mad, and subsequently disappeared from his cell.
 
 *Each new day is an afterlife, a tree growing from the tombstone of the previous one. Each memory is false, faithless, a skeletal grin under the skin of the beloved face. Each and every religion, each promise, each realm - everything is overrun by the shades of the dead. From the eight, every one is a lifeless, spherical corpse hung in heavens. From the eighty one that followed them, each went to the other side and did not return. From the eighteen, every one of them is eighteen times dead. Even the ever-beating heart skips and flutters.*
 

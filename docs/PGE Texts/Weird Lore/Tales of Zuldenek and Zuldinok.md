@@ -13,7 +13,7 @@ Scholars debate as to whether these figures actually existed, or were merely rep
 Recorded here are the two most famous versions: one passed down among men, particularly Nords, and the other told by elves, primarily Dunmer. These tales provide fascinating insight into not just the differences in cultural use of the Thu’um, but the early days of Snow-Throat itself, when the land was even wilder than it is now, and new people and ideas fought for their place within it.
 
 
-#**The Song of H’roar Hill-Throat and The Knife-Eater**
+**The Song of H’roar Hill-Throat and The Knife-Eater**
 
 Long ago, when Snow-Throat still toiled in the untamed ruin of the False Dragon’s jealous blight, the returned sons of Aka began to again teach mortals to speak with the Storm Voice, as they had in times of old. 
 
@@ -56,13 +56,13 @@ And the hillock was thrown on top of Naga, and he spoke blasphemies no more. But
 *Uv Lahney Ko Sahlo.”*
 
 
-#**The Legend of Vabria Nagavar and The Fool King of Hillocks**
+**The Legend of Vabria Nagavar and The Fool King of Hillocks**
 
 Long ago, when Tamriel still bore glorious scars of Peryite’s testing Gift, Dragons began to teach all manner of mortals to speak their wrathful tongue, as they had done only for Men in times past. 
 
 Out of this time came two wielders of Power-Throats: Nagavar, student of Mora the Lord of Knowledge, from whom he learned secret words that the Black Dragon had hidden away for himself; and Torevar the Fool King, a dirt-drunken bard who sang a never-ending Shout-song made of lies and praises to false lords and powers.
 
-Nagavar traveled across many lands, teaching others the secret words, and showing them the true face of Ysmir-Who-Is-Missing, which is the Scribe of Black Books. He collected disciples, their mouths foaming with truths which they spake unto their brethren. When their number had grown, he led them to Snow-Throat to speak with Sikhaalnak, Mora’s servant who knew the first secret of mind-cutting. 
+Nagavar traveled across many lands, teaching others the secret words, and showing them the true face of Ysmir-Who-Is-Missing, which is the Scribe of Black Books. He collected disciples, their mouths foaming with truths which they spoke unto their brethren. When their number had grown, he led them to Snow-Throat to speak with Sikhaalnak, Mora’s servant who knew the first secret of mind-cutting. 
 
 But when the Vabriavari arrived at the mound where the dragon resided, they found only his bones, his scales flayed for leather flasks of unsavory drink. But Nagavar was not deterred, and turned and began to speak to his followers, teaching them hidden wisdom with Xarxes’ own Breath. But from the South came Torevar the Fool King, with painted crown and drunken mouth, blowing away steads and killing wandering herdsmen with his slurred Shouting. 
 

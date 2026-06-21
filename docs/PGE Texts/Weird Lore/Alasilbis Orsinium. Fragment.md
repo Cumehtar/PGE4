@@ -2,7 +2,7 @@
 
 Brother and sister Ornim, once-noble people of strength and honor; why do you suffer your place in this world?
 
-You, Ornim of Orsinium, children of hardship and strife; why do you walk eternally in the way of toil and broken oaths? Your bones crack, and you labor in vain for an uncaring god. Your children are travelers, unwelcome in foreign lands. The Beseechers choke in ash, beaten and bloodied, seeking the broken words of a fragment, a shadow of Royalty. Come, and See again.
+You, Ornim of [[Orsinium]], children of hardship and strife; why do you walk eternally in the way of toil and broken oaths? Your bones crack, and you labor in vain for an uncaring god. Your children are travelers, unwelcome in foreign lands. The Beseechers choke in ash, beaten and bloodied, seeking the broken words of a fragment, a shadow of Royalty. Come, and See again.
 
 You Ornim of Tamriel, outcasts wherever you roam; why do you travel in a world of self-deception and contracts unfulfilled? You seek acceptance, yet never truly find it. You serve the pitiless, those who bid you welcome with changing faces, and would just as soon cast you out if not for shifting law; and you fear when this, too, may change. Come, and See again.
 

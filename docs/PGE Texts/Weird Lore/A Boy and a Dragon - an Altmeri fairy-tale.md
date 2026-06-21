@@ -1,8 +1,8 @@
-The story I am going to tell you is a lie. If I were to mark every fact and name that was forgotten or replaced, if I were to keep all the alternative and consequtive orders of events, then I would have to sing in exploding-fractal-mirror-sign-shadows-ET-MNEM. Let the others do that, I will simply lie to you.
+The story I am going to tell you is a lie. If I were to mark every fact and name that was forgotten or replaced, if I were to keep all the alternative and consecutive orders of events, then I would have to sing in exploding-fractal-mirror-sign-shadows-ET-MNEM. Let the others do that, I will simply lie to you.
 
 Picture a child, sitting by the brook, waiting for his friends, his skin glowing softly golden. Twenty years ago his people came to this land, escaping from a great calamity of {worlds-colliding-burning-splintering-pieces-of-land-drifting-through-aether-skies-falling-down}.
 
-He was born here, in the peaceful green land. I will lie to you again and say that it was called Feykro-se-wuth by the original inhabitants. You see, they were dragons - scaly, huge, old, wise, speaking with the voices of the elemental power. If you don't believe me, go find a dragon and ask it how their homeland was called, it will lie to you too.
+He was born here, in the peaceful green land. I will lie to you again and say that it was called Feykro-se-wuth by the original inhabitants. You see, they were dragons - scaly, huge, old, wise, speaking with the voices of the elemental power. If you don't believe me, go find a dragon and ask it what their homeland was called, it will lie to you too.
 
 In sixty more years, the boy would grow up, grow old, all the time doing the dragons' bidding in gratitude for the shelter, and die.
 
@@ -12,7 +12,7 @@ Picture young boy with a golden skin, sitting peacefully at the riverbank, waiti
 
 No, that is not right either.
 
-Picture young Xarxes sitting by the brook, waiting for his friends Shor and Trinimac to come. Their tribes have only recently come to this land, and the boys, the chiftains' sons of similar age, have struck an instant friendship. The boy looks at the brook, and the brook looks back at him. 'You will die', it whispers, 'the Old ones of this land do not wish you well, they will enslave you, make you the servants, use your hands to build the temples. You are short-lived, you and your children will whither and die, while they will stay immortal'. When his friends come, the boy tells him everything, but his friends betray him, and he is sacrificed to the black dragon god.
+Picture young Xarxes sitting by the brook, waiting for his friends Shor and Trinimac to come. Their tribes have only recently come to this land, and the boys, the chieftains' sons of similar age, have struck an instant friendship. The boy looks at the brook, and the brook looks back at him. 'You will die', it whispers, 'the Old ones of this land do not wish you well, they will enslave you, make you the servants, use your hands to build the temples. You are short-lived, you and your children will whither and die, while they will stay immortal'. When his friends come, the boy tells him everything, but his friends betray him, and he is sacrificed to the black dragon god.
 
 That's how it went. Or not.
 
