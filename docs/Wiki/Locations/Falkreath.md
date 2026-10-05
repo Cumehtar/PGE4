@@ -2,5 +2,5 @@ A city in the southernmost parts of the Kingdom of [[Greater Wrothgaria and Kart
 
 *Sources:*
 
-[[Thane-baronies of Whorthgaria. Rorikstead]]
+[[Thane-baronies of Wrothgaria. Rorikstead]]
 

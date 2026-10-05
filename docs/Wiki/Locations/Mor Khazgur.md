@@ -1,5 +1,5 @@
-An Orcish settlement in central [[Greater Wrothgaria and Karth]]. 
+An Orcish settlement in central [[Greater Wrothgaria and Karth]]. Ruled by the gro-Khazgurs.
 
 *Sources:*
 
-[[Thane-baronies of Whorthgaria. Rorikstead]]
+[[Thane-baronies of Wrothgaria. Rorikstead]]

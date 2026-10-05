@@ -2,4 +2,4 @@ A significant city in the eastern portions of [[Greater Wrothgaria and Karth]]. 
 
 *Sources:*
 
-[[Thane-baronies of Whorthgaria. Rorikstead]]
+[[Thane-baronies of Wrothgaria. Rorikstead]]

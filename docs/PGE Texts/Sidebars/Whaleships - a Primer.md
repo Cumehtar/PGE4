@@ -1,4 +1,4 @@
-The term “whaleship” refers to a broad variety of craft designed for interplanar travel by the Deep Orcs of Orsinium. These vessels can vary broadly in size, design, and purpose, but have two unifying facets: construction from whalebone and moth silk and the general shape of a whale. 
+The term “whaleship” refers to a broad variety of craft designed for interplanar travel by the Deep Orcs of [[Orsinium]]. These vessels can vary broadly in size, design, and purpose, but have two unifying facets: construction from whalebone and moth silk and the general shape of a whale. 
 
 The external skin of a whaleship is made of sheets of moth-silk, inked with runes and spell-circles to catch, store, and direct magicka. Motivator-runes cover the fins and tail, allowing for the generation of a push/pull effect, while other patterns serve to strengthen the silk, immunize it and the interior from magical effects, attune it to the currents of the Mundus, and much more.
 
