@@ -8,4 +8,10 @@ The Temple is also a major political power, using its own answer to the Potentat
 
 As for religion, the Temple of the Reclamations is clearly still the main faith of Resdayn, and is doing what it can to unite the Dunmer, but there are cracks in the foundation. Plenty of Ashlanders still hate organized religion as soft Altmeri decadence, not to mention the debate of hierarchy between Wise Women and Archcanons. Even within the Temple some old sectarianism continues about what it means for the False Tribunal to be “merely” Saints, and strange groups like the Clockwork Apostles continue to exist.
 
-For influences, we’ve pulled some from popular fanon and fan mods, but our goal is to make this setting stand on its own, so the hope is to keep such influences light. PGE1 and TESIII are obvious sources of influence, as well as the works that inspired them such as Dune or Star Wars, as well as Mesopotamian and South Asian cultures.
+For influences, we’ve pulled some from popular fanon and fan mods, but our goal is to make this setting stand on its own, so the hope is to keep such influences light. PGE1 and TESIII are obvious sources of influence, as well as the works that inspired them such as Dune or Star Wars, as well as West Asian and South Asian cultures.
+
+*Sources:*
+
+[[Chapter. Resdayn]]
+
+[[Design Doc.Resdayn]]

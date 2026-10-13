@@ -3,3 +3,9 @@ Following the Fall of the Empire, the former Imperial City, now mostly known by 
 The power of the Archdiocese rests in the Imperial Cult which is still very present throughout Tamriel, especially among humans (and indeed the seven other Primates live in Colovia, the Potentate and Anequina), although the priesthood's gradual slide towards Alessian Order-style worship of "the One" is starting to cause issues, as does the schism with the Primate of Akatosh/Chaplain of Auri-El in [[Kvatch]].
 
 The population is largely made of Cyrodiils, especially outside of the city proper, but the priesthood and leadership is more diverse as faithful from all over the continent can rise in ranks. The main inspiration is the Papal States and Isaac Asimov's Trantor (itself a sci-fi version of post Roman Empire Rome).
+
+*See Also:*
+
+[[Chapter. Archdiocese of the Divine]]
+
+[[Design Doc.Archdiocese]]

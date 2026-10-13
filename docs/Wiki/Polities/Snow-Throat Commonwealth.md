@@ -3,3 +3,9 @@ Made up of eastern and central Skyrim and County Bruma, the Snow-Throat Commonwe
 Snow-Throat draws from early American history, especially the Articles of Confederation, when the federal government was weak and democracy was strong. The nation is one of the more developed technologically in the setting, but is still schizotech - Renaissance to pre-Industrial Revolution tech exists alongside Viking longships transported in canals, crossbow-armed militias comparable to the Marines of the Malazan setting and American minutemen, etc.
 
 Magically, Snow-Throat lags behind most other nations - while magic is far more accepted than it was in Skyrim, Snow-Throat's institutions are regarded as hidebound and traditional and the common mage unrefined. Religiously, the Commonwealth has a revived but very syncretic faith based largely off of the old Nordic pantheon, while the Giants hold mostly to their old ways and the Dragon Monks practice a bizarre form of [[Neo-Ysmirism]]. Primary inspirations are early American history, Skyrim, and Malazan.
+
+*Sources:*
+
+[[Chapter. Snow-Throat Commonwealth]]
+
+[[Design Doc.Snow-Throat Commonwealth]]

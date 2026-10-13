@@ -1,0 +1,16 @@
+**Background:**
+After the Silver Plague absolutely devastated the Iliac Bay, the region fell into a bunch of squabbling city-states once more. Between the new industrialism of the sympathetic-soul enchanting, and the power of regional knightly orders, no new kingdom could again centralize power. Instead, about 40 or so city-states have formed an alliance that meets at the “Muster Assembly” and “Lance Assembly” on the Isle of [[Balfiera]]. Under their governance, the norm in the Bay is a quasi-democracy in which knights control the votes.
+
+As for the influences, first is obviously the fragmented Iliac Bay of the pre-Miracle of Peace times. And where the [[Freehold Republic]] takes from the Renaissance Mediterranean, the [[Iliac League]] rather calls back to the ancient Greek polities, with the ideal of free warrior-citizens and agora. Polish voting gentry can be seen as one more inspiration, although due to the widespread enchanted mechanisms and the post-factum depopulation, the proportion of the full-rights citizens to the rest is less drastic. 
+
+**Society and Culture:**
+Urban Iliac culture is based around the perfect ideal of the “citizen-knight”. To be virtuous in Iliac society is to be well-rounded as a Spellsword, educated, and close to the Gods. Obviously, prizing military valor also leads to a lot of short-sighted and ambitious behavior, as it did back in *The Elder Scrolls II: Daggerfall*. Expect all the cities, knightly orders, and temples to be trying to scheme and one-up each other. 
+
+There is also the peculiar status of their enchanted industrialism. The Iliac League favored a “sympathetic style” of enchanting wherein one enchants a loom with a spider soul or a plow with an oxen soul. When first adopted, this was cutting-edge technology. Now the Potentate and Freehold consider this quaint.
+In the rural and less coastal parts of the Iliac Bay, druidry and witchcraft thrive and act as the real community leaders. In the coastal cities, religion is fairly diverse; with a wide range of beliefs from temple to temple. Each city has a patron deity, and even two cities with the same patron may have differing interpretations of that divinity. Apocalypticism is also rampant throughout the Iliac Bay, perhaps owing to their militancy and fear of invasion.
+
+**Relationships with Others:**
+The Iliac League has a strong economic relationship with [[Alinor]]. They have tense relations with the Freehold Republic over trade disputes. The League perceives the [[Yokedate]] as a potential rival in colonial and territorial ambitions. The [[Second Potentate]] does not currently have a good trade relationship with the Iliac League. Iliacs are paranoid about a potential Wrothgarian invasion. The League has a back-and-forth relationship with the [[Druadach Kingdom]] due to dispute over the Bjoulsae River.
+
+**Main Themes:**
+The Iliac League is a combined exploration of the societal changes brought about by rapid economic growth, the struggles for “democracy” in a land where military service is the main pathway to citizenship, and the struggles of trying to maintain “unity” in a land that is so heavily fragmented and decentralized.

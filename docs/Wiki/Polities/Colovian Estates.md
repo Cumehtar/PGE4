@@ -3,3 +3,9 @@ Also known as "the Colovian Wilds" and "the Colovian Frontier". Each City (and m
 The main power in Colovia however, is the East Empire Company, between predatory loans to small towns, maintaining (and tolling) roads, and aggressively buying lands, the Company is slowly taking over the region and using the people as a cheap workforce.
 
 The population is largely Colovian, with significant Bosmer, minotaur, goblin and Redguard minorities. The main inspirations are Renaissance Europe (especially the divided states of Italy and Germany) and the various East India Companies.
+
+*See Also:*
+
+[[Chapter. Colovian Frontier]]
+
+[[Design Doc.Colovian Estates]]

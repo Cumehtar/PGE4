@@ -1,0 +1,19 @@
+**Background:**
+The [[New Ayleid Imperium]] is a militaristic, imperialist mageocracy. Born from the strange nationalism of a Bosmeri, Altmeri, and Khajiiti diaspora who wanted to create a new vision for “Heartland Elves,” they began seizing power in much of Colovia and northern Valenwood. Backed by a branch of the Camoran dynasty, and considerable loans from the Tamrielic Bank of Zenithar, they have rebuilt many ancient Ayleid cities, or else conquered existing cities and repurposed them according to their Neo-Ayleidic ideology. It is also worth noting that “New Ayleid Imperium” is an exonym, insiders would properly refer to it as the “Imperatum Adonai av Sunnamora”, or just Sunnamora.
+
+The Ayleid Imperium is inspired a little bit by the Western Roman Empire, a bit by the Tevinter Imperium of *Dragon Age*, and a bit by Mankar Camoran’s ideology.
+
+**Society and Culture:**
+The society of the Neo-Ayleids is tiered. At the top are the mage-kings called “Adoni”, below them are the mage-priests called “Chaplains”, next the military referred to as “Questing Knights”, then the middle and working class called “plebeians,” and finally “servants” (debt slaves, essentially). Clever readers might notice the “Questing Knight” and “Chaplain” terminology are pulled from Mankar Camoran’s writings. As Camoran states, one can progress from the lowest tier to “Master,” but in the Imperium it usually requires years of military service and/or sponsorship from a higher-class person. There is also much emphasis on magical education, obviously.
+
+Ideally, the Ayleids see themselves as something almost beyond internal ethnic tension. As noted in the Nu-Mantia Intercept, an “Ayleid” can be an ideological designation. In the modern Imperium, those who are more invested in the cultural and national project of the Imperium are “Ayleids”, regardless of whether outsiders might designate them “Bosmer”, or “Khajiit”, or whatever. In practice, however, there are still deep cultural tensions between differing groups throughout these newly conquered regions, which are likely being exploited internally and externally by political rivals.
+
+As for religion, it is mostly an eclectic mix of Aedra worship in the north (with some Meridia thrown in), and a bit of Daedra worship in the south. Followers of the Green Pact can be found all throughout. Some Neo-Ayleids are becoming fascinated with reconstructing the star-worship of their forebears (or, rather, what they imagine it to be like).
+
+**Relationships with Others:**
+Sunnamora bitterly hates the tribes of [[Bloodtoil]], who they see as primitive barbarians squatting on valuable and sacred rivers and forests. Some in the Imperium, being devout Meridia worshipers, would also like to “liberate” [[Skingrad]] from its vampire overlord. 
+
+The most decisive factor in international relations regarding the Imperium is that it is heavily indebted to the [[Tamrielic Bank of Z’en]], headquartered in [[Leyawiin]], whose majority shares are owned by the [[Freehold Republic]] and the [[Second Potentate]]. The founder of the Imperium was a Camoran, leading to fears in the Republic that the Camorans may try to revive their ancient dynastic empire, be it through separatism or conquering the Republic outright. The Potentate, fearful that the Imperium has benefitted the Abecean more than Nibenay at this point, tries to stoke these fears more in the hopes of causing some kind of civil war within the Republic or the Camoran dynasty.
+
+**Main Themes:**
+The Ayleid Imperium is one of the most openly expansionist of the nations in our project, and much of their narrative revolves around the outrageous costs of feeding their imperialist war-machine (huge debts on both cities and individuals, deep class divides, poor relations with neighbors, etc). The positive aspects of Ayleid culture, however, would have to be their emphasis on learning, education, and urban renewal.

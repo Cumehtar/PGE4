@@ -1,0 +1,27 @@
+**Background:**
+The [[Freehold Republic]] is a loose federation of multiple city-states (“free holds”) along the Abecean Sea, rising from the vacuum of power left behind when the Aldmeri Dominion collapsed due to Plague and war.  Following a series of blockades, embargoes, political marriages, and backroom deals that would later be collectively remembered as the “Gold Coast Conquests”, power in what is now the Freehold Republic shifted to wealthy *calani*, or merchant families, who could secure naval trade in the region. Early on, these families were mostly Altmer veterans from Auridon and thus set the cultural tone of the Republic in favor of Auridoni culture and religion. In a short time, other wealthy families managed to gain enough status to influence the overall cultural and ethnic makeup of the Republic’s ruling class as well.
+
+At the time of the Guide, the situation of the Republic is not too dissimilar to the Great Houses from *Morrowind*; with six “Sacred Families” acting as something like the chief “political parties” of the Republic that most other families in the Republic find themselves entangled with in some way. Each of these Sacred Families claims a patron deity who best represents their values.  The six families are trying to outmaneuver one another just as much as outsiders, and this may allow commoners a chance to rise up and fight for some more representative government in the Abecean.
+
+The Freehold Republic is partially inspired by the merchant republics of Italy, as well as the aforementioned treatment of the Great House system in *Morrowind*, and by general cyberpunk media.
+
+**Society and Culture:**
+Being a merchant republic, Freehold society is straightforwardly plutocratic. Wealth is everything in Freeholder society, as it demonstrates success, and success demonstrates perfection, which demonstrates one is on the “Path to Alaxon” (i.e., closer to the Gods). Demonstrating one’s good standing in Alaxon grants one a *calian*, a signet ring which allows for voting in the local election. People from poorer backgrounds, then, often look to join a wealthier family through service first as a hireling, then later as an adoptee or marriage candidate. The at-Reymons are especially known for adopting mercenaries. Plutocracy is also demonstrated by the utter domination of the Six Families. The Praxic Consortium of Rightful Commerce, the Freehold equivalent of the East Empire Company, is ruled entirely by the Six Families. 
+
+Religiously, the Freehold Republic is very diverse. While a variant of Neo-Alessianism may be popular in Anvil, the old Redguard sword cults survive with some foreign additions in Hew’s Bane. Most interesting, perhaps, is the doctrine being pushed by the dominant Mer that the Old Ehlnofey were Dragons, the Wandering Ehlnofey mortals, and that Veloth’s exodus was myth-echo of *Xarxes*’ leading mortals from Dragonic tyranny. In this mythology, the Dragonborn was an incarnation of Xarxes, and Hermaeus Mora is a sort-of shadowy God Ancestor. Another aspect of their religion is secret societies and mystery cults, which are often exoticized by outsiders but usually amount to little more than social clubs in reality.
+
+**The Six Sacred Families:**
+As described above, each of the prominent families in the Freehold Republic find themselves entangled with one of the powerful ruling “[[Sacred Six Families]],” which are:
+
+The arcano-capitalistic **Adariels** who claim Xarxes as their Aedra, based primarily in [[Firsthold]]. 
+The militant **Elsinors** who claim Phynaster as their Aedra, and are most tied to [[Skywatch]].
+The artistic Camorans claim Jephre as their ancestor, and call [[Woodhearth]] their main home. 
+The mercenary at-Reymons claim Reymon Ebonarm as their patron, and their HQ can be found in [[Abah’s Landing]]. 
+The dutiful Shraj claim Zenithar, and are primarily based in [[Chasegard]].
+The mercurial Umbranoxes claim [[Anvil]] as their ancestral home, and Dibella as their ancestral deity.
+
+**Relationships with Others:**
+The Freehold Republic’s greatest archnemesis are the Baandari Pirates, who continually harass their trade along the Southern Sea and even into the Blue Divide. Non-Camoran factions of the Republic are also increasingly concerned about the rapid growth of the [[New Ayleid Imperium]], that it may lead to some schism within the Republic should the Camoran’s ties to the Imperium through its founder allow them to become too powerful and the age of the Camoran Usurper return. The Republic is also facing growing pressure to contain the naval threat of the [[Yokedate]]. The Republic currently does not get along well with the [[Sapiarchy of Alinor]], particularly the militants in [[Shimmerene]]. The Republic would very much love to colonize Pyandonea and/or Yokuda, much to the chagrin of the Potentate and the Iliac League, not to mention the natives of those lands. 
+
+**Main Themes:**
+The Freehold Republic is essentially “magical cyberpunk”: technology vs nature, wealthy families and megacorps rule almost everything, people alter their bodies to become tools of the state, pollution clouds the air in many cities, reality-bending technology and magic is used with little concern for the impact on social welfare, etc. There is also some usage of Renaissance themes: innovation and exploration in science, religion, politics, and magic in a way that blurs the line between all four.

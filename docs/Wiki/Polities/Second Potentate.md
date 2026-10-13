@@ -10,3 +10,5 @@ Speaking of the influences, the Potentate calls back to the Nibenay of the PGE 1
 
 *Sources:*
 [[Chapter. Second Potentate]]
+
+[[Design Doc.Potentate]]

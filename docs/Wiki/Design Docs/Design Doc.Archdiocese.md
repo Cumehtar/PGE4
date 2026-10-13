@@ -1,0 +1,17 @@
+**Background:**
+After the fall of the Mede Empire due to plague and war, the Temple of the One managed to become the governing body of the Imperial City (anon Cyrodiil City) and the surrounding region. The [[Archdiocese]] is an independent religious theocracy living in the center of Tamriel, led by an Archbishop of the One elected by the [[Council of the Eight]] and blessed (allegedly) by the Dragons roosting on the White-Gold Tower.
+
+The Archdiocese is influenced by descriptions of the Alessian Order from *The Elder Scrolls IV* and other supplementary TES materials and by Trantor from Isaac Asimov’s *Foundation* series. The main influence is the idea of the Catholic Church as the last vestige of the Roman Empire, especially during the Medieval and Renaissance periods.
+ 
+**Society and Culture:**
+As a theocracy, most of the governance within the Archdiocese seems to be handled by the Primate and the various prelates they have appointed throughout the region. Holy knights handle the law enforcement. The general vibe of Cyrodiil City and Lake Rumare is still post-apocalyptic even 200 years after the Second Great War. Many gangs hideout in the city streets, and entire tribes (such as the Mother-Navigators of Gottlesfont) have made regions of the Archdiocese "territory" their home. The areas around the Temple of the One and the Arcane University see the most traffic from foreigners coming to study theology.
+
+Religiously and culturally, the Archdiocese has returned to a pseudo-monotheism which emphasizes that all gods and spirits are really different aspects or emanations of Akatosh. This allows some level of tolerance for difference within their borders, so long as the dominant theology is not threatened.
+
+**Relationships with Others:**
+The Archdiocese has a mostly positive-to-neutral relationship with the [[Second Potentate]], the [[Colovian Estates]], and [[Anequina]], because [[Primate]]s are located in all of those polities. They also have a positive-to-mixed relationship with the Kingdom of [[Greater Wrothgaria and Karth]] due to the Kingdom’s conservative theology (read: rejection of “Oneness”). They have similar issues with the [[Snow-Throat Commonwealth]]’s lapse into “heathenry”. They have poor relations with the Daedra-worshipping "heretics" of the [[New Ayleid Imperium]] as a whole, but the situation is especially tense with the schismatic Primate of [[Kvatch]]. All that being said, via priests, missionaries, and the like, the Archdiocese's religion is very influential in many parts of Tamriel, fostering goodwill from many citizens across the continent.
+
+**Main Themes:**
+A main narrative of the Archdiocese is an exploration of a "post-apocalyptic" Tamriel, through a ruined city controlled by a strange religious order. It also explores themes of theocracy, and the former Imperial City (Tamriel’s Rome!) becoming increasingly irrelevant in international politics.
+
+Externally, the Archbishop of the One's influence over other peoples via priests and missionaries is a reflection of the Catholic Church's outsized influence on world politics, especially during the Medieval and Renaissance, despite the Papal States' relatively small size during those periods.

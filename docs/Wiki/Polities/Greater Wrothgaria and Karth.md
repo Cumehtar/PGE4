@@ -7,3 +7,4 @@ Influence-wise, GW&K takes the most stereotypical 'medieval European fantasy' el
 *Sources:*
 [[Chapter. Greater Wrothgar and Karth]]
 [[On the arms and armaments of Wrothgaria]]
+[[Design Doc.Wrothgaria and Karth]]

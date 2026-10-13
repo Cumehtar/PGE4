@@ -11,3 +11,9 @@ Rumors and reports about the settlement range wildly; some claim that New Thrass
 This is a bit different from other polities in the setting. Even though it’s considered an independent political entity, it’s very small, has little interaction with the rest of Tamriel, and is home to mostly one race. The Remnant of Old Thras, the City of New Thras, and Tamrielic Sload are all mostly a way to return the Sload to the setting in roles aside from exclusively “evil slug necromancers.”
 
 Influences for New Thras include Isengard from Lord of the Rings (more of the “industrialization of nature” and less of the “pure evil corrupting pure good”), as well as the general idea of the Sload finally succeeding in invading something.
+
+*Sources:*
+
+[[Chapter. New Thras]]
+
+[[Design Doc.New Thras]]

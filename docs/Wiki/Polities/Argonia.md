@@ -3,3 +3,9 @@ The Kingdom of Argonia is a confederation of Black Marsh tribes united by a sing
 The Kingdom is led by a Council of Chieftain presided over by the King of Argonia (more of a religious title than a hereditary king) who uses the threat of the Shadowscales to enforce the decisions of said Council. In truth the Argonians are a people divided over their own identity, between those who wish to a return to the pre-Duskfall Empire, those who wish to remain true to the traditions of impermanence they lived according to for millenia (indeed many tribes have simply refused to join the kingdom), and those who seek a new way for their people. Their is also an ongoing struggle over whether and how to integrate the new human and Dunmeri subjects of the kingdom. The Nisswo cult is likewise divided by something of a return of the worship of Sithis-the-Destroyer, while the Bortherhood of Sethiete, mostly perceived as a watered-down version of Nisswo-ism for foreigners is gaining grounds among the humans.
 
 The population is mostly Argonians (in all their forms), Hist (for what it's worth), Nibeneans and Dunmer. The inspiration is the PGE3 and ESO depictions of Black Marsh and Amazonian nations if they had managed to push the conquistadors back.
+
+*See Also:*
+
+[[Chapter. Argonia]]
+
+[[Design Doc.Argonia]]

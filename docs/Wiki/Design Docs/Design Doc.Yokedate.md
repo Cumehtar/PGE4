@@ -1,0 +1,15 @@
+**Background:**
+Following the First Great War, [[Stros M’Kai]] became a major military center for the armies of Hammerfell, even reviving the ancient title of “[[Elden Yokeda]]” (essentially, “Shogun”.) After the Silver Plague, the King of Hegathe, who was now styling himself “[[Sheklith]]”, employed the armies of the Elden Yokeda to reclaim much of “Old Hammerfell” from the so-called heathens who had control of it. Now the “Totambu [[Yokedate]]” is essentially made up of three social structures: the Sheklith and his temples and their religious reforms and taxes, the Elden Yokeda and the military governors, and the nomadic tribes and their kinship structures.
+
+The Totambu Yokedate is influenced by Redguard lore from *The Elder Scrolls II: Daggerfall*  and *The Elder Scrolls Adventures: Redguard*, and also a bit of Turkish and Japanese history.
+
+**Society and Culture:**
+As noted, the Totambu Yokedate’s society seems to operate through three main pillars. The first, headed by the Sheklith (or “Emperor”) is primarily a spiritual leader and national figurehead, whose main power lies in the ability to impose taxes on mages and temples following “foreign religion”. The second, the Elden Yokeda, is a military dictator who appoints other military governors (yokedas) to act as agents in various regions of Old Hammerfell. The yokedas can also grant Yoku names to foreigners (reconstructed Yoku being the privileged language of the Yokedate). Finally, yok’shira (“grandmothers,” - community elders) act as essentially a “judicial” branch of the local kinship governments. The gift economy is highly important in Yokedate society, and not showing proper respect to the elders will result in consequences.
+
+While the Sheklith is fixated on religious purity, and the “Young Yokuda” faction of the military is obsessed with nationalism, there is some cultural and ethnic diversity within the Yokedate. Many Legion veterans from the Great Wars stayed behind in Hammerfell, and some were granted Yoku names. The nomads have also accepted some Khajiit and others into their ranks. A lot of syncretic cults have sprung up, especially the various sword-cults of the military.
+
+**Relationships with Others:**
+The Yokedate’s expansionist militarism puts it at odds with [[Elinhir]] in Colovia, the southern cities of the [[Iliac League]], and the [[Bjoul]] tribes of the Great Steppe. It also has tensions over future territorial ambitions with the [[Freehold Republic]], and does not enjoy that the Republic controls Hubalajad Bay.
+
+**Main Themes:**
+The Yokedate’s narrative has to do with the old “Crown vs Forebear” divide falling away, and now there are differing conflicting ideas over what it means to be a “true Redguard”, from the Sheklith and his religious purity, to the military and their nationalism and linguistic reforms, to the actual diversity of the various tribes.

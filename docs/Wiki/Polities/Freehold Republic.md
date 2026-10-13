@@ -3,3 +3,9 @@ Auridon, the Gold Coast, and parts of western Valenwood and southern Hammerfell,
 The Republic is, at the Guide’s writing, economically and politically dominant, but that may change soon. They have the most shares in the Tamrielic Bank of Z’en (a combination of the IMF and the World Bank) and lead the magitek industry. If you want mass produced reality-bending devices used casually with no thought of long-lasting effects, that would be Freehold.
 
 Religiously, the leading Altmer families prefer an esoteric cult following Xarxes and Hermaeus Mora that believes the Dragonborn was an incarnation of Xarxes. Each of the other families have their own patron deities, who they push in their spheres of influence.
+
+*See Also:*
+
+[[Chapter. Freehold Republic]]
+
+[[Design Doc.Freehold Republic]]

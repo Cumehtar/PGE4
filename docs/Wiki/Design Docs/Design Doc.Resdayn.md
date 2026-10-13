@@ -1,0 +1,19 @@
+**Background:**
+“[[Resdayn]]” is the native term for Morrowind. Around the time of the Second Great War, a border dispute with Argonia saw the old feud between those eastern provinces rekindled. This time, to prevent the near-total annihilation of the War of Accession from happening again, House Redoran formed an alliance with the Ashlander tribes which involved recognizing them as independent nations. In the years that followed, to help smooth over the deep cultural and religious divides, the Temple has tried to step in as an intermediary. This has resulted in an informal “mortal Tribunal” of sorts: the Hortator who leads the “settled” House Dunmer, the Gah-Khan who leads the Ashlander tribes, and the Alma Rula who leads the Temple. However, the gaps remain deep, and peace in the land of Resdayn has always been uncertain.
+
+Resdayn is obviously influenced by the *The Elder Scrolls III*, and is also partially influenced by some of the same things which shaped that game, including South Asian and West Asian cultures as well as sci-fi stories such as *Dune* and *Star Wars*.
+
+**Society and Culture:**
+There are, in essence, three Resdayns. “House Resdayn,” “Tribal Resdayn,” and “Temple Resdayn.” House Resdayn would look the most familiar to people who have played *Morrowind*: dominated by aristocracies vying for power, House Redoran currently being the strongest followed by Sadras and Telvanni with Dres and Indoril each barely hanging on (Dres has had to reluctantly adopt many Archein Argonians into their ranks just to compete). Though slavery is long gone, the ebony and glass trade is still a powerful incentive to engage in interesting labor practices: the Telvanni use ash-slaves powered by dust from Red Mountain, for example. Resdayn has learned some lessons from the Umbriel crisis, however, and refuses to engage in large-scale soul-powered industrialism like other states. Sul City in the Scathing Bay is powered instead by Clockwork magic.
+
+Tribal Resdayn, as mentioned before, is united by the Gah-Khan (“great-chief”). They are mostly still nomadic, but some in the tribes are developing a sedentary merchant-aristocracy of their own. The Urshilaku are currently on top and becoming too involved in House-politics for tribal liking, and remain too tribal for House liking; the Zainab have become full-on merchant-lords like a tribal answer to the Great House Hlaalu; the Ahemmusa have become essentially Dark Elf vikings; and the Erabenimsun are having an identity crisis between faithless mercenaries and spiritual pacifists.
+
+Temple Resdayn has its own growing tradition of organized labor along spiritual lines.  The Temple sanctions a number of other craftsmer guilds, each patronized by a particular saint, which can enact various strikes and the like against noblemer and merchants. Whether this growing spirit of egalitarianism and worker-led democracy can lead to true radicalism or instead be completely subsumed by theocracy remains to be seen. The Alma Rula is also the “Mouth of Mephala,” and thus controls the Morag Tong.
+
+Also worthy of note are the significant Nordic and Orcish populations in the Velothi Mountains and the Sheogorad regions.
+
+**Relationships with Others**:
+Resdayn has a very tense relationship with [[Argonia]] to the south, due to ancient cultural grudges and border disputes in the Deshaan region. Similar cultural tensions regarding burial rites cause hostility with the [[Second Potentate]], mostly around Kragenmoor and Narsis. Oddly enough, the Ahemmusa have good trade relations with the [[Snow-Throat Commonwealth]] due to their connections to the large Nord community in Sheogorad.
+
+**Main Themes:**
+The main narrative of Resdayn is the cultural tension between Ashlanders and “settled Dunmer”, which continues to persist due to both the various cultural differences and the lingering colonial attitudes among some of the Dunmer.
