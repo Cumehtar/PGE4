@@ -1,4 +1,4 @@
-**History and legend alike speak of the great “Walking City” of [[Falinesti]]. A living arborpolis considered sacred to all devotees of Y’ffre, it rooted itself permanently in the waning days of the Third Era. But the Roaming Tree reappeared decades ago, amazing the inhabitants of the southwestern forests of Tamriel. To learn more about this miraculous marvel, I have decided to speak with someone living within its boughs. Your correspondent with the Courier Guild spoke with Rakalai, an Imga who sells charms and potions in her shop** _**The Top Branch**_.
+**History and legend alike speak of the great “Walking City” of [[Falinesti]]. A living arborpolis considered sacred to all devotees of Y’ffre, it rooted itself permanently in the waning days of the Third Era. But the Roaming Tree reappeared decades ago, amazing the inhabitants of the southwestern forests of Tamriel. To learn more about this miraculous marvel, I have decided to speak with someone living within its boughs. Your correspondent with the Courier Guild spoke with Ralakai, an Imga who sells charms and potions in her shop** _**The Top Branch**_.
 
 _Many thanks for agreeing to this interview. Let me start by asking: what inspired you to set up shop in such an unusual location? The branch of a walking tree?_
 
@@ -26,6 +26,6 @@ RALAKAI: We take care of ourselves. The Greenwardens do well enough to keep the 
 
 _Interesting. Now, there are many who wonder why Falinesti started moving again just a few decades ago. I heard one Ayleid follower of Meridia say he refuses to set foot in this city, that it was clearly the result of some dark ritual._ 
 
-RALAKAI: There is a saying where I come from. “Naught without sacrifice.” The Great Trees are a Gift from the Green, say the prophets. For those who can truly understand the Will of the Spirit of the Now. The previous generations forgot this. That is all I will speak on that matter. Oh, and consider buying this bone-charm, taken from the neck of a hippogriff. You may need it if you slip from a tall tree.
+RALAKAI: "Dark ritual"? Kah. There is a saying where I come from. “Naught without sacrifice.” The Great Trees are a Gift from the Green, say the prophets. For those who can truly understand the Will of the Spirit of the Now. The previous generations forgot this. That is all I will speak on that matter. Oh, and consider buying this bone-charm, taken from the neck of a hippogriff. You may need it if you slip from a tall tree.
 
 **Thus concluded my interview. If you find yourself anywhere near Falinesti, consider visiting** _**The Top Branch**_. **The modestly priced slowfall charm saved my life immediately following the interview.**
