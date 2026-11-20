@@ -4,7 +4,7 @@ _Many thanks for agreeing to this interview. Let me start by asking: what inspir
 
 RALAKAI: My ancestors have lived in her branches for generations. We adapt to the age, when need be, yet keep the old traditions alive. Take for sample this Special Hoarvor Elixir, which is made from dried hoarvor bloat sacs and imported redwort petals, as well as a secret ingredient of my own, sure to cure most poisons you will encounter in the southern jungles. A potion like that, with ingredients both foreign and local, is easier to make here because Falinesti is always moving, so trade must always flow with it.
 
-_Indeed, I noticed many merchants from abroad as I entered the city. A significant number of them seemed to be from [[docs/Wiki/Polities/Ne-Quin’al]], even though the city is currently rooted in Sunnamora._
+_Indeed, I noticed many merchants from abroad as I entered the city. A significant number of them seemed to be from [[Ne-Quin’al]], even though the city is currently rooted in Sunnamora._
 
 RALAKAI: Yes, the cat-folk of Ne-Quin’al must trade their goods here and now while they can. Soon, Falinesti will move south for the long Winter Year in Pa’alatiin. The southern cat-folk will become the new governors of the Great Tree. They forbid all commerce from the northern Mane’s land, which they say could be a “corrupting influence.” I stay out of all that political nonsense, though. If you like Khajiiti goods, I have a sphinx-charm here which resembles Agamanus. It is said to ward off the dark spirits, at least until the magicks run out. 
 

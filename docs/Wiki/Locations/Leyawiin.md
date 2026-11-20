@@ -1,1 +1,1 @@
-A major city where the Niben meets the Southern Sea. Under the control of [[docs/Wiki/Polities/Ne-Quin’al]]. Home to the [[Tamrielic Bank of Z’en]].
+A major city where the Niben meets the Southern Sea. Under the control of [[Ne-Quin’al]]. Home to the [[Tamrielic Bank of Z’en]].
