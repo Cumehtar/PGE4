@@ -1,4 +1,4 @@
-A major city in northern [[Anequina]].
+A major city in northern [[docs/Wiki/Polities/Ne-Quin’al]].
 
 *Sources:*
 
