@@ -6,6 +6,7 @@ site_name: My Docs
 theme:
     name: material
     features:
+        - navigation.tabs
         - navigation.sections   # top-level sections render expanded
         - navigation.path       # breadcrumb showing where you are
         - navigation.top        # back-to-top button
