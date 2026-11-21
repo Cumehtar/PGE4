@@ -7,6 +7,7 @@ theme:
     name: material
     features:
         - navigation.tabs
+        - navigation.prune
         - navigation.sections   # top-level sections render expanded
         - navigation.path       # breadcrumb showing where you are
         - navigation.top        # back-to-top button
@@ -61,8 +62,8 @@ markdown_extensions:
 plugins:
   - search
   - roamlinks
-  - nav_async:
-      minify: true
+  #- nav_async:
+      #minify: true
 
 
 extra_javascript:
