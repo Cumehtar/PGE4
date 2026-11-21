@@ -3,6 +3,8 @@ site_name: "Potentate's Guide to the Evirons"
 
 theme:
     name: material
+    font:
+        text: Caudex
     features:
         - navigation.tabs
         - navigation.prune
