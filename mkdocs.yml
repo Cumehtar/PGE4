@@ -6,10 +6,9 @@ theme:
     features:
         - navigation.tabs
         - navigation.prune
-        - navigation.sections   # top-level sections render expanded
-        - navigation.path       # breadcrumb showing where you are
-        - navigation.top        # back-to-top button
-        - navigation.indexes    # lets a section itself be a page (needs section/index.md)
+        - navigation.sections   
+        - navigation.path     
+        - navigation.top        
 
     palette:
 
