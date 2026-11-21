@@ -3,12 +3,6 @@ site_name: "Potentate's Guide to the Evirons"
 
 site_name: My Docs
 
-nav:
-  - Home: index.md                    # always define a top-level index first
-  - PGE Texts
-  - Wiki
-
-
 theme:
     name: material
     features:
